@@ -12,6 +12,7 @@ precision mediump float;
 uniform vec2 iResolution;
 uniform float iTime;
 uniform vec2 iMouse;
+uniform vec2 poseBox;
 
 #define S smoothstep
 
@@ -47,7 +48,10 @@ float GetDist(vec3 p) {
    // cp.x = abs(cp.x)+.15;
     
     float d = length(cp)-r2;
-   	d = sdBox2d(cp, vec2(.1, .4*(sin(4.*a)*.5+.5)))-.1;
+    float poseX = poseBox.x;
+    float poseY = poseBox.y;
+    
+   	d = sdBox2d(cp, vec2(.1, .4*(sin(poseX*a)*.5+.5)))-.1;
     return d*.6;
 }
 

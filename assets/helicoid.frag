@@ -12,6 +12,7 @@ precision mediump float;
 uniform vec2 iResolution;
 uniform float iTime;
 uniform vec2 iMouse;
+uniform vec2 poseScale;
 
 
 vec3 pal( in float t, in vec3 a, in vec3 b, in vec3 c, in vec3 d )
@@ -91,7 +92,10 @@ float GetDist(vec3 p) {
    // bp.x *= Rot( 2. + iTime*2.);
    // bp.y *= bp.y*2. + iTime*2.;
     
-    float box = sdBox(bp, vec3(1,1.5,1))/scale; //this is good augmentation with poseNet
+    float scaleX = poseScale.x * 2.;
+    float scaleY = poseScale.y * 1.5;
+    
+    float box = sdBox(bp, vec3(scaleX,1.5,1))/scale; //augmentation with poseNet
     
     box-= sin(p.x*2.+iTime*2.)*.1; //displacement mapping
    	box = abs(box)-.2; //makes shell
