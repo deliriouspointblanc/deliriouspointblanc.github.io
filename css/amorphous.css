@@ -1,0 +1,143 @@
+/* Extra stuff to check and add? */
+body {
+  background-color: black;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+  color: white;
+  font-size: 1rem;
+}
+
+h1 {
+  margin: 0.5rem;
+  color: white;
+  text-align: center;
+  font-family: 'Krona One', sans-serif;
+}
+
+#model1 {
+  position: absolute;
+  left: 0px;
+  width: 45%;
+  padding: 5px;
+}
+
+#model2 {
+  position: absolute;
+  right: 0px;
+  width: 45%;
+}
+
+#result {
+  padding-top: 1rem;
+  padding-left: 0.5rem;
+  border: none;
+  background: transparent;
+  color: #000;
+  font-size: 1.75rem;
+  width: 95%;
+  height: 600px;
+}
+
+#result2 {
+  padding-top: 1rem;
+  padding-left: 1rem;
+  border: none;
+  background: transparent;
+  color: #fff;
+  width: 95%;
+  height: 600px;
+  font-size: 1.75rem;
+}
+
+#sketch-holder {
+  position: absolute;
+}
+
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  border-radius: 5px, 5px, 0px, 0px;
+  text-align: middle;
+  outline: none;
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  color: black;
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+  opacity: 70%;
+  text-align: center;
+}
+
+#textInput, #textInput2 {
+  text-align: center;
+  font-size: 15px;
+  color: white;
+  background-color: black;
+  width: 300px;
+}
+
+#tempSlider, #tempSlider2 {
+  margin: 0, 0, 1rem, 0;
+}
+
+#resetBoth {
+  border-radius: 2px;
+  text-align: center;
+  font-size: 18px;
+  border-width: 2px;
+  border: white;
+  color: black;
+  background-color: white;
+  cursor: pointer;
+  position: absolute;
+  left: 40rem;
+  top: 2rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+#resetBoth:hover {
+  color: white;
+  background-color: transparent;
+  transition-delay: 0.5s;
+}
+
+#homepage {
+  position: absolute;
+  padding: 0.5rem;
+  left: 0.5rem;
+  margin-top: 0.rem;
+  top: 0rem;
+}
+
+#prudence {
+  position: absolute;
+  padding: 0.5rem;
+  right: 0.5rem;
+  margin-top: 0.rem;
+  top: 0rem;
+}
+
+#koan {
+  position: absolute;
+  padding: 0.5rem;
+  right: 10rem;
+  margin-top: 0.rem;
+  top: 0rem;
+}

@@ -1,0 +1,133 @@
+/* import fonts from fonts.css file*/
+
+@import url(./fonts.css);
+/* css vars*/
+@import url(./partials/_variables.css);
+/* global css*/
+@import url(./partials/_global.css);
+
+/* start nav */
+
+.header_area .main-menu .navbar .navbar-brand{
+  padding: 0 2rem 0 5rem;
+}
+
+.header_area .main-menu .navbar{
+  padding: 1rem 10rem;
+}
+
+.header_area .main-menu .nav-item .nav-link{
+  font: normal 500 15px/2px var(--roboto);
+  text-transform: uppercase;
+  padding: 1.7rem;
+  color: var(--title-color);
+}
+
+.header_area .main-menu .navbar-nav .active a{
+  background: var(--gradient-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.header_area .main-menu .navbar-nav a:hover{
+  background: var(--gradient-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+/* end nav */
+
+/* banner area */
+.site-main .site-banner{
+  background: url(../img/banner/home-banner.png)no-repeat 0% 50%;
+}
+
+.site-main .site-banner .site-title h3{
+  padding-top: 35%;
+  font-weight: 500;
+} 
+
+/* .site-main .site-banner .site-title h3::after{
+  content:"";
+  height: 2px;
+  width: 18vw;
+  background: black;
+  display: inline-block;
+  margin-left: 5%;
+  transform:translateY(-10px);
+} */
+
+.site-main .site-banner .site-title h1{
+  font-size: 5rem;
+}
+
+.site-main .site-banner .site-title h4{
+  font-size: 1.5rem;
+  padding-top: 2%;
+}
+
+.site-main .site-banner .banner-image > img{
+  padding: 7rem 0;
+  width: 90rem;
+}
+
+#tag-intro{
+  line-height: 45px;
+}
+
+/* end banner area ============================== */
+
+/* start about area ============================== */
+
+.site-main .about-area{
+  padding: 1rem 2rem;
+}
+
+.site-main .about-area .about-title h2 > span{
+  display: block;
+  font: normal bold 30px var(--roboto);
+  letter-spacing: 10px;
+}
+
+.site-main .about-area .about-title .paragraph > p{
+  padding: .4rem 0;
+}
+
+.site-main .about-area .about-title .social-text > a{
+  padding: 0 0 1rem 0;
+  font-size: 30px;
+  color: var(--secondary-color);
+}
+
+.site-main .about-area .about-title .social-text > a:hover{
+  color: var(--primary-color2);
+}
+/* end about area ============================== */
+
+/* start project area ============================== */
+.site-main .project-area{
+  padding: 4rem 0;
+}
+
+.site-main .project-area .button-group button{
+  /* padding: 4rem 0 1rem 0; */
+  background: transparent;
+  border: none;
+  font: normal 500 16px/30px var(--roboto);
+  text-transform: uppercase;
+}
+
+.site-main .project-area .button-group button:hover{
+  background: rgb(66, 135, 245);
+  border-radius: 5px;
+}
+
+.site-main .project-area .button-group button + button{
+  /* padding-left: 1rem; */
+}
+
+.site-main .project-area .grid .our-project > .title h4{
+  font: normal 700 25px/25px var(--roboto);
+}
+/* end project area ============================== */

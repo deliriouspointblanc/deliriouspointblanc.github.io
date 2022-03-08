@@ -1,0 +1,16 @@
+/* @font-face */ 
+
+@font-face{
+  font-family: "Roboto";
+  src: url('../fonts/Roboto/Roboto-Regular.ttf');
+}
+
+@font-face{
+  font-family: "Space";
+  src: url('../fonts/SpaceMono-Regular.ttf');
+}
+
+@font-face{
+  font-family: "Druk";
+  src: url('../Druk_Wide_Bold.ttf');
+}
