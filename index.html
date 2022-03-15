@@ -21,21 +21,19 @@
     <div class="main-menu">
       <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="./assets/logo.png" alt="logo" width="140" height="35"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
+          <a class="navbar-brand" href="#"><img src="./assets/logo.png" alt="logo" class="img-fluid"></a>
+
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <div class="ms-auto"></div>
             <ul class="navbar-nav mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
                 <a class="nav-link" href="./#project-area">Portfolio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="./#about-area">About</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Contact</a>
@@ -78,7 +76,7 @@
     <!-- ======================= End Banner Area -->
     <!-- ======================= About Area -->
 
-    <section class="about-area">
+    <section class="about-area" id="about-area">
       <div class="container-fluid">
         <div class="row">
           <div class="col-lg-6 col-md-12">
@@ -88,19 +86,18 @@
           </div>
           <div class="col-lg-6 col-md-12 about-title">
             <h2 class="text-uppercase pt-2">
-              <span>Let me</span>
-              <span>introduce</span>
-              <span>myself</span>
+              <span>Who am I</span>
+              <span>exactly?</span>
             </h2>
             <div class="paragraph py-4 w-75">
               <p class ="para">
-                A proud generalist
+                I'm a human trying to make sense of our world of pixels and soft-ware, rebuilding and unknowing AI/ML with experiments and interactive experiences. 
               </p>
               <p class ="para">
-                I'm a designer for <a href="https://serviceproject.org.uk/" class="app-project">SERVICE</a>, an app-based research project to build a social support platform for older adults.
+                I'm also a UI designer for <a href="https://serviceproject.org.uk/" class="app-project">SERVICE</a>, an app-based research project building a social support platform for older adults.
               </p>
               <p class="para">
-                My artistic practice is concerned with the fabrication of culture, the corpus of collective ‘data’ we hold as a society, and the possible imagined futures afforded by the latent space of machine learning algorithms. I explore ‘artificial intimacy’ and our willingness for virtual companionship and connection in today’s networked world.
+                My practice is concerned with the fabrication of culture, the corpus of collective ‘data’ we hold as a society, and the possible imagined futures afforded by the latent space of machine learning algorithms. I explore ‘artificial intimacy’ and our willingness for virtual companionship and connection in today’s networked world.
               </p>
             </div>
             <div class="social-text">
@@ -123,7 +120,7 @@
 
     <!-- ======================= Project Area -->
 
-    <section class="project-area">
+    <section class="project-area" id="project-area">
       <div class="container">
         <div class="project-title pb-5">
           <h1 class="text-uppercase title-h1">Recent Works
@@ -189,7 +186,9 @@
             <div class="col-lg-4 col-md-6 col-sm-12 element-item art">
               <div class="our-project">
                 <div class="img">
-                  <img src="./portfolio/batik.png" class="img-fluid" alt="batik matrix piece portfolio 2">
+                  <a class="test-popup-link" target="_blank" href='./works/batik-matrix.html'>
+                    <img src="./portfolio/batik.png" class="img-fluid" alt="batik matrix piece portfolio 2">
+                  </a>
                 </div>
                 <div class="title py-4">
                   <h4 class="text-uppercase">Batik Matrix</h4>
@@ -222,7 +221,9 @@
             <div class="col-lg-4 col-md-6 col-sm-12 element-item textual">
               <div class="our-project">
                 <div class="img">
-                  <img src="./portfolio/colour_of_water.png" class="img-fluid" alt="color of water essay portfolio 2">
+                  <a class="test-popup-link" target="_blank" href='./works/colour-of-water.html'>
+                    <img src="./portfolio/colour_of_water.png" class="img-fluid" alt="color of water essay portfolio 2">
+                  </a>
                 </div>
                 <div class="title py-4">
                   <h4 class="text-uppercase">What is The Colour of Water?</h4>
