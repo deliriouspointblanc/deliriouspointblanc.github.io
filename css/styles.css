@@ -2,9 +2,9 @@
 
 @import url(./fonts.css);
 /* css vars*/
-@import url(./partials/_variables.css);
+@import url(../css/partials/_variables.css);
 /* global css*/
-@import url(./partials/_global.css);
+@import url(../css/partials/_global.css);
 
 /* start nav */
 
