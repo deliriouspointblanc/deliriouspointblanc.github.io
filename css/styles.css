@@ -2,9 +2,9 @@
 
 @import url(./fonts.css);
 /* css vars*/
-@import url(../../deliriouspointblanc.github.io/css/partials/_variables.css);
+@import url(../css/partials/variables.css);
 /* global css*/
-@import url(../../deliriouspointblanc.github.io/css/partials/_global.css);
+@import url(../css/partials/global.css);
 
 /* start nav */
 
