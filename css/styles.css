@@ -104,6 +104,8 @@ canvas {
 }
 
 .site-main .about-area .about-title .paragraph > p{
+  font: normal 500 16px/1.2rem var(--space);
+  text-align: left;
   padding: .4rem 0;
 }
 
@@ -128,11 +130,12 @@ canvas {
   background: transparent;
   border: none;
   font: normal 500 16px/30px var(--roboto);
+  color: white;
   text-transform: uppercase;
 }
 
 .site-main .project-area .button-group button:hover{
-  background: rgb(66, 135, 245);
+  color: rgb(66, 135, 245);
   border-radius: 5px;
 }
 
