@@ -189,3 +189,16 @@ canvas {
 .site-main .project-area {
   padding-top: 2rem;
 }
+
+/* Hiding incompatible elements from mobile devices*/
+
+@media screen and (max-width: 600px) {
+  .desktop {
+    margin-top: 3rem;
+    visibility: hidden;
+    clear: both;
+    float: left;
+    width: 28%;
+    display: none;
+  }
+}
