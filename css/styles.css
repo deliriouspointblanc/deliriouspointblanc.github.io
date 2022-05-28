@@ -8,6 +8,34 @@
 
 /* start nav */
 
+@media screen and (max-width: 600px) {
+  .sticky-div {
+    visibility: hidden;
+    clear: both;
+    float: left;
+    margin: 10px auto 5px 20px;
+    width: 28%;
+    display: none;
+  }
+}
+
+.sticky-div {
+  /* background-color: green; */
+  color: white;
+  text-align: right;
+  position: relative;
+  width: 100%;
+  padding: 10px 10px;
+}
+
+.start {
+  height: 100px;
+}
+
+.end {
+  height: 500px;
+}
+
 body{
   background: black;
 }
@@ -121,8 +149,15 @@ canvas {
 /* end about area ============================== */
 
 /* start project area ============================== */
+
+.carousel-item{
+  height: 32rem;
+  background: #777;
+  color: white;
+}
+
 .site-main .project-area{
-  padding: 2rem 0;
+  padding: 1.5rem;
 }
 
 .site-main .project-area .button-group button{

@@ -33,18 +33,18 @@ function draw() {
   background(0, 20); //alpha for blur
 
   //Text to tell visitor controls for muting music
-  fill(255);
-  textSize(15);
-  let textPosH = width/4 - 200;
-  let textPosW = 50;
-  text ("press 'm' to toggle music", textPosW, textPosH);
-  if (playing) {
-    fill(113,107,107);
-    text("on", textPosW * 5, textPosH);
-  } else {
-    fill(255,73,75);
-    text("off", textPosW * 5, textPosH);
-  }
+  // fill(255);
+  // textSize(15);
+  // let textPosH = width/4 - 200;
+  // let textPosW = 50;
+  // text ("press 'm' to toggle music", textPosW, textPosH);
+  // if (playing) {
+  //   fill(113,107,107);
+  //   text("on", textPosW * 5, textPosH);
+  // } else {
+  //   fill(255,73,75);
+  //   text("off", textPosW * 5, textPosH);
+  // }
   for (var i = 0; i < beats.length; i++){
     beats[i].display();
     beats[i].update();

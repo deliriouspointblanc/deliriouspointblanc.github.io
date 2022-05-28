@@ -16,7 +16,11 @@
   <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-  
+  <div class="sticky-div">
+    press 'm' to toggle music
+</div>
+  <!-- beat-sketch as background-->
+  <div id="beat-sketch"><canvas></canvas></div>
   <!-- ======================= Start Header Area -->
   <header class="header_area">
     <div class="main-menu">
@@ -57,10 +61,10 @@
     <section class="site-banner" id="about">
       <div class="container" >
         
-        <div class="row" id="beat-sketch"><canvas></canvas>
+        <div class="row"> <!-- id="beat-sketch" -->
           <div class="col-lg-6 col-md-12 site-title">
             <h3 class="title-text">Hey there!</h3>
-            <h1 class="title-text text-uppercase"> I am Yasmin</h1>
+            <h1 class="title-text text-uppercase"> I'm Yasmin</h1>
             <h4 id="tag-intro"class="title-text">Multidisciplinary artist, designer and developer</h4>
             <div class="site-buttons">
               <div class="d-flex flex-row flex-wrap">
@@ -94,13 +98,16 @@
             </h2>
             <div class="paragraph py-4 w-75">
               <p class ="para">
-                I'm a human trying to make sense of our world of pixels and soft-ware, rebuilding and unknowing AI/ML with experiments and interactive experiences. 
+                I'm a human making sense of our world of pixels and soft-ware, rebuilding and unknowing AI/ML with experiments and interactive experiences. 
               </p>
               <p class ="para">
-                I'm also a UI designer for <a href="https://serviceproject.org.uk/" class="app-project">SERVICE</a>, an app-based research project building a social support platform for older adults.
+                I was recently a UI designer for <a href="https://serviceproject.org.uk/" class="app-project">SERVICE</a>, an app-based research project building a social support platform for older adults. Read more about it <a href="https://serviceproject.org.uk/" class="app-project">here</a>
+              </p>
+              <p class ="para">
+                I'm currently the Design lead for <a href="https://serviceproject.org.uk/" class="aixd">AIxDesign</a>, a community that is working to make AI accessible and playful as well as interrogate the mythologies surrounding this emerging field <a href="https://serviceproject.org.uk/" class="app-project">here</a>
               </p>
               <p class="para">
-                My practice is concerned with the fabrication of culture, the corpus of collective ‘data’ we hold as a society, and the possible imagined futures afforded by the latent space of machine learning algorithms. I explore ‘artificial intimacy’ and our willingness for virtual companionship and connection in today’s networked world.
+                My artistic practice is concerned with the fabrication of culture, the corpus of collective ‘data’ we hold as a society, and the possible imagined futures afforded by the latent space of machine learning algorithms. I explore ‘artificial intimacy’ and our willingness for virtual companionship and connection in today’s networked world.
               </p>
             </div>
             <div class="social-text">
@@ -122,9 +129,9 @@
     <!-- ======================= End Services Area -->
 
     <!-- ======================= Project Area -->
-
+    <!-- old recent works-->
     <section class="project-area" id="project-area">
-      <div class="container">
+      <div class="container-fluid">
         <div class="project-title pb-5">
           <h1 class="text-uppercase title-h1">Recent Works
           </h1>
@@ -138,27 +145,67 @@
           </div>
 
           <div class="row grid">
+            <div class="col-lg-4 col-md-6 col-sm-12 element-item art">
+              <div class="our-project">
+                <div class="img">
+                  <a class="test-popup-link" href='./works/modular-extraction.html'>
+                  <img src="./portfolio/modular-extraction-resized.jpg" class="img-fluid" alt="batik matrix piece portfolio 2">
+                  </a>
+                </div>
+                <div class="title py-4">
+                  <h4 class="text-uppercase">Modular Extraction</h4>
+                    <span class="text-white">2022, Augmented Reality, Blender</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 element-item textual">
+              <div class="our-project">
+                <div class="img">
+                  <a class="test-popup-link" href='./works/queering-the-machine-eye.html'>
+                  <img src="./portfolio/queering_machine_eye_promo.png" class="img-fluid" alt="batik matrix piece portfolio 2">
+                  </a>
+                </div>
+                <div class="title py-4">
+                  <h4 class="text-uppercase">Queering The Machine Eye</h4>
+                    <span class="text-white">2022, glitch feminism, art critique</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 element-item design projects">
+              <div class="our-project">
+                <div class="img">
+                  <a class="test-popup-link" href='./works/queering-the-machine-eye.html'>
+                  <img src="./portfolio/X_logo.png" class="img-fluid" alt="batik matrix piece portfolio 2">
+                  </a>
+                </div>
+                <div class="title py-4">
+                  <h4 class="text-uppercase">AIxDesign</h4>
+                    <span class="text-white">2022-ongoing, Design lead, AI Tooling Lead</span>
+                </div>
+              </div>
+            </div>
             <div class="col-lg-4 col-md-6 col-sm-12 element-item art textual">
               <div class="our-project">
                 <div class="img">
                   <a class="test-popup-link" href='./works/smthng-beautiful.html'>
-                  <img src="./portfolio/smthingBeautiful.png" class="img-fluid" alt="batik matrix piece portfolio 2">
+                  <img src="./portfolio/smthngBeautiful/smthingBeautiful.png" class="img-fluid" alt="batik matrix piece portfolio 2">
                   </a>
                 </div>
                 <div class="title py-4">
                   <h4 class="text-uppercase">Smthng Beautiful</h4>
-                    <span class="text-secondary">2022, poetry, styleGAN, Blender</span>
+                    <span class="text-white">2022, poetry, styleGAN, Blender</span>
                 </div>
               </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12 element-item art">
               <div class="our-project">
                 <div class="img">
-                  <img src="./portfolio/prudence_resized.png" class="img-fluid" alt="prudence piece portfolio 1">
+                  <a class="test-popup-link" target="_blank" href='./works/prudence.html'></a>
+                  <img src="./portfolio/prudence.png" class="img-fluid" alt="prudence piece portfolio 1">
                 </div>
                 <div class="title py-4">
                   <h4 class="text-uppercase">Facing Prudence</h4>
-                    <span class="text-secondary">2022, Sustainable Fashion, Blender</span>
+                    <span class="text-white">2022, Sustainable Fashion, Blender</span>
                 </div>
               </div>
             </div>
@@ -171,7 +218,7 @@
                 </div>
                 <div class="title py-4">
                   <h4 class="text-uppercase">Amorphous Butterfly</h4>
-                    <span class="text-secondary">2021, Speculative AI, charRNN, ml5.js</span>
+                    <span class="text-white">2021 - Speculative AI - charRNN - ml5.js</span>
                 </div>
               </div>
             </div>
@@ -182,7 +229,7 @@
                 </div>
                 <div class="title py-4">
                   <h4 class="text-uppercase">Artificial Intimacy</h4>
-                    <span class="text-secondary">2021, social AI, chatbots, art critique</span>
+                    <span class="text-white">2021, social AI, chatbots, art critique</span>
                 </div>
               </div>
             </div>
@@ -190,12 +237,14 @@
               <div class="our-project">
                 <div class="img">
                   <a class="test-popup-link" target="_blank" href='./works/batik-matrix.html'>
-                    <img src="./portfolio/batik.png" class="img-fluid" alt="batik matrix piece portfolio 2">
+                    <img src="./portfolio/z-interpolation_V2_1.gif" class="img-fluid" alt="batik matrix piece portfolio 2">
+                    <!-- TO-DO: How to make video stick within grid??-->
+                    <!-- <iframe class="embed-responsive-item"src="./portfolio/batik-interpolation.mp4" width="512px" height="512px" autoplay = true></iframe> -->
                   </a>
                 </div>
                 <div class="title py-4">
                   <h4 class="text-uppercase">Batik Matrix</h4>
-                    <span class="text-secondary">2020, datafication of culture, styleGAN, openFrameworks</span>
+                    <span class="text-white">2020, datafication of culture, styleGAN, openFrameworks</span>
                 </div>
               </div>
             </div>
@@ -206,7 +255,18 @@
                 </div>
                 <div class="title py-4">
                   <h4 class="text-uppercase">postHuman Koan</h4>
-                    <span class="text-secondary">2020, Machine-mediated mythos, charRNN, poseNet</span>
+                    <span class="text-white">2020, Machine-mediated mythos, charRNN, poseNet</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 element-item projects">
+              <div class="our-project">
+                <div class="img">
+                  <img src="./portfolio/in-grid-faces.gif" class="img-fluid" alt="batik matrix piece portfolio 2">
+                </div>
+                <div class="title py-4">
+                  <h4 class="text-uppercase">in-grid collective</h4>
+                    <span class="text-white">2020 residency with Arebyte, workshops, speculative storytelling</span>
                 </div>
               </div>
             </div>
@@ -217,7 +277,7 @@
                 </div>
                 <div class="title py-4">
                   <h4 class="text-uppercase">Troubling the Automated Gaze</h4>
-                    <span class="text-secondary">2019, data gaze, machine vision, art critique</span>
+                    <span class="text-white">2019, data gaze, machine vision, art critique</span>
                 </div>
               </div>
             </div>
@@ -230,7 +290,7 @@
                 </div>
                 <div class="title py-4">
                   <h4 class="text-uppercase">What is The Colour of Water?</h4>
-                    <span class="text-secondary">2019, digital aesthetics, hellblau, art critique</span>
+                    <span class="text-white">2019, digital aesthetics, hellblau, art critique</span>
                 </div>
               </div>
             </div>
@@ -240,7 +300,6 @@
     </section>
 
     <!-- ======================= End Project Area -->
-
   </main>
   <!-- ======================= End Main Area -->
 
