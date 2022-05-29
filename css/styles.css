@@ -40,11 +40,11 @@ body{
   background: black;
 }
 .header_area .main-menu .navbar .navbar-brand{
-  padding: 0 2rem 0 2rem;
+  /* padding: 0 2rem 0 2rem; */
 }
 
 .header_area .main-menu .navbar{
-  padding: 1rem 5rem;
+  /* padding: 0.5rem 5rem; */
 }
 
 .header_area .main-menu .nav-item .nav-link{
@@ -138,9 +138,9 @@ canvas {
 }
 
 .site-main .about-area .about-title .social-text > a{
-  padding: 0 0 1rem 0;
-  font-size: 30px;
-  color: var(--secondary-color);
+  padding: 0 0 2rem 0;
+  font-size: 5vmin;
+  color: var(--text-color); 
 }
 
 .site-main .about-area .about-title .social-text > a:hover{
@@ -161,7 +161,7 @@ canvas {
 }
 
 .site-main .project-area .button-group button{
-  /* padding: 4rem 0 1rem 0; */
+  padding: 4rem 0 1rem 0;
   background: transparent;
   border: none;
   font: normal 500 16px/30px var(--roboto);
