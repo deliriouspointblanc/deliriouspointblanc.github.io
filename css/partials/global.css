@@ -1,6 +1,6 @@
 /* Global Classes */
 .title-text{
-  font: normal bold 50px/ 72px var(--space);
+  font: normal bold 5vmin/ 64px var(--space);
   color: var(--title-color);
 }
 
@@ -39,13 +39,13 @@
 
 /* Sketch styling - this is a tricky one still */
 
-#rose-curve{ /* TO-DO: NEEDS FIXING*/
-  position: absolute;
-  top:100vmin;
-  right: 50rem;
-  width:100%;
+#rose-curve { /* TO-DO: NEEDS FIXING */
+  /* position: absolute;
+   top:100vmin;
+  right: 50rem; 
+   width:100%;
   height:100%;
-  z-index: -1;
+  z-index: -1; */
 }
 
 #beat-sketch{
@@ -133,5 +133,5 @@ a{
   background: #ffffff;
   box-shadow: var(--box-shadow);
   z-index: 999;
-  transition: background 1s ease;
+  transition: background 2s ease;
 }

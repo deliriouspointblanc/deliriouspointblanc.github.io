@@ -14,10 +14,14 @@ let randCol;
 
 let cnv;
 
+let canvasDiv = document.getElementById('rose-curve');
+
 function setup() {
-  let clientHeight = document.getElementById('rose-curve').clientHeight;
-  let clientWidth = document.getElementById('rose-curve').clientWidth;
-  let cnv = createCanvas(clientWidth, clientHeight);
+  // let clientHeight = document.getElementById('rose-curve').clientHeight;
+  // let clientWidth = document.getElementById('rose-curve').clientWidth;
+  let width = canvasDiv.offsetWidth;
+  let height = canvasDiv.offsetHeight;
+  let cnv = createCanvas(width, 700);
   cnv.parent("rose-curve");
   // Saves the canvas as an image
   // cnv = createCanvas(innerWidth, innerHeight);
@@ -71,5 +75,7 @@ function keyPressed() {
 }
 
 function windowResized() {
-  resizeCanvas(clientWidth, clientHeight);
+  let width = canvasDiv.offsetWidth;
+  let height = canvasDiv.offsetHeight;
+  resizeCanvas(width, 700);
 }
