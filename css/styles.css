@@ -160,12 +160,16 @@ canvas {
 }
 
 .site-main .about-area .about-title .social-text > a{
-  padding: 0 0 2rem 0;
-  font-size: 5vmin;
+  padding: 0 1rem 2rem 0;
+  font-size: 8vmin;
   color: var(--text-color); 
 }
 
 .site-main .about-area .about-title .social-text > a:hover{
+  color: var(--primary-color2);
+}
+
+.para > a:hover{
   color: var(--primary-color2);
 }
 /* end about area ============================== */
@@ -183,15 +187,20 @@ canvas {
 }
 
 .site-main .project-area .button-group button{
-  padding: 4rem 0 1rem 0;
-  background: transparent;
+  margin: 0.25rem;
+  padding: 1rem 0.5rem 1rem 0;
+  background: var(--primary-color2);
   border: none;
-  font: normal 500 16px/30px var(--roboto);
+  border-radius: 1px;
+  font: normal 500 3vmin/15px var(--space);
   color: white;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 .site-main .project-area .button-group button:hover{
+  /* border: white; */
+  /*To-DO: Make hover animation slightly longer*/
+  background: white;
   color: rgb(66, 135, 245);
   border-radius: 5px;
 }
@@ -215,7 +224,7 @@ canvas {
 /* Hiding incompatible elements from mobile devices*/
 
 @media screen and (max-width: 600px) {
-  .desktop {
+  .desktop-vis {
     margin-top: 3rem;
     visibility: hidden;
     clear: both;

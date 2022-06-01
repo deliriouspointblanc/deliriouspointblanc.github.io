@@ -40,12 +40,12 @@
 /* Sketch styling - this is a tricky one still */
 
 #rose-curve { /* TO-DO: NEEDS FIXING */
-  /* position: absolute;
-   top:100vmin;
-  right: 50rem; 
+  position: fixed;
+  /* top:100vmin;  */
+  right: 0rem;  
    width:100%;
   height:100%;
-  z-index: -1; */
+  z-index: -1; 
 }
 
 #beat-sketch{

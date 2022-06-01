@@ -8,6 +8,8 @@ var k = n / d;
 var rot = 1;
 var offset = 80;
 
+rRandVals = [75, 100, 125, 200];
+let rRand;
 //colors:
 let myCols = ['#eb4034','#11edc8', "#111fed"];
 let randCol;
@@ -35,13 +37,15 @@ function draw() {
   randCol = floor(randCol);
   // equation of rose curve: r = cos(k0) 
   
+  //random radius
+  rRand = floor(random(rRandVals.length));
   //translate to middle of screen
   translate(width/2, height/2);
   
   rotate(rot);
   
   for (var a = 0; a < TWO_PI; a += 0.01) {
-    var r = 200 * cos(k * a) + offset + random(0.2, 1.8);
+    var r = rRandVals[rRand] * cos(k * a) + offset + random(0.2, 1.8);
     
     var x = r * cos(a);
     var y = r * sin(a);
@@ -50,11 +54,12 @@ function draw() {
     
     if (mouseIsPressed) {
       //change stroke colour to blue
+      rRandVals[rRand + 1];
       rot+= 0.1;
-      strokeWeight(random(3, 8));
+      strokeWeight(random(3, 15));
       stroke(0,0,random(80,255));
     }
-    strokeWeight(2);
+    strokeWeight(random(2, 8));
     point(x,y);
   }
   offset += sin(frameCount * 0.05)*PI;
