@@ -13,8 +13,11 @@
   color: white;
 }
 
+.profile-pic{
+  width: 80%;
+}
 .amorphous-about{
-  width: 100%;
+  width: 80%;
   height: 20%;
 }
 
