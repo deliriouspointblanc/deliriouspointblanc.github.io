@@ -91,6 +91,15 @@ body{
 /* end nav */
 
 /* banner area */
+/*  showreel */
+.showreel {
+  position: absolute;
+  width: 100%;
+  /*min-height: 100vh; */
+  max-height: 25vh;
+  background-color: rgab(0,0,0,0.2);
+  z-index: -1;
+}
 /* .site-main .site-banner{
   background: url(../img/banner/home-banner.png)no-repeat 0% 50%;
 } */

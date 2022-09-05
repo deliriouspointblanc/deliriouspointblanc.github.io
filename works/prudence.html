@@ -1,17 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Prudence AR Test</title>
-  <link rel="stylesheet" href="../style.css">
+  <title>Yasmin Morgan | Facing Prudence</title>
+  <!-- favicon -->
+  <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
+  <!-- bootstrap css file -->
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <!-- font awesome icons-->
+  <link rel="stylesheet" href="../css/all.min.css">
+  <!-- custom css file -->
+  <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-  <h4 class="work-tag">Updating soon ...</h3>
-  <a href="/assets/Prudence_300_AR_test.usdz" rel="ar">
-  <img src="/assets/Prudence.png">
-  </a>
+  <!-- ======================= Start Header Area -->
+  <header class="header_area">
+    <div class="main-menu">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="../index.html"><img src="../assets/logo.png" alt="logo" class="img-fluid"></a>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="ms-auto"></div>
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html#project-area">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html#about-area">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+            <!-- <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form> -->
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- End Header Area ---------------->
+  <!-- Title & Tagline of Work -->
+  <main class="site-main">
+    <div class="container project-area">
+      <div class="row">
+        <div class="col-lg-6 col-md-12">
+          <h1 class="work-title">Facing Prudence (2022)</h1>
+          <h4 class="work-tag">Facing Prudence is a digital 3D animation that has been created in collaboration with fashion designer Jemma Battaglia</h3>
+          <p class="para work-process"> Facing Prudence is an abstract communication of Battaglia's research in an effort to show the entropy of the knowledge of ‘Defuturing’ and the unknowing of system change needed to move the planet out of the Capitalocene epoch.</p>
+          <p class="para work-process"> This was my first time creating a garment in Marvelous Designer. It was a big challenge because Jemma wanted the figure to run in different directions, symbolising the past, present and future.</p>
+          <img src="../portfolio/facing_prudence_3.JPG" class="img-fluid" alt="facing prudence garment in Marvelous Designer">
+          <p class="para work-process"> I used Mixamo, an online tool for loading character animations onto a rigged model.</p>
+          <p class="para work-process"> The most challenging part of this project was combining the Mixamo animations in Blender, I had to copy the animations using the NLA editor but it was very time consuming. In some sections, I ended up using clones of the same model with different animations and cut the scene with different camera angles.</p> 
+          <img src="../portfolio/facing_prudence_2.JPG" class="img-fluid" alt="purple garment in Blender">
+        </div>
+        <div class="embed-responsive col-lg-6 col-md-12">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/2agWjXjeoKk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <p class="text-secondary">Final animation</p>
+          <video width="300" controls class="img-fluid"><source src="../portfolio/facing_prudence_1.mp4" type="video/mp4"></video>
+          <p class="text-secondary"> First test with simple cloth simulated with Marvelous Designer + Mixamo animation in Blender</p>
+          <img src="../portfolio/facing_prudence_4.JPG" class="img-fluid" alt="facing prudence garment in Marvelous Designer">
+          <p class="para work-process">Jemma wanted the animation to be set in central London, where one of the UAL campuses are. There were no HDRIs available online, so I used google street view to generate a 360 image.</p> 
+        </div>
+      </div>
+    </div>
+    
+  </main>
+  <!-- Image/Video of Work -->
+  <!-- Description/Process-->
+  <div class="container">
+  </div>
   <!-- ========== JS FILES ========== -->
   <!--  Jquery js file  -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
