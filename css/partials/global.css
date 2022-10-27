@@ -1,6 +1,6 @@
 /* Global Classes */
 .title-text{
-  font: normal bold 5vmin/ 64px var(--space);
+  font: normal bold 4vmin/ 64px var(--space);
   color: var(--title-color);
 }
 

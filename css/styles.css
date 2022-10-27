@@ -105,7 +105,7 @@ body{
 } */
 
 .site-main .site-banner .site-title h3{
-  padding-top: 15%;
+  padding-top: 5%;
   font-weight: 500;
 } 
 
@@ -125,7 +125,7 @@ body{
 
 .site-main .site-banner .site-title h4{
   font-size: 1.5rem;
-  padding-top: 2%;
+  /*padding-top: 2%;*/
 }
 
 /* .site-main .site-banner .banner-image > img{
@@ -134,7 +134,7 @@ body{
 } */
 
 #tag-intro{
-  line-height: 45px;
+  /*line-height: 45px;*/
 }
 
 /* p5 beat-sketch styling TO FIX: canvas does not reach limit of div, how to extend it? */
