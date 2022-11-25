@@ -1,3 +1,7 @@
+<!-- To-do:
+  - Reduce padding of 'about' text on phone
+  - Increase size of showreel.
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,8 +10,15 @@
   <title>Yasmin Morgan | Computational Artist</title>
   <!-- responsive meta tag -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- favicon -->
-  <link rel="shortcut icon" type="image/png" href="./assets/favicon.png">
+  <!-- favicons -->
+  <!-- <link rel="shortcut icon" type="image/png" href="./assets/favicon.png"> -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
+  <link rel="manifest" href="./assets/site.webmanifest">
+  <link rel="mask-icon" href="./assets/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
   <!-- bootstrap css file -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
   <!-- font awesome icons-->
@@ -17,14 +28,14 @@
   <link rel="stylesheet" href="./css/styles.css">
   <!-- Trying out analytics -->
   <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-D3T4CY7J3V"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-+
-  gtag('config', 'G-D3T4CY7J3V');
-</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D3T4CY7J3V"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  +
+    gtag('config', 'G-D3T4CY7J3V');
+  </script>
 </head>
 <body>
   <div class="sticky-div">
@@ -37,6 +48,12 @@
     <div class="main-menu">
       <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
+          <!-- extra code-->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="navbar-collapse collapse" id="collapse">
+
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -70,7 +87,7 @@
 <!-- ======================= Showreel Area -->
     <!-- ======================= Start Banner Area -->
     <section class="site-banner" id="about">
-      <div class="container" >
+      <div class="container-fluid" >
         <div class="row">
           <div class="showreel">
             <div class="video-wrap">
@@ -89,7 +106,7 @@
             <div class="site-buttons">
               <div class="d-flex flex-row flex-wrap">
                 <!-- TO-DO: FIX BUTTONS / ADD LINKS-->
-                <form target = "_blank" action = "mailto:yasminmorgan.info@gmail.com">
+                <form target = "_blank" action = "./contact-yasmin">
                   <button type="submit" class="btn button primary-button me-4 text-uppercase">Work with me</button>
                 </form>
                 <form target = "_blank" action = "./links.html">
