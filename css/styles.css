@@ -100,12 +100,13 @@ body{
   background-color: rgab(0,0,0,0.2);
   z-index: -1;
 }
+
 /* .site-main .site-banner{
   background: url(../img/banner/home-banner.png)no-repeat 0% 50%;
 } */
 
 .site-main .site-banner .site-title h3{
-  /* padding-top: 5%; */
+  padding-top: 5%;
   font-weight: 500;
 } 
 
@@ -120,18 +121,18 @@ body{
 } */
 
 .site-main .site-banner .site-title h1{
-  /* font-size: 3rem; */
+  font-size: 3rem;
 }
 
-.site-main .site-banner .site-title h4{
-  font-size: 1.5rem;
-  /*padding-top: 2%;*/
-}
-
-/* .site-main .site-banner .banner-image > img{
-  padding: 3rem 0;
-  width: 50rem;
+/* .site-main .site-banner .site-title h3{
+  font-size: 1.5rem; 
+   padding-top: 2%;
 } */
+
+.site-main .site-banner .banner-image > img{
+  padding: 1rem 0;
+  /* width: 50rem; */
+}
 
 /* p5 beat-sketch styling TO FIX: canvas does not reach limit of div, how to extend it? */
 canvas {

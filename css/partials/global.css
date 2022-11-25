@@ -1,6 +1,11 @@
 /* Global Classes */
+
+a {
+  color: white;
+}
+
 .title-text{
-  font: normal bold 4vmin/ 10vh var(--space);
+  font: normal bold 4vmin/ 64px var(--space);
   color: var(--title-color);
 }
 
@@ -14,10 +19,11 @@
 }
 
 .profile-pic{
-  text-align: center;
   width: 80%;
+  /* height: 80%; */
   z-index: -100;
 }
+
 .amorphous-about{
   width: 80%;
   height: 20%;
@@ -126,8 +132,8 @@ button:hover
   box-shadow: 0px !important;
 }
 
-a{
-  var(--primary-color2);
+a:hover{
+  color: var(--primary-color2);
 }
 
 .navbar_fixed{
