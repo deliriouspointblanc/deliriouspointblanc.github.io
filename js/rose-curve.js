@@ -57,7 +57,8 @@ function draw() {
       rRandVals[rRand + 1];
       rot+= 0.1;
       strokeWeight(random(3, 15));
-      stroke(0,0,random(80,255));
+      //TO-DO: How to make colour more pleasing
+      stroke(myCols[randCol]); //0,0,random(80,255)
     }
     strokeWeight(random(2, 8));
     point(x,y);

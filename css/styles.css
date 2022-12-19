@@ -20,6 +20,7 @@
 }
 
 .contact-details {
+  margin-left: 2rem;
   font: normal bold 3vmin/ 32px var(--space);
   color: var(--title-color);
 }
@@ -101,24 +102,11 @@ body{
   z-index: -1;
 }
 
-/* .site-main .site-banner{
-  background: url(../img/banner/home-banner.png)no-repeat 0% 50%;
-} */
-
 .site-main .site-banner .site-title h3{
+  font-size: 1.8rem;
   padding-top: 5%;
   font-weight: 500;
-} 
-
-/* .site-main .site-banner .site-title h3::after{
-  content:"";
-  height: 2px;
-  width: 18vw;
-  background: black;
-  display: inline-block;
-  margin-left: 5%;
-  transform:translateY(-10px);
-} */
+}
 
 .site-main .site-banner .site-title h1{
   font-size: 3rem;
@@ -190,7 +178,7 @@ canvas {
 }
 
 .site-main .project-area{
-  padding: 1rem;
+  padding: 4rem 0;
 }
 
 .site-main .project-area .button-group button{
@@ -198,22 +186,28 @@ canvas {
   padding: 1rem 0.5rem 1rem 0;
   background: var(--primary-color2);
   border: none;
-  border-radius: 1px;
+  border-radius: 20px;
   font: normal 500 3vmin/15px var(--space);
   color: white;
+  box-shadow: 1px 7px #fe007fae;
   /* text-transform: uppercase; */
+}
+
+#btn1 {
+  padding-left: 3rem;
+}
+
+.site-main .project-area .button-group button + button{
+  padding-left: 3.5rem;
 }
 
 .site-main .project-area .button-group button:hover{
   /* border: white; */
   /*To-DO: Make hover animation slightly longer*/
-  background: white;
+  background: transparent;
   color: rgb(66, 135, 245);
-  border-radius: 5px;
-}
-
-.site-main .project-area .button-group button + button{
-  padding-left: 1rem;
+  border-radius: 20px;
+  transform: all 0.5s;
 }
 
 .site-main .project-area .grid .our-project > .title h4{
@@ -227,11 +221,11 @@ canvas {
 .site-main .project-area {
   padding-top: 2rem;
 }
-
 /* Hiding incompatible elements from mobile devices*/
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 400px) {
   .desktop-vis {
+    color: white;
     margin-top: 3rem;
     visibility: hidden;
     clear: both;

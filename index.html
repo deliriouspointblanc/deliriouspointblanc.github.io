@@ -1,6 +1,7 @@
 <!-- To-do:
   - Reduce padding of 'about' text on phone
   - Increase size of showreel.
+  - How to tell user 'press M to toggle music' Maybe an alert
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -36,42 +37,35 @@
   +
     gtag('config', 'G-D3T4CY7J3V');
   </script>
-  <!-- ad sense check -->
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3398569264554466"
-     crossorigin="anonymous"></script>
 </head>
 <body>
-  <div class="sticky-div">
+  <!-- <div class="sticky-div">
     press 'm' to toggle music
-</div>
+  </div> -->
   <!-- beat-sketch as background-->
-  <div id="beat-sketch"><canvas></canvas></div>
+  <!-- <div id="beat-sketch"><canvas></canvas></div> -->
   <!-- ======================= Start Header Area -->
   <header class="header_area">
     <div class="main-menu">
       <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img width="300vh"src="../assets/logo.png" alt="logo" class="img-fluid"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
+          <a class="navbar-brand" href="../index.html"><img src="../assets/logo.png" alt="logo" class="img-fluid"></a>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <div class="ms-auto"></div>
             <ul class="navbar-nav mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" href="./#project-area">Portfolio</a>
+                <a class="nav-link" href="../index.html#project-area">Portfolio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./#about-area">About</a>
+                <a class="nav-link" href="../index.html#about-area">About</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./contact-yasmin.html">Contact</a>
               </li>
             </ul>
-            <!-- <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form> -->
           </div>
         </div>
       </nav>
@@ -99,8 +93,8 @@
           </div>
           <!-- End of area that can't be deleted :??-->
           <div class="col-lg-6 col-md-12 site-title">
-            <h3 class="title-text">I'm Yasmin</h3>
-            <h3 id="tag-intro" class="title-text">Multidisciplinary artist/designer/developer</h3>
+            <h3 class="title-text">I'm Yasmin Morgan aka Delirious</h3>
+            <h3 id="tag-intro" class="title-text">Computational artist/designer/developer</h3>
             <div class="site-buttons">
               <div class="d-flex flex-row flex-wrap">
                 <!-- TO-DO: FIX BUTTONS / ADD LINKS-->
@@ -115,7 +109,8 @@
           </div>
           <div class="col-lg-6 col-md-12 banner-image">
             <!-- ALIGN PROFILE PIC TO CENTER WHEN IN-->
-            <img width="400" src="./assets/profile_combined.png" alt="banner-img" class="img-fluid profile-pic">
+              <img width="400" src="./assets/profile_combined.png" alt="banner-img" class="img-fluid profile-pic">
+            </a>
           </div>
           <div class="row">
             <h1 class="text-uppercase pt-2 align-center">Showreel 2022</h1>
@@ -125,22 +120,16 @@
       </div>
     </section>
     <!-- ======================= End Banner Area -->
-    <!-- ======================= Showreel Area ======= -->
-    <section class="showreel" id="showreel">
-      <div class="container-fluid">
-        <div class="row">
-            
-        </div>
-      </div>
-    </section>
     <!-- ======================= About Area -->
-
     <section class="about-area" id="about-area">
       <div class="container-fluid">
         <div class="row">
           <div class="col-lg-6 col-md-12">
             <div class="text-center about-image">
-              <img width="400" src="./assets/about-us.png" alt="About us" class="img-fluid amorphous-about">
+              <a href="./works/amorphous/amorphous.html" target="_blank">
+                <img width="400" src="./assets/about-us.png" alt="About us" class="img-fluid amorphous-about">
+                <p class="text-secondary">Deity from 'Amorphous Butterfly'</p>
+              </a>
             </div>
           </div>
           <div class="col-lg-6 col-md-12 about-title">
@@ -160,6 +149,12 @@
               </p>
               <p class="para">
                 My artistic practice is concerned with the fabrication of culture, the corpus of collective ‘data’ we hold as a society, and the possible imagined futures afforded by the latent space of machine learning algorithms. I explore <a href="./works/artificial-intimacy.html"class="artificial-intimacy">‘artificial intimacy’</a>and our willingness for virtual companionship and connection in today’s networked world.
+              </p>
+              <p class="para">
+                When I'm not thinking about technology, you can find me cycling,skateboarding with <a link="https://www.baesianz.com">MSGP</a> (and sometimes teaching it!) and playing footy with <a link="https://www.baesianz.com">Baesianz FC</a> 
+              </p>
+              <p class="para">
+                I'm a freelancer so if you have an exciting project that could use my help, feel free to send me an electronic mail: yasminmorgan.info@gmail.com
               </p>
             </div>
             <div class="social-text">
@@ -194,7 +189,7 @@
             <button type="button" data-filter=".projects">Projects</button>
             <button type="button" data-filter=".music">Music</button>
           </div>
-
+        </div>
           <div class="row grid">
             <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 element-item art">
               <div class="our-project">
@@ -321,7 +316,6 @@
                   <a class="test-popup-link" target="_blank" href='./works/in-grid-collective.html'>
                     <img src="./portfolio/in-grid-faces.gif" class="img-fluid" alt="batik matrix piece portfolio 2">
                   </a>
-                  
                 </div>
                 <div class="title py-4">
                   <h4 class="text-uppercase">in-grid collective</h4>
@@ -356,7 +350,6 @@
               </div>
             </div>
           </div>
-        </div>
       </div>
     </section>
 
