@@ -178,7 +178,7 @@ canvas {
 }
 
 .site-main .project-area{
-  padding: 4rem 0;
+  padding: 4rem 2rem;
 }
 
 .site-main .project-area .button-group button{
@@ -220,6 +220,20 @@ canvas {
 
 .site-main .project-area {
   padding-top: 2rem;
+}
+
+/* JOURNAL / BLOG style */
+.journal-img {
+  width: 200px;
+  height: 250px;
+}
+
+.journal-para {
+
+  margin: 2rem 3rem 1rem 3rem;
+  color: var(--title-color);
+  font: normal 550 17px/25px var(--space);
+  /* text-align: justify; */
 }
 /* Hiding incompatible elements from mobile devices*/
 

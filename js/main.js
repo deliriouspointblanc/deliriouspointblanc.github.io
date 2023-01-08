@@ -12,6 +12,8 @@ $(document).ready(function(){
     return false;
   })
 
+  // $('.collapse').collapse()
+
   $('.project-area .button-group #btn1').trigger('click');
   //sticky nav menu
 
