@@ -7,6 +7,9 @@ let moveY = 0;
 
 let fft, pieces, radius, c;
 
+let myCol = "#0d062870";
+let myAlpha = 128;
+
 function preload() {
   track = loadSound('../assets/amorphousButterfly_short.mp3');
 }
@@ -30,7 +33,8 @@ function setup() {
 }
 
 function draw() {
-  background(0, 20); //alpha for blur
+  background(myCol);
+  //background(0, 20); //alpha for blur
 
   //Text to tell visitor controls for muting music
   // fill(255);

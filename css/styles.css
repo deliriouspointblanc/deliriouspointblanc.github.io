@@ -43,7 +43,7 @@
 }
 
 body{
-  background: black;
+  background: #0d0628;
 }
 
 /* Size of home-page image on diff sizes */
@@ -98,7 +98,7 @@ body{
   width: 100%;
   /*min-height: 100vh; */
   max-height: 25vh;
-  background-color: rgab(0,0,0,0.2);
+  /*background-color: #0d0628; rgab(0,0,0,0.2);*/
   z-index: -1;
 }
 
@@ -184,7 +184,7 @@ canvas {
 .site-main .project-area .button-group button{
   margin: 0.25rem;
   padding: 1rem 0.5rem 1rem 0;
-  background: var(--primary-color2);
+  background: var(--border-color);
   border: none;
   border-radius: 20px;
   font: normal 500 3vmin/15px var(--space);
@@ -231,7 +231,7 @@ canvas {
 .journal-para {
 
   margin: 2rem 3rem 1rem 3rem;
-  color: var(--title-color);
+  color: var(--primary-color);
   font: normal 550 17px/25px var(--space);
   /* text-align: justify; */
 }

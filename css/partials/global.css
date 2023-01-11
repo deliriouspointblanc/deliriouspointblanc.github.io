@@ -86,7 +86,7 @@ a {
   background:var(--gradient-color);
   background-clip: padding-box;
   color: whitesmoke;
-  transition: background.6s ease;
+  transition: background .6s ease;
   box-shadow: var(--box-shadow);
 }
 
