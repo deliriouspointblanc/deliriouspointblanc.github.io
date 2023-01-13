@@ -1,0 +1,992 @@
+﻿AIxDesign is an independent community of practice, where we gather to delve into the intersection of Design and AI/ML/Data. We believe that AI is for everyone, and we work with the following principles:
+Creativity over productivity – co-creating with AI to connect with our human selves
+Democratizing access – all our events are accessible for beginners and don’t require expensive hardware
+Making and learning with joy
+
+
+In 2022 we are running four programs. Our programs are aimed at creating a welcoming space for exploration of AI/ML tools by and for independent creatives, exploring the use of AI for social good and introducing feminist and humanist perspective and methods
+
+
+AI Playground
+AI Playground, led by Computational Mama is an event series to play, build, craft and experiment with Creative AI tools and code. The series is divided in four themes: Image, Text, Music and Body. Through hands-on workshops and artist talks, this series invites creatives to experiment, offering the first steps into adopting AI into your creative practice.
+Bottom-up Data Activism
+Bottom-up Data Activism with Abdelrahman Hassan is a series of workshops where we engage in critiques of data-driven processes. We will focus on concepts of agency, privacy, and anti-hegemony, with an intersectional approach!⁠
+Mapping AIxDesign landscape
+In the research aspect of our practice, we are busy mapping the entry points and professional opportunities in the field of AI & Design. The research will produce a podcast series, and an illustrated depiction of the ecosystem, outlining overlaps, opportunities, challenges, key players and organizations, tools, and subjects covered in academic papers.
+AI Tooling
+AI Tooling led by Yasmin Morgan is a program where we experiment with generative design and AI tools to support our own creative process and content creation. The results are implemented into our own communication channels, and we will be sharing the messy and fun process of arriving there.⁠
+After successfully funding through Kickstarter and your help, the AI Ideation Cards are now also available in our shop!
+1. Get lost in the AIxDesign Resource Library
+A constantly-evolving database of resources for designers and creatives embarking on their AI journey. Including articles, online courses, code snippets, job opportunities, and much more!
+2. Attend one of our upcoming events
+We host keynotes and workshops on a regular basis. Mapping the AIxDesign landscape one session at a time, they range from accessible coding workshops to keynotes about the role of UX designers and tools for applied ethics to informal networking spaces. Join us to see for yourself.
+3. Download the AI meets Design toolkit
+The predecessor of this community, the AI meets Design toolkit is a set of tools to support designers in developing AI products & services. It was created by Nadia Piet in 2019 and you can download it here!
+4. Sign up for our monthly newsletter
+We send out a monthly newsletter packed with resources & community updates to 1100+ curious minds just like you. Click here to browse the archive, or sign up in the footer below to receive the next edition in your inbox.
+5. Join the AIxDesign community on Slack
+Our Slack space brings together ±210 practitioners in the field. To join us, you can fill the signup form here. It will send you an invite link once you submit (please check your SPAM folder as well). See you in there!
+6. Help us make it all happen
+We hope to be a platform for others and invite you to get involved. We’re open to any ideas you might have about how to contribute. If you’re not sure, this page can help.
+
+
+Collaboration is at the heart of what we do. Whether you’re an individual looking to contribute, an expert looking to speak or join forces on a project, an organization looking for talent, or other offerings, we’re here for it. Please check below for more info, or reach out to talk.
+
+Recl(AI)ming Pleasure through F(AI)lure
+The tools we use to create narratives with AI, furthering and expanding our human language, are modern in their performance but simultaneously stuck in the past carrying our ingrained biases and stereotyping. How can one reclaim agency and fight biases with (AI) storytelling?
+In their work, Emily Martinez focuses on critically looking, un/learning, un/making, speaking and dreaming about queer imaginings and AI. During the behind-the-scenes talk, Emily will walk us through their projects such as Queer AI, Ultimate Fantasy, and Unsupervised Pleasures.
+The talk is open to curious individuals from all fields and disciplines.
+This event is part of AI Playground by AIxDesign. AI Playground is a series of events where we want to showcase the most interesting, forward-thinking and mind-blowing ways to use AI&ML tools in creative practice. The goal of these sessions is to inspire and activate creatives in a playful and accessible way to take the first step into exploring and adopting AI methods into their toolkit.
+This event is part of AI Playground program led by Computational Mama a.k.a. Ambika and funded by Stimuleringsfonds Creative Industrie.
+The talk will take around 60 minutes including the Q&A and discussions, and you will need to bring:
+-a reasonable internet access
+-An open mind :) <3
+(The talk will happen on Gathertown and will be recorded for future reference and documentation. )
+About the Artist
+Emily Martinez (they/she) is a new media artist working with machine learning, queer technologies, new economies, and consensual tech. They are a 1st generation immigrant/refugee (Cuba > Miami) and a self-taught coder who believes in the tactical misuse of technology. Emily's work has been exhibited internationally, mostly as a collaborator with Anxious to Make and Queer AI. Their latest project, Unsupervised Pleasures is a DIY community library and practice space that uses queer methodologies, glitch feminism, decolonial and other non-normative frameworks to un/make things with AI. When Emily is not working, they are learning to love and doing their energy work.
+About AIxDesign
+AIxDesign is a studio and global network exploring & shaping practices emerging at the intersection of Design and AI/ML/Data. Embracing industry, academic, and artistic approaches equally, our goals are to invite critical & creative approaches to AI, make it more accessible, and collectively unpack and uphold what it means to develop AI systems in line with human values. For more info about our work, have a look at our website at aixdesign.co.
+
+
+Thinking of AI, we are drawn to its potential when it comes to imagining our future. But in the creative uses of this technology, AI is as powerful to help us reminisce and create new memories and narratives of our past. In their work, interdisciplinary artist Aarati Akkapeddi. does just that – using AI to work with the subjects of family, memory and childhood, the artist creates new memories and a space for reflection. During their workshop, Aarati will introduce the workshop and take us on an immersive and exploratory deep dive into working with AI and images. In this hands-on workshop, we will understand how to combine AI and ML with our personal image archives and watch new memories emerge.
+The workshop is open to curious individuals from all fields and disciplines and requires no specific technical skills.
+This event is part of AI Playground by AIxDesign. AI Playground is a series of events where we want to showcase the most interesting, forward-thinking and mind-blowing ways to use AI&ML tools in creative practice. The goal of these sessions is to inspire and activate creatives in a playful and accessible way to take the first step into exploring and adopting AI methods into their toolkit.
+This event is part of AI Playground program led by Computational Mama a.k.a. Ambika and funded by Stimuleringsfonds Creative Industrie.
+About the Workshop Flow
+Does the machine understand the human face as an average of many faces? What does it mean to build a collage with AI? Can your photo gallery be used as a dataset? The very beginning of exploring AI as a creative tool is understanding the importance of datasets. Instead of struggling with “big data” we will learn to build tiny datasets. With the tiny image datasets, we’ll begin our journey of algorithm based creative explorations.
+The Good Old D(AI)s workshop will get you comfortable with:
+-redefining what an image dataset can mean to a creative practitioner
+-running google colab with small python scripts to realign your image dataset based on a AI facial recognition algorithm
+-developing a portrait of averaged faces using your dataset or others available freely on the internet
+The workshop will take 120 minutes and you will need to bring:
+-10-20 portrait images with humans in them from your own collection of photos or from a copyright free resource. While the algorithm is meant for facial recognition there is no restriction or compulsion to come in to the workshop with other images
+-All images should be less than 1mb and around 500kb is ideal.
+-Join on a computer with reasonable internet access
+-An open mind :) <3
+(The workshop will happen on Gathertown and will be recorded for future reference and documentation. )
+About the Artist
+Aarati Akkapeddi is a coder, interdisciplinary artist and educator based in Lenapehoking (Brooklyn, NY). They work for The Experimental Humanities Collaborative Network, where they create digital spaces and tools. In their creative practice, they combine archival material, code, machine learning and analog techniques (photography & printmaking) to create artwork about intergenerational/collective memory. They currently teach creative coding in the Design & Technology department at Parsons. Learn more about Aarati's work on aarati.me/.
+
+
+Learn about the exciting world of whales and how the Whales for Climate team is shining a light on the urgent environment crisis through AI, Generative Adversarial Networks, and new ways of generative image making.
+This event is part of the AI Playground program led by Computational Mama a.k.a. Ambika.
+
+
+Have you been thinking about playing with AI?
+Have you tried learning AI but quit because it seemed too complex?
+Would like to learn and explore AI in simple friendly formats?
+Have you been exploring and playing with AI tools?
+Has AI become part of your creative side projects?
+Have you been able to convince your clients to play with it?
+Have you convinced your friends to play with AI?
+**Bring your own (AI) toys will be a quick, convivial and fun free play session. Come with your toys, share your joys, build things together, consider friendships over collaborations.**
+
+
+What do AI and design have to do with each other? How may designers contribute to the trajectory? How may we claim AI as a creative material? Where might we put ourselves – jobs, schools, communities – if we want to commit to exploring these questions?
+With the goal to put on paper the broad scope of practices that lay on the intersection of AI and Design, we are inviting you to join our generative workshop and ponder these questions together 💭 In our exploration, we will be making a map to create a variety of entry points for curious individuals and collectives who are interested in getting to know this area and exploring professional opportunities it offers. Join us in our first session to collectively start roaming and mapping the AI & Design landscape!
+This event is hybrid, running both online and at Digital Society School in Amsterdam. If you wish to participate physically, please RSVP hello@aixdesign.co.
+
+
+Our community hangouts are a space to come meet other practitioners at the intersection of AI and Design and we're hosting our next on the 14th of December!
+We'll kick off with a round of speed networking. We'll randomise 1-to-1 meetings of 5 minutes each. No pressure, good times, 10/10 Would recommend.
+From there on, simply come-as-you-are. We'll open up gather.town for you to explore and interact as you'd like. Continue conversations from your 1:1s or gather around our virtual gallery to meet people interested in the same things as you.
+The room will be hosted by the inspiring Ploipailin Flynn: business strategist, digital right activist, founder of antiracistby.design, and long-term AIxDesign member.
+Sign up here through Eventbrite and we'll send you a message with everything you need. See you then!
+
+
+About the Session
+ML5.js is an open-source and user-friendly library that aims to make machine learning approachable for designers, artists, and other members of the creative community.
+In this session, we will train a custom Neural Network to recognize and respond to a body pose of your choice. This can be a dance move, a yoga posture, or any other body pose or gesture you'd like to play with! We will be using the ML5.js library, the PoseNet model, and Glitch to create a user interface.
+This session is the second of two introductory workshops to ML5.js. While coding experience is not required, a basic understanding of Javascript will be helpful.
+About the Speaker
+Erik Katerborg is a creative technologist and lecturer in creative media at the Rotterdam University for Applied Sciences. He is especially interested in making technology and coding more accessible to people with a creative or design background. Learn more about Erik’s work on his Linkedin.
+Now more than ever, advanced technologies are being put into practice around us. Evolving technologies have brought about a change in human behaviour when interacting with AI. For example, certain products are shaped in a certain way around us to accommodate certain technologies. This is also shaped the interface delivering such technology (Think: Google Home or Fitbit).
+In this talk, Sofie will dive into the risks, opportunities and application areas of how design and UX shape human decision making when it comes to AI and products that harness the capabilities of AI.
+Human behavior results not only from intentions and deliberate decisions, but also from its interaction with technological artifacts. She will also touch upon the basics of captology which is the study of computers as persuasive technologies. Here, persuasion broadly covers behaviour change and change in user motivation brought about by evolving technologies.
+About the Speaker
+Meet Sofie Nabseth, part of the core team at the AI company Sana Labs.
+Over the last years, Sofie has headed Sana Labs’ global marketing activities and expanded their international footprint. From brand and positioning to global AI summits and lead generation, bringing the benefits of AI in learning to tens of thousands of individuals across the globe. Sofie is now responsible for business development, helping organizations in various industries leverage AI in learning.
+Sofie is also leading the Swedish chapter of the non-profit Women In AI - helping more girls and women understand and apply AI, decreasing the gender gap in the AI field.
+Learn more about Sofie and her work as well as Sana Labs through her LinkedIn.
+
+
+AIxDesign is a community-led platform exploring and promoting the use of AI/ML for creative purposes, practice-based research and activism.
+What is AIxDesign - for the website (up to 5 sentences)
+1. At AIxDesign we are celebrating the power of human-machine creativity for social good. Through our hands-on workshops on AI, ML and Data tools and community-led research, we create wacky and imaginative use cases for these technologies. By working with independent creatives and combining hands-on play with a critical approach, we are developing feminist and humanist gatherings, materials and methods.
+
+2. At AIxDesign we focus on the combination of AI, ML and Data tools with designerly and artistic practices, developing wacky and imaginative use cases. We believe that AI is for everyone, and it is our goal to democratize access to AI and expand the typology of an AI-professional. It is our goal to use our creativity, capacity to reflect and the desire to tweak our tools to help create better AI and an inclusive professional community.
+
+3. At AIxDesign we believe that AI is for everyone, and it is our goal to radically democratize access to AI, ML and Data tools with the focus on create uses of these technologies. We want a future where artists, designers, and activists can freely use AI for reasons other than corporate benefit. By working with independent creatives and combining hands-on play with a critical approach, we are developing feminist and humanist gatherings, materials and methods.
+4. 5. AIxDesign is a collaborative effort to democratize access to AI&ML tools and computational literacy, with the focus on imaginative and creative use of these technologies. Furthering the use and exploration of AI in non-commercial context, AIxDesign creates learning opportunities and showcases the wide array of practices and professionals working with AI. Joy, and working and learning with joy, is our core value. Our goal is to make AI&ML tools less intimidating and lower the access barrier. Through our non-hierarchical structure and with a team to support a thriving community of like-minded individuals, we work to create joyful encounters between humans and tech and between humans and other humans. Destabilising AI as a fixed construct – with a fixed set of ties to the goal of automation and optimization, big tech and wast amounts of computational power – we want to radically expand the typology of an AI-practitioner. We see a lot of opportunities to decentralize AI and we promote it as a tool everyone can use. While we are intrigued and impressed by all creative uses of AI, be it design or music creation or writing, we currently call ourselves AIxDesign, as we want to use the word ‘design’ as an umbrella term for intentionally using AI/ML as a creative tool and designing creative processes where AI/ML is involved. At AIxDesign, we work with joy, but we also work with difficult subjects. The tools we are working with are not neutral, and we acknowledge the fact that technologies that fascinate us came into existence with built-in biases, discriminating on the basis of race, gender and class. We do our part to work against (algorithmic) discrimination and towards a more just society, and create a comfortable setup for difficult conversations.
+THE WHY - Vision
+We believe that AI is for everyone, and it is our goal to radically democratize access to AI, ML and Data tools. We want a future where artists, designers, and activists can freely use AI for reasons other than corporate benefit. By taking AI outside of big tech, we want to expand the typology of AI-professional, simultaneously expanding the range of subjects for AI to work with. Outside of chasing productivity and optimization, what goals are out there? AI-technologies have built-in biases and often facilitate injustice. We want to use our creativity, capacity to reflect and the desire to tweak our tools to help create better AI and an inclusive professional community.
+THE WHAT - Mission
+At AIxDesign we are harnessing the power of human-machine creativity for social good. Through our hands-on workshops on AI, ML and Data tools and community-led research, we create wacky and imaginative use cases for these technologies. By working with independent creatives and combining hands-on play with a critical approach, we are developing feminist and humanist gatherings, materials and methods.
+   * We focus on AI, ML and Data and the intersection of these tools with design and creative practices.
+   * We engage in field-building. As a nascent field, we aim to both explore, shape, and advocate for practices emerging at the intersection of AI and Design.
+   * We produce workshop programs, event series, one-off events and collaborative event production – AIxDesign community is at its best when we gather to play, learn, explore and chat.
+   * We gather: We started AIxDesign because we struggled to find like-mindeds to talk to - people that understood and valued both technology, creativity, data, and design. We value our community, and we are working to ensure that every member has the opportunity of networking and professional development.
+   * We acknowledge that AI & ML landscape of today is far from being an inclusive space, and we aim to change that by creating a welcoming community, playful learning experiences and accessible formats. AIxDesign started online, and while we are beginning to have events on location we will continue keeping all our events hybrid, for everyone to join.
+   * We aim to overcome the ‘techie/non-techie’ binary. Our practice embraces equal parts data and design smarts, valuing industry and academic contributions, and looking to marry both analytical and creative approaches to build meaningful intelligent systems to co-exist with.
+   * We are an independent community of practice. When it comes to AI/ML landscape, existing communities of practice live within the big tech and not independently. AIxDesign aims to change that.
+THE HOW - Values & Guiding principles
+   * Imagination & creativity
+   * Plurality: We are, and we always will be, featuring a multitude of perspectives.
+   * Joy
+   * Inclusive community
+   * Practice-based without sacrificing theory: We created AIxDesign partly out of our frustration with existing learning materials on AI & ML tools. While being technically excellent, many don’t introduce the students to complex concepts and problematic history of AI. We wanted to create hands-on learning situations in which it is also possible to learn about those.
+   * Not for profit but for gainful employment AIxDesign is a non-profit organization, but by focusing on non-commercial activities we don’t mean that we don’t cover any corporate uses of AI & ML. We are interested in seeing how playful exploration can lead to job opportunities, and we are happy to share job postings for positions where AI & ML skills are valued in our network.
+
+Medium articles
+Today’s world generates data at unbelievably rapid rates. It is essential to leverage the available data to understand the bigger picture better. Data Science is changing the world, and user research needs to get on board to understand business and user needs better. User Experience can be a tool that can be essential to frame how data science conveys critical insights. This talk gives an overview of how Data Science can complement UX research, including quantitative and qualitative methods. It introduces the Data Science pipeline and describes useful UX research applications, like identifying users to interview, finding different customer segments, and generating data for usability studies.
+
+This session is the first of our keynote series, and it took place over Zoom. The session was interactive yet educational. For this event, our speaker was Grishma Jena — Data Scientist with the Research Ops team for User Research and Design, Cloud & Data Platform, at IBM in San Francisco. She works across portfolios in conjunction with user research and design teams and uses data to understand users’ struggles and opportunities to enhance their experiences. Grishma kicked off the session by sharing her role at IBM and how we could get involved in their user research program.
+
+The keynote covered relevant topics in Data science, such as data, Machine Learning models, and steps to be taken to incorporate data science into user research. We have summarized the key six takeaways from the keynote below:
+
+1. Addressing Misconceptions
+There are common misconceptions around data science and user research. Grishma addressed that the misconceptions are mainly related to practitioners in these fields. User researchers often think of data scientists as a glorified numbers person, and data scientists confuse user researchers for designers and may not be considered important to a product development process. She mapped out her motivation for the talk by sharing what data science can do in user research.
+2. Asking the Right Questions
+Grishma emphasized asking the right question, i.e., formulate a question the stakeholder is trying to answer. Questions like “Are we offering the right things to the right people?” or “How likely is it the user will buy our product?” aid in finding answers to the problem you’re trying to solve.
+
+After you ask the right question and find corresponding data, the next step is data wrangling or data cleaning. Data wrangling is when you gather, select, and transform data for easy access and analysis. A couple of methods to do this is by scaling or normalizing data, deduplicating records, interpolating values, and standardizing multiple sources.
+
+The next step is data exploration — the initial investigation of data to explore essential variables and how they are distributed. Grishma urges covering any initial patterns or points of interest. This helps form hypotheses about the defined problem.
+
+3. Creating a Meaningful Model
+The next step after data exploration is model building. She provided the following steps:
+
+Feature engineering: Select important features and construct more meaningful ones, using domain knowledge
+Preparation: Divide the data into training and test sets
+Training: Choose supervised or unsupervised learning, Tune model parameters and Monitor against overfitting
+Evaluation: Evaluate model on unseen data, i.e., a test set
+One relevant use case to the topic is Airbnb. She provided them as an example of doing a tremendous job in integrated data science in user research. Here are a couple of ways Airbnb has managed to do so:
+
+Used data to determine host preferences: Airbnb used supervised learning and classification to answer critical questions like “Would a host accept or decline a booking?” They also found trends about how hosts in small and big cities behaved based on demands and availability of properties.
+Reduced bounce rates with a redesign: A data scientist at Airbnb discovered that some Asian countries' bounce rates are relatively high. To fix this issue, they approached UX researchers and decided to show top-selling destinations to ensure users stay on the site. This led to a redesign and a 10% increase in conversions. Here, they used supervised learning and regression.
+Showed skewed search results to users: They let users drive the search based on past data (bookings) available to them. They created a model to assess the probability of booking and used it to skew search results. As a result, results showed properties that were most likely to be booked past on past booking trends.
+Here is more information about how Airbnb uses Data Science.
+
+Moreover, Grishma discussed model validation, where you assess your model’s quality, where you can use cross-validation for robustness or use metrics like accuracy, precision, recall, F1 score, or confusion matrix.
+
+A good example is ABN AMRO: they want to help their customer service representatives tag better and faster based on the support ticket. They came up with a robust system with a high level of accuracy and precision in tagging/labeling. However, on deployment, they found that the representatives’ time to file support tickets didn’t decrease but instead increased.
+This happened because the model landed up presenting the representatives with 20–30 different tags, which led to them spending more time going through the list of tags — this is a case where UX researchers could have helped data scientists produce better results by running some usability tests before implementation. The big takeaway from this is that while a system may look good on paper, it may not solve the problem at hand in person.
+4. Telling a Story with Data
+The last step of the data science pipeline is data visualization and storytelling. One can tell a story with data to answer the original questions, communicate findings to stakeholders, and humanize the numbers at hand. It uses a combination of narrative, visuals, and data to drive change. Narrative and visuals engage the users, visuals and data enlighten the user while narrative and data explain the data to the users. To learn more about data storytelling, check this link out.
+
+Grishma presented us with Google’s outlook on usability testing as they believe that it is time-consuming and expensive. To solve this, Google AI used deep learning for usability testing to predict the tap-ability of elements.
+
+Lastly, she then presented how Spotify uses data science and user research. Spotify is one of the few companies that have used the combination of Data Science and User Research to find peculiarities of users’ listening habits. In other words, find outliers and use it for their 2016 ad campaign such as the one shown below.
+5. Data Scientist + User Researcher = Dream Team
+Grishma believes that Data Scientists and User Researchers are better together and are a dream team. As data scientists usually focus on quantitative data and User Researchers on qualitative data, they would bring different perspectives to the table. This will help in blending people and data to get close to the truth. Integrating these teams will provide a holistic understanding of multiple forms of data and mitigate the cons of a single research method alone. Furthermore, these teams will keep biases in check and find correlations that help develop a better hypothesis and hyper-specific personae.
+
+“All data created by people. And all people create data…Today we divorce people from their data, and that gives companies a license to forget about the people behind the data…It allows us to divorce ourselves from the responsibility of what that data can do.”
+
+– Ovetta Sampson, Microsoft
+
+Embracing Fair Practices
+The talk was concluded by addressing the most critical topic relevant to data and user research, which is Ethics. All involved in handling data should have an ethical discussion about the way the data is used. She discussed how tech could attack people or be misused by people that have used home assistant systems to gaslight their partners.
+
+She urges to ensure that training data is fair and representative and understanding possible bias sources. It is crucial to ensure fairness over time, especially for the different user groups. It is essential to have a diverse team working in integrated teams to ensure that varied opinions, backgrounds, and thoughts come forward.
+Swiping cramps
+I’ve been using Tinder for the last 2 years and since my first swipes, I’ve had a hunch that Tinder loads the deck against me to keep me on the app for longer. I promise I’m not salty about not getting enough matches, I just feel I could be getting these matches with less swiping. Currently, I average 9 left swipes (rejection) to 1 right swipe (hopeful acceptance), and would argue I don’t have a specific “type”.
+
+However, a definite side effect of an app that shows you the world and values quantity over quality, is that you develop some conscious and unconscious bias on which way you’re swiping. Whether that would be profiles with sporty photos that irrationally make me feel lazy or profiles with bios that are only used to plug Instagram profiles, there are certain things I always half-consciously swipe left on. All this may sound shallow to non-Tinder users, but online daters will all agree this is the reality of dating in 2020.
+
+So I asked myself:
+
+Why is it that, in an age where Spotify can accurately create playlists based on my music taste and Youtube is able to feed me video after video I will passively consume, Tinder only shows me profiles I want to swipe right on 10% of the time?
+
+It’s important to say here that Tinder does use an algorithm to help curate peoples experience on the app. They claim it helps people match more frequently, get off the app and meet IRL. However, they are very vague on how this algorithm actually works, but they do say that the more you use the app, the more matches you get. Who would’ve guessed?
+
+So, if Tinder has an algorithm that is so focused around matches, why does it show me profiles I don’t want to match with 90% of the time. Is Tinder’s algorithm just bad? Am I more random and spontaneous than I think? Or am I just weirdly picky and hard to please?
+
+Recommendations matter
+My hypothesis/conspiracy theory is that Tinder knows who I am likely to swipe right on and rations out those profiles, and in an attempt to gamify the experience, keep me swiping for longer and hook me to their app. A tactic akin to slot machines, video game loot boxes called “variable rate reinforcement”, and one of the widely recognized dark design patterns.
+
+“The player is basically working for reward by making a series of responses, but the rewards are delivered unpredictably… Dopamine cells are most active when there is maximum uncertainty, and the dopamine system responds more to an uncertain reward than the same reward delivered on a predictable basis.”
+
+Dr Luke Clark, director at the Center for Gambling Research at the University of British Columbia
+
+Methods of investigation
+To test this hypothesis, I decided to assess whether there was a distinct pattern of my “Matches” compared to my “Left Swipes”.
+
+To work out these patterns, I trained various machine learning models with data from both my “Matches” and random “Left Swipes”. I split them into Pictures, Bios, Music and in the end, the full profile.
+
+Consequently, I tested the generated results made by these models side by side, choosing my favourite of the two options presented each time. If I choose the result generated by the model trained on my “Matches” more often, then it would prove my match preferences were learnable by an AI and hence, Tinder could consistently fill my feed more with people I would like to swipe right on.
+Generating (Frankenstein’s) Profile Pictures
+Profile pictures are a key part of the Tinder experience — it’s the first thing you see and I would be lying if I didn’t say it’s probably the most important aspect of a profile. Tinder evidently thinks so too, as throughout the apps short history it has continued to increase the size of the profile picture in its UI.
+
+So to generate fake profile pictures, I trained a Stylegan2 Model on RunwayML with 212 images of the faces of my “Left Swipes” and a separate model on 212 “Match” faces, both for 5000 steps.
+
+Due to my small data set, the resulting generated images were very abstract. However, going into the test I was pretty confident I would be easily able to discern which generated images were based on “The Perfect Match” model, based on the colour, composition and frankensteined facial features.
+
+This was not the case — during the test, I only selected “The Perfect Match”-generated picture 5 out of 10 times. Not too promising.
+Generating Profile Bios
+Bios are a variable part of a Tinder profile: some users writing only their height, others a thesis on their perfect partner and a good proportion of users have no bio at all. For me, a bio is an important part of my swiping decision, but no bio is definitely better than a bad bio. Hence, out of my 212 matches, only 116 had bios. I also found 116 bios from random people I would normally swipe left on. These were used to train the Tensor flow-based Textgenrnn word-level model for 100 steps.
+
+Again, as in the previous step, the generated results were very abstract but definitely recognisable as Tinder bios, even if they made no sense.
+
+During the test, I went for “The Perfect Match”-generated bio 7 out of 10 times. However, 2 were easy to spot because I clearly recognised some generated text from the datasets, so the real result was 5 out of 8.
+Generating “Our Song”
+The final piece of a Tinder profile is music, as users have the option to add an Anthem song, as well as a feed of their current most-listened artists. For my test, I focused solely on the user’s Anthems as these are more common and they would give me cleaner data points. For me, these anthems are quite important and help to add detail to my picture of someone.
+
+Through brute force, I compiled a playlist on Spotify of the 99 songs from my “Matches” and 99 others from random “Left Swipes”. I then used Spotify’s similar playlist feature via Skiley to generate new playlists. I was worried that the diverse data sets used would lead to very random playlists but the resulting playlist felt very close to the input data.
+
+During the test, I was shown the song name, artist and album artwork but not allowed to listen to the song because the majority of the time this is how I engage with Tinder profile Anthems.
+
+As a result, I picked the “The Perfect Match”-generated song 6 out of 10 times.
+The Final Test — Comparing fully generated profiles
+For the last part of the test, I compared full profiles of generated photos, bio and anthems. This was most true to life of the test, as the combination of all the different points gave me a really clear picture of a profile. As such, I managed to pick “The Perfect Match” generated profile 8 out of 10 times. However, because of the bios, I again clearly recognised 2 of the generated bios from the data sets — the real result was 6 out of 8.
+Conclusion
+In the end, I managed to correctly pick “The Perfect Match” generated profile 61.1% of the time. This was all done with very crude models (except Spotify) and tiny data sets. Whereas Tinder would have access to more sophisticated models, a lot more data and real data scientists. Hence I would tentatively say my hypothesis is correct. If Tinder wanted to, I believe they could learn my preferences and show me profiles I would match with at a much more consistent rate.
+
+There are many reasons why I think they choose not to implement a more accurate and user-focused algorithm — perhaps it would ruin the fun of the app or maybe people wouldn’t opt for subscription plans if they found matches so easily. Cynically, I believe they tune their algorithm to balance out the outcomes of Matches, Fun and Profit. They are a company after all, not a benevolent cupid armed with digital arrows.
+
+Closing Thoughts
+At the end of the day, I feel my results were quite obvious and entirely predictable. However, I feel that fact I was able to create this experiment and put Tinder on trial with no Machine Learning and very little coding experience, tells us of a new paradigm emerging. One where companies or governments can no longer hide behind or outright blame their algorithms for anti-user features or more importantly discrimination. People (Companies or Governments) make choices about what they want their algorithm to do, and now with new easy to use the software we can check that we agree with their choices.
+
+On a personal level, what I am also taking away from this experiment is a greater understanding of Machine Learning but most importantly a deeper awareness and questioning of my conscious and unconscious biases.
+Both 
+Nadia Domide
+’s and my (yes we’re both called Nadia haha) day-to-day work is focussed on Artificial Intelligence and Design. Intrigued by creative AI practices, we decided to not leave this excitement to client requests and to start experimenting.
+
+In this article, we’ll walk you through the entire process of how we created our first generative AI visuals using Runway ML.
+
+Runway: ML for Artists
+Runway ML is a free software making Machine Learning accessible to artists and creatives. They offer the option to (re-)train your own models such as StyleGAN which we were most eager to try out. Around the time we were having these talks, Runway ML put out an open call for their residency program and we decided to apply. While we weren’t chosen — by the time we finished writing our application, we were so excited we decided to do it anyway.
+
+These places do not exist(.com)
+After some brainstorming and discussions, different streams of inspiration started colliding. We were really inspired by the parody projects on thispersondoesnotexist.com, such as thisartworkdoesnotexist.com & thisworddoesnotexist.com — so we asked ourselves: Can we create places that don’t exist? Can AI dream up real presentations of unreal places? Can we generate imaginary landscapes? Long story short: yes, we can.
+
+The complete step-by-step process of generating visuals by (re-)training a StyleGAN in Runway ML
+1. Data collection
+One of the important parts of an ML project is collecting the training data. We started curating a dataset of approximately 3000 images from Google Earth View. These images were displayed on the world’s largest billboard to bring a bit of zen to New York’s hectic Times Square during the holidays. They are both stunning and a well-curated (AKA lazy) dataset to obtain.
+
+2. Picking the right pre-trained model to start with
+Runway ML currently offers an easy way to do image synthesis, by using StyleGAN to generate photorealistic images. We chose to start with their available pre-trained model, called Landscapes (see image below).
+By doing transfer learning on the StyleGAN model it allowed us to train our algorithm in a shorter time. We preprocessed the images to squared and centered ones, opted for 3000 training steps, and hit the exciting purple ‘Start Training’ button.
+
+3. Training on our dataset
+We trained the model for a couple of hours. During this training time, we could observe how the FID (Frechet Inception Distance) score was changing (see image below). This metric simply computes how similar a generated image is from the real ones in the dataset. Having a low value is an indicator that the real data and the generated one have similar characteristics.
+4. Generating outputs from the latent space
+Ta-da! Once the training was completed, we could use it to generate new images and videos using random points in the latent space.
+
+What is a latent space? It is a magical multi-dimensional hidden space with no meaning, filled with points. The beauty of this space is that the generative model learns to map these points to output images. And a space walk is simply a series of images that show a transition between two or more generated images.
+
+Runway gives you the option to export images and a video of a so-called latent space walk.
+
+Join us in our collective imagination
+We’ve generated 120 of these images. Astonished by their beauty and our brains seeking to think up stories, we questioned what we should do with these fictional places. Might these landscapes have value when put in the hands of people? How can you create memories of places you have never been to (and never will)?
+
+If you like the idea of generating imaginary landscapes & assigning meaning to places that don’t exist, please join us in this small experiment of collective imagination.
+
+We’ll start with a shot of our fictional historical landmarks — the Dustry Blue meets Sandy View and the Coral Candy Pickle Grove place — pictured in the images below.
+Big thanks to Runway ML, and everyone that has contributed to the open-source files that made this experiment possible. Now go out to craft your own StyleGAN models and imaginaries. Thank you for reading with us!
+The next generation of storytelling
+How can AI help us discover new ways to create and tell stories?
+Explaining AI with visual narratives
+I heard a song recently on one of Spotify’s curated “Made for You” playlists, and it hit me that I hadn’t heard that particular song in ages. I used to listen to it constantly and Spotify didn’t even exist back then. How could its algorithm possibly have known it was relevant to me? Yep, that’s a rhetorical question. Surprise, surprise: it isn’t only historical data that feeds algorithms.
+
+So, you might wonder — What other data are being used to predict my interests in music?
+
+That, I’m sorry to say, is a question for engineers building algorithms and training models, but it is a good question. A question I’d like to find an answer to every time that, for example, Netflix recommends me a new show that I end up loving like crazy or, speaking of less frivolous topics when I hear a friend of mine complaining because she did not qualify for a second credit card.
+It would be useful to have a behind-the-scenes window to peek at the algorithms making the decisions that impact our lives and see what’s behind the final output we get. In fact, AI is so pervasive in our lives that people don’t always realize when it’s being employed. Often the use of this technology is so subtle that it could be easily hidden behind a simple picture or a phone notification. After all, if you don’t know the rules, how could you possibly understand the game?
+
+Having a clear explanation of the data that has been used to train a model, how the model works, and how it is being deployed is so crucial to gain full control of how AI impacts us. This refers to everyone, but especially to those who are not technically savvy and know very little about how AI works.
+
+To enhance people’s awareness of AI, we have to first explain the meaning of a model’s recommendations and the context surrounding that final output. My background in data journalism and information design inspired me to question the methods we usually employ to communicate the results of models and algorithms.
+
+How can we reimagine the ways we communicate the AI’s outcome?
+I don’t know about you — you can probably still sleep at night without having an answer to this — but this question is stuck in my mind.
+The curiosity about the inherent complexity of models led me to experiment with novel ways to illuminate the richness of the data provided by AI technologies. For example, the output of a machine-learning model is not only about its final predictions.
+
+Underlying the ML’s predictions is a huge variety of other information that is integral to the final result: the data used for training the model, the understanding of that data lineage and provenance, the bias that might be detected, the new data created over a feature engineering process, the features’ score, and more and more data… This is only a small part of the meta-information that we might think of that underlying the final result of an ML model. And yes, if your mind is about to blow up, you are on the right track, dude. 🤯 🧠
+
+Think of all the algorithms governing our lives and decisions: AI opened up an entirely new world of information that represents the simultaneous combination of multiple processes, tools, and data.
+
+As you might have started guessing, the complexity of a final model’s result is enormous, and we, as humans, need a better way not to only access this information, but to comprehend it. Therefore, understanding how AI works and impacts our lives is crucial. To do so, every time we work with AI, we have to put a genuine effort into unlocking the context of the data behind its outcome.
+
+Many of my projects focus on envisioning new ways to represent the results of AI models and facilitating public understanding of AI. The foundation of these projects is research and experimentation with the use of data storytelling applied to AI practices.
+I believe that, without experimenting, we can’t come up with new ideas. Even if sometimes it means working on projects that might look more like a moonshot without any immediate valuable result. It’s by doing and practising that we can advance our knowledge of what works and what doesn’t when it comes to interaction between humans and AI.
+
+This brings me to a project I started last year in an effort to reinvent the content we can create with NLP and NLU’s data. I named this project Interviews Visualized and it was a fun way to combine the art of storytelling, data design, NLP algorithms, and IBM Watson Natural Language Understanding. Let me bring you straight into my workshop to explain what this project was about. I hope it will spark some new ideas for your future work… follow me!
+AI reveals the stories hidden in our words
+Last year, I happened to run a newsletter for the team I worked for at IBM. While brainstorming the content for the newsletter and designing its layout, I remember wanting to integrate data storytelling into it. Yet the question was: how? Over the years, working with data on a daily basis has become so rooted in my mindset and working process that I often can’t think of any ideas without being driven by data first. I try to include data storytelling in everything I do because there is no better way of revealing the insights hidden in data. However, it wasn’t until I wrote the very first issue of the newsletter that I had the idea of how to incorporate data into it.
+As I logged the transcripts of the interviews of the people I’d spoken to, I began to wonder about the actual meaning of their words: which ones were the most relevant, and why? How did those words relate to specific sentences and passages in the text? What was their context, their connotation, and so on… It was at that point that I started writing an NLP algorithm to find answers to my questions in order to reveal the hidden connections existing in the story’s sentences and words.
+
+By extracting additional meaning from the stories I would write, I wanted to provide readers with a second layer of information: all the information they could not see in the text itself. To give readers the ability to see the patterns existing in the text’s words, I combined NLP techniques, IBM Watson NLU and data design to visualize the structure and semantics of the words used in the newsletter. In this way, I transformed the data generated as the output of a model into a compelling visual story.
+As soon as I created and applied the first NLP algorithm to the text, I realized how many overlooked patterns existed between the words used by the people I interviewed: NLP illuminated the human side of the words chosen and returned people a new way to explore a written text more in-depth.
+
+Following this concept, I came up with a visual way to represent all this information and attached a legend to every visual story to encourage people to take the time to explore the data and go deeper into the details.
+The ultimate purpose of this experiment, which kept going for several weeks with several visual data narratives, was to find new ways to make AI and ML technologies more accessible to a broader audience of non-experts and to create new strategies to communicate the content generated by algorithms and models.
+
+I felt so much potential in this project that I scaled up the initial algorithm that I created by partnering with a fantastic data scientist and colleague of mine, Erika Agostilli, to leverage the capabilities of Watson NLU to allow my visual stories to express even more details and rich context than I could do with my own algorithm.
+
+Scaling up the project in such a way allowed us to create a little engine, which Erika and I called Interviews Processor, that I used to parse the text of each story I published in the newsletter.
+Numbers “can help remedy our human fallibilities. What’s easy to forget is that statistics can amplify these fallibilities, too.” —Hannah Fry
+
+It’s not algorithms’, data’s, or numbers’ fault if sometimes human judgment is mistaken. Our mistakes have more to do with how we communicate the numbers provided by algorithms and models: how we manage to communicate the context those numbers relate to, the level of uncertainty they bring with them, how that uncertainty reflects into the world, and how those numbers affect people’s lives.
+
+I believe that we will never even get close to painting the complexity of this AI in its entirety.
+But we can try, every time we deal with data, by exerting a genuine effort to connect data to people and explain its richness and complexity as best as we can. Visual data stories are the most powerful means we have to do that.
+Together with 
+Benjamin Flader
+ and 
+Harits Abdurrohman
+, we did a little AI x Design Community collaborative session to evaluate the state of No-code and Low-code ML tools. This article documents our process, the metrics that we assessed the tools on, and insights we were able to draw from our assessment.
+
+The process of decluttering tools
+Everything started with a very long list of no-code tools. We filtered out the ones that we believed were not relevant — for example, if it was a data analytics tool rather than a machine learning tool. Initially, although our focus was on no-code tools, but we also included low-code tools as well. In the end, we ended up with 26 tools altogether.
+We defined no-code tools as tools that do not require any coding, but also don't require prior knowledge of programming or software development concepts.
+
+Our next step was to discuss the assessment metrics. We chose coverage of ML process and tool simplicity. In two rounds, we split up to briefly research the tools on our list, and to make sure that the assessment is not based on a sole opinion, there were always at least 2 of us looking into each tool.
+
+After browsing through tool features, documentation, tutorials, and company landing page, we came back together to discuss and assess the tools based on the two metrics we had decided upon. Evaluations of the tools were from first impressions, although we were all familiar with about half the tools and we’ve evaluated from personal experience.
+We noted that some of the tools were more process-focused, while some were use-case focused. The ones that focus on the process helps users easily manage the machine learning process or parts of it. The ones that focus on use cases seem to be more "out of the box", allowing for people to quickly train and deploy a model for a specific use case. We classified the tools into these 3 categories of focus: process building, single use case, and multiple use cases.
+
+Aside from tool simplicity, we also assessed how much Data Science knowledge a user would need to have in order to be able to navigate these tools and use it properly (without wanting to throw their computers out the window).
+
+After mapping the tools in a quadrant chart, we analyzed the results of our assessment and grouped the quadrants as Power Tools, Accessibility Promotors, Expert Tools, and Pocket Tools.
+
+Results & Presentation of assessment factors
+Coverage of ML process: From data wrangling to model training to deployment, how much of the machine learning process does the tool cover? If the tool is focused on a specific use case, how much of the process is behind the tool's "black box"?
+Tool simplicity: How simple is it for a user with minimal to no coding experience to use the tool? Are the results shown by the tool easy to interpret? How is UX/UI? Does it require download or is it plug-and-play?
+Tool focus: Is the tool designed for specific use case(s) or is it meant to aid the machine learning development process?
+Scale of Data Science knowledge needed: At which level of data science knowledge should the user have to be able to effectively use the tool?
+Quadrant groups
+Power Tools: Tools found in this quadrant are mostly intended for data scientists and engineers (or those with a good understanding of data science concepts). These tools will often aid users in the ML development process, either by providing in-depth insights or helping to increase productivity.
+Accessibility Promotors: Tools here often aim to make AI accessible to the general public.
+Expert Tools: If a tool finds itself in this quadrant, then it would be considered underdeveloped for a no-code tool and would most likely be a tool used by industry experts to perform specific tasks in the ML process.
+Pocket Tools: These tools are designed with a very specific focus of certain parts of the ML process in mind.
+Assessment analysis & Tool recommendations
+There is no no-code ML tool that covers both the whole ML process from data collection to integration and is extremely simple to use. All tools have different benefits, but the one that most stood out to us was Obviously AI (that we are proudly announcing that we are hosting our future event with). As it is in an early stage, we'll have to keep an eye on it. We are looking forward to see how these tools will progress!
+
+If you already have a specific use case in mind there are specific tools for one or several use cases available. Try out Teachable Machine for image or audio recognition. It is easy to use but lacks representation of the whole ML process, although it does come close. Similarly, try out Runway ML for image generation.
+
+To get some ideas, check out our other articles in which some of these tools are used:
+Lastly, while there are a lot of tools trying to be the tool for everything (like H2O), the market for no-code ML tools is still young and does not provide many options for specific phases of the ML process. There is lots of room here for the development of tools intended for testing, data preparation, or deployment and integration of ML models in other tools.
+
+Overview of assessed tools
+AI Builder from Microsoft
+AutoML Tables from Google
+Azure AutomatedML from Microsoft
+BigML
+Create ML from Apple
+DataRobot
+Fiddler
+H2O
+Lobe
+MakeML
+Metaranx
+mljar
+Obviously AI
+Orange
+PerceptiLabs
+RapidMiner
+Weka
+What-If Tool
+Use-case specific tools
+Chatfuel for Facebook Messenger (chatbots)
+Dialogflow from Google (conversational AI)
+Cognigy (conversational AI)
+textengine.io (language generation)
+Playform (image generation)
+RunwayML (image and text generation)
+Teachable Machine from Google (recognition & classification)
+Wekinator (recognition & classification)
+Computational creativity: 14 AI Artists whose work to explore
+A list of our favourite artists who are using AI as a tool for their creative work
+AI is being used in many professions — but what about the creative industry? How do artists use AI in their work? Currently, it’s not a very common tool for artists, but the good news is that this number is increasing. You can see bits of AI in many parts of the creative fields: from visual arts to dance, music, and even photography. In this article we’ll introduce some of our favourite artists who are using AI in their practice.
+
+1.SOUGWEN CHUNG is a multidisciplinary artist exploring the communication between humans and machines. She is using a robot hand to create her artworks. This robot mimics her brush/marker strokes while she is painting with her hand. Sougwen’s art practice includes different art fields, including installation, sculpture, still image, drawing, and performance.
+2.WAYNE MCGREGOR is a choreographer and director. In the “Living Archive” project, Wayne and Google Arts & Culture collaborated to experiment with AI and dance dialogue. The AI tool generates real-time new original movements for/with professional dancers. They trained the AI model with thousands of hours of Wayne’s archive videos, collected for 25 years.
+PINDAR VAN ARMAN is, as he introduced himself, an AI artist collaborating with his painting robots’ creative mind. He teaches his robot assistants how to paint by deconstructing his artistic process, critiquing the results, modifying the algorithms in a loop. His last project, called “Artonomous” is a collaboration with Kitty Simpson, photographer, which draws portraits inspired by a set of reference photographs using AI, feedback loops, and deep learning.
+REFIK ANADOL is a new media artist, creating parametric data sculpture and live visual/audio performance in his installations. He is exploring the space between the digital and physical world using machine intelligence by demonstrating a hybrid relationship between space design and media arts.
+ANNA RIDLER is an artist and researcher that is using her own handmade datasets for creating artworks. Constructing personal datasets is helping her to find underlying concepts and themes while using them. Her datasets include selected captured and classified images and texts, which needs a laborious process to create. In “Mosaic Virus”, she uses her dataset and AI to display evolving videos of tulips based on bitcoin's price.
+DANIEL AMBROSI is one of the creators of the AI art movement. In his project “Dreamscapes”, he created a series of landscape images using a unique form of computational photography, which he built back in 2011. Along with this dataset, he used an enhanced version of “DeepDream,” a computer vision program designed by Google in Dreamscapes.
+HELENA SARIN is a software engineer and visual artist using GANs (Generative Adversarial Networks) to create artworks. “Neural Bricolage,” founded by Helena, is featuring her AI-assisted pieces. They are created using a dataset consists of her own drawings, sketches, and photographs as datasets.
+.LAUREN LEE MCCARTHY is an artist that embodies machines to examine social relationships in today’s world. She works with performance, software, electronics, internet, film, photography, and installation, “trying to understand the distance between the algorithm and herself, between others and herself”.
+SCOTT EATON is an artist and creative technologists, creating his artworks by combining traditional craft with contemporary digital tools. He uses deep neural networks in his work called “Hyperbolic Composition I: Genesis”, which is an expressive, novel figurative image of the human body.
+SOFIA CRESPO is a generative artist focused on artificial lifeforms. She is interested in biology-inspired technologies. Her artworks are answers to the question of how new tech can help us connect with nature and love it more.
+KYLE MCDONALD. “Artist working with code” is the way Kyle introduces himself. Besides using code and machine learning to create his own artworks, he contributes to developing new tools and open-source toolkits for artists to use them in creative ways.
+.TARYN SOUTHERN is an artist, storyteller, and a producer with futuristic mindset working in the intersection of storytelling and technology. “I AM AI” is created by Taryn in 2018, which is the first album composed and produced by AI.
+TOM WHITE is collaborating with AI systems to create abstract prints to see the machine perception through their eye. His artworks are creations by AI for AI to investigate around the question, how machines see, understand, and articulate the world.
+BEN SNELL. Thinking of computational power as new raw material, Ben creates artwork (photographs, sculptures, and drawings) using contemporary materials and techniques in combination with traditional motifs. A computer program sculpted “Dio”, trained by a dataset of classical sculpture archives.
+Boshra Javaheri
+ is a designer and researcher with a diverse background in architecture, product design, and human-centered experience design. She is curious about people and has a passion for their experiences, emotions, and interactions with AI. You can find more about her here.
+UX challenges for AI/ML products [1/3]: Trust & Transparency
+Design considerations in Human-AI interactions. Part 1 of the series.
+This article was originally developed and released as Chapter 4 of the AI-Driven Design e-book series ‘Design Challenges in Machine Learning Products’ in collaboration with AWWWARDS, Adyen, and Joel van Bodegraven available for download here.
+
+I repurposed it into a Medium article so it can be a ‘living document’ I can edit and add to as I learn, develop new insights, and find better examples.
+
+Introduction
+Every design material comes with unique opportunities and challenges. In the same way that designing an event poster is different from designing a mobile app, designing AI/ML-driven applications is different from designing mobile apps.
+
+As we begin to see AI features popping up in our day-to-day products and services, its challenges begin to materialize. They range from UX problems, such as explainability and user feedback mechanisms, to greater ethical challenges, such as echo chambers and data bias. Designing the user experience of adaptive, intelligent, and semi-autonomous systems present a range of new challenges for us designers to take on.
+
+When thinking or talking about AI, we often imagine utopian or dystopian futures. Rarely, we dare to acknowledge its impact as something we have a hand in shaping (or even: a design challenge). Technology may be neutral and deterministic, but its development is not. As designers, we can take the raw material of AI and turn it into user, business, and social value.
+This piece is by no means all-encompassing and only scratches the surface on the complexities of designing for AI. Instead, it aims to provide a starting point for building a shared understanding around some of the complexities of designing AI/ML interactions, spark discussion, and invite everyone to take part in (re-)imagining how to design positive user/human experiences in algorithmic systems.
+
+3 x 3 challenges
+This article, which shares my research on designing Machine Learning Products, will address 3 different themes Trust & Transparency, User Autonomy & Control and Value Alignment, highlighting 9 of the challenges that can arise within them, all supported with real-life examples.
+
+Theme 1: Trust & Transparency
+Not all AI features are (in)visible to the user, nor should we want them to be. When confronting our users with new systems, it is our job as designers to help them understand how they work, be transparent about their abilities, construct helpful mental models, and make the users feel comfortable in their interactions. Transparency is key to building trust in the system and respecting user trust in your organization.
+
+1. EXPLAINABILITY
+Making sense of the machine and communicating to the user why the system acts the way it does.
+
+Design considerations: Show users what input data or algorithms were used to train the model, explaining and visualizing a gradual detailing of the model’s logic and how to interpret its presented result.
+
+As HAI’s faculty member Nigam Shah points out, there are three main types of AI interpretability: “how a model works, why the model input produced the output, and an explanation that brings about trust in a model”.
+→ Mixpanel
+Mixpanel, the business analytics service company, uses machine learning to uncover user insights. The anomaly detection feature helps pick up on unusual behavior. The image shows an example of an anomaly, together with what data the prediction is based on and which segments drive the anomaly so that the user can make an informed decision about the next steps. It even offers a “share” function to consult with a colleague for a 3rd opinion.
+→ Airbnb
+When Airbnb introduced ‘smart pricing’ based on supply and demand, adoption wasn’t as high as expected. They learned users were happy to be informed by the algorithm but they still wanted to make the final decision for themselves. Airbnb then built an interface where hosts can evaluate price changes and accept or reject each of the algorithm’s recommendations.
+
+Questions around Explainability
+
+What is the right level of transparency?
+Too little means the user doesn’t trust your system. Too much means the user might get confused with an overload of information.
+What are good ways to explain predictions, confidence, and underlying logic underlying within the user interface?
+What are useful mental models to help users understand and interact with the AI?
+How to provide explainability to the user when model interpretability is low?
+2. MANAGING EXPECTATIONS
+Assisting the user to build helpful mental models of what the system can and cannot do by being transparent about abilities and limitations.
+
+Design considerations: Proper onboarding during the first interaction with the application or feature where abilities and limitations are established.
+
+→ Siri & Assistant
+Each time the user calls upon Siri and it shows this screen, Siri has the opportunity to respond to queries and gradually introduce the user to its varied abilities. Onboarding and setting expectations become even more important in post-pixel interfaces because the user doesn’t have physical affordances nudging them where to go and what to do.
+The Assistant chatbot doesn’t try to cover up its shortcomings but instead makes the most of its limited abilities by explicitly stating its abilities and how a user must communicate a query in order for it to be processed successfully.
+
+Questions around Managing Expectations
+
+Where and when do I communicate its abilities and limitations to the user?
+What is the right level of trust?
+Too little trust means the user doesn’t get any value from the system. Too much trust might lead to automation bias and poses risks for both the user and the organization.
+How do I (continue to) onboard my user and make sure the systems’ adaptivity and resulting unfamiliarity don’t result in loss of trust?
+3. FAILURE + ACCOUNTABILITY
+When it comes to designing AI-driven user flows; assume failure and design graceful recoveries. Take accountability for mistakes and minimize the cost of errors for your user.
+
+Design considerations: Apologizing, minimizing automation bias, allowing the user to indicate a mistake, suggesting alternatives, allowing feature requests, and taking accountability for mistakes.
+→ Google Home & Alexa
+I make requests to my Google Home quite frequently that are returned with “I’m sorry, I can’t do that yet.’’ While disappointing, the apologies and promise of future improvement keep me from losing trust. In the example of Siri below, we can see it also recommends an alternative — a query it understands to be similar to the one initially called upon and one it can perform. Both of them recognized there is no way to user test against adaptive systems so they must be designed for failure.
+
+
+→ Fail! Chatbots
+While we can not predict every possible scenario and ML’s adaptive nature makes testing a bit more tricky, we can anticipate obvious failures and prevent them from leading to awkward user experiences like below. Test your systems in real-life, out-of-the-lab context to bring to the surface common and obvious mistakes.
+
+
+→ Nest
+
+One day as B.J. May approached his Nest doorbell, it wouldn’t let him in because the model thought he was Batman. Fortunately, the designers anticipated failure and designed 2 back-up ways for him to intervene and still get inside. Consequently, the failure didn’t have many consequences other than a funny Twitter thread.
+
+Questions around Graceful Failure + Accountability
+
+How can your user report a mistake?
+Under which conditions, for which goals and which users, even edge cases, might the system return undesired results?
+How to design an interface that minimizes the cost to the user when the AI makes a mistake?
+Considering the impact of mistakes in your use case, and how to retaliate from a bad prediction to not harm trust.
+Who is responsible and liable for the consequences of mistakes?
+3+ Ways AI and Design intersect (and Designers can get involved with AI)
+Pointing out the spaces & practices emerging at this intersection.
+
+Shaping the world around us
+The role of a designer is to intentionally shape the world around us with the resources we have available. That world is increasingly shaped by data sets, algorithms, and pre-trained models.
+
+As Artificial Intelligence(AI)/Machine Learning(ML) is finding its way into every industry and area of life, we can no longer afford to limit the development of these systems to the domain of engineering. As people are widely affected, both positively and negatively, we no longer get to excuse ourselves because it’s ‘too’ technical.
+
+You may ignore technological developments and continue your design practice as-is for now. But if you recognize the influence and responsibility we have as designers or are simply curious to learn what AI and design have to do with one another, you came to the right place.
+
+How do AI and design intersect?
+While still in its infancy, the intersection of AI/ML and design is beginning to take shape and establish itself as a field. Universities form research groups and big tech expert teams committed to it. And as AI/ML is increasingly widespread, the need for designers to ensure the human(ity)-centeredness of these systems is urgent. The other day I even came across the first job opening for “AI designer”, and then another one — so yes, I guess it’s a real thing now.
+
+Right now, I’m observing 3 major opportunity spaces for designers to work with AI/ML:
+
+design with AI (human-machine collaborations with creative output)
+design for AI (integrating human-centered design practices into the AI dev process)
+design of AI (interaction and UX design for AI systems)
+We’ll discuss each of these in more detail.
+
+1) Design with AI — human-machine collaborations with creative output. AI as a design tool or partner.
+How can AI assist us in the creative / design process? Design with AI is exploring collaboration between human creativity and computational logic to produce creative output. Creatives have begun exploring the abilities of AI to augment their images, videos, text, music, UI, product design, architecture, and any other format that can be rendered into computable data.
+
+This practice seems most relevant for graphic designers, artists, and creatives.
+
+
+Examples of what Design with AI might look like in the wild:
+
+generative or parametric design in architecture like Autodesk did to design their new Toronto office
+automating tedious design tasks like AirBnB’s tool for digitalizing wireframes or Netflix’s tool for localizing graphics
+logo and brand asset generation tools that have learned from best practices for example from Brandmark
+using machine learning models such as PoseNet and mapping its prediction to visual output like this collaboration by technologist Maya Man and dancer Bill T. Jones
+Generative Adversarial Networks (GANs) to generate images imitating or warping a certain input style. Try the Ganbreeder yourself
+Vera van der Seyp is one of my favorite AI designers working with generative type and graphics
+Sofia Crespo is an AI artist focused on nature & neural nets
+Resources to learn more about Design with AI:
+algorithms.design — incredible directory of AI x design projects
+Runway ML —the easiest way to get started with creative AI
+AI Artist’s AI Art Tools — exhaustive collection of creative AI tools
+autonomous.design — set of AI-powered design tools
+
+Questions to ask and ponder around Design with AI:
+Continuing a similar debate around intelligence, how do we define and measure creativity? Who owns, gets to take credit, and sells the art when it’s made in collaboration with an AI, from an often pre-existing dataset, and open-source model? Should we use computers to imitate best practices or incorporate randomness instead?
+
+
+Image created using CLIP+VQGAN model to generate visuals based on text prompts
+2) Design for AI — integrating human-centered design practices into the AI development process. AI as a problem-solver.
+Why, when, and how should we build AI systems? Design for AI is about bringing elements and practitioners from the human-centered design approach into the AI development process. Spotting opportunities, considering user needs, and anticipating societal implications alongside engineering decisions will enable us to build systems that are considerate of the context they’re intended for. This requires a close and cross-disciplinary collaboration between designers and engineers.
+
+This practice seems most relevant for design consultants, strategists, and researchers.
+
+
+Examples of what Design for AI might look like in the wild:
+
+Spotting opportunities for AI/ML to add value and help solve problems in a unique way
+Being able to frame user needs as data exploration queries and machine learning problems
+Informing trade-offs between different algorithms and optimization parameters based on the specific use case (e.g. recall vs precision)
+Prototyping the experience through Wizard of Oz methods to validate user value before investing lots of resources
+Interviewing domain experts for an early understanding of feature selection and decision logic
+Some resources to learn more about Design for AI:
+AI meets Design toolkit — my toolkit for designers to work with AI
+AI Ideation Cards — card deck with 24 prompt cards and 100+ examples to help you brainstorm around AI capabilities and find opportunities
+Lingua Franca — A Design Language for Human-Centered AI
+
+Questions to ask and ponder around Design for AI:
+What do designers need to learn about AI/ML? What do engineers need to learn about design? How can we make the most of both designers’ and engineers’ practice? How do we communicate and collaborate to design human(ity)-centered AI?
+
+
+AI Ideation Card deck to support in finding meaningful opportunities for AI
+3) Design of AI —shaping the UX, UI, and user interaction with AI systems. AI as a design material.
+How will users interact with the AI systems we built? Design of AI is about designing interactions with adaptive, intelligent, and semi-autonomous systems. Every design material comes with unique opportunities and challenges. In the same way that designing an event poster is different from designing a mobile app, designing AI/ML-driven applications is different to designing mobile apps. To create helpful and holistic experiences, this requires designers to acquaint themselves with the materiality of data and AI/ML, and coin smart solutions.
+
+This practice seems most relevant for UI, UX, and interaction designers.
+
+
+Examples of what Design of AI might look like in the wild:
+
+Leveraging new types of interactions available such as voice interfaces and computer vision for better user experiences
+Designing interfaces to explain to users (with the right amount of detail) how the system works
+Laying out an ongoing onboarding process that makes sense of changes
+Building in the right user feedback mechanisms both implicit and explicit to help your model learn
+Auditing datasets and models for inclusivity and bias
+Anticipating potential unintended consequences
+Some resources to learn more about Design of AI:
+AI-Driven Design Ebook #4 — Design Challenges in Machine Learning Products — my ebook with AWWWARDS & Adyen about some of the unique design challenges
+
+Questions to ask and ponder around Design of AI:
+What are helpful mental models for users to have around understanding AI/ML-systems? How do we materialize high-level principles like explainability and user feedback loop into (post-pixel) interfaces? How can we build responsibility and ethics audits into every step of the development process to anticipate consequences and ensure inclusivity?
+
+
+Image from SPACE10’s Everyday Experiments proposing a speculative computer vision chef
+4) Design x AI
+There are plenty more practices and design challenges surrounding AI/ML. While these may not fit into the categories above, they’re relevant spaces for us designers and this post wouldn’t be complete without mentioning them.
+
+Data Design
+On the periphery, we observe a practice that is less about AI/ML and more about the raw material it feeds off: data. This includes data visualization, data design, information design, even database design. For example Giorgia Lupi’s work.
+ML Tools
+With more low- and no-code tools entering the market, somebody is designing the applications that allow people to train, test, and deploy machine learning models through Graphical User Interfaces instead of code. For example Teachable Machine, AutoIBM, or RunwayML.
+AI Education
+One of the most important roles in this whole space is developing accessible educational content and experiences to improve data literacy and make AI/ML understandable to professionals and the general public.
+… tell me what else is emerging in the comments!
+
+Image from the project Explainable Artificial Intelligence: a Collection of Critical Essays
+Forming a taxonomy around AI x Design
+A very young field, this is a first attempt at forming some sort of taxonomy to organize the practices emerging at this intersection. It’s by no means complete or decided — rather, it’s here for you to argue and add onto! I’d love to hear from you with more examples, new categories, and alternate mental models.
+
+Join the AIxDesign community
+AI and design have a lot more to do with each other than a first glance may suggest. As a development that is so influential, it’s of crucial importance more designers, artists, social scientists, and hybrid minds work alongside the engineers building these systems.
+
+That includes you! If you’re feeling in any way triggered, consider this a call. Get lost in some of the resources, ask your engineers if you can help, run off to make some weird AI art. Whatever it is, take that first step.
+
+If you (want to) work in the AIxDesign space, I invite you to join our community of AIxDesign practitioners. We host events, publish content, congregate in a Slack channel, share opportunities, facilitate networking spaces, and more.
+
+There’s so much to be done and this is just the beginning. I’m excited and honored to see it all unfold and contribute where I can.
+
+I’d love to hear if you learned anything new, and what (if any) next steps you’re planning to take!
+
+TL:DR
+There are new practices emerging at the intersection of AI and design. For now, they seem to fall in 3 categories: 1) design with AI (creative human-AI collaboration), 2) design for AI (human-centered design for the AI dev process) and, 3) design of AI (interaction and UX design for AI systems). With plenty more practices popping up at the periphery, this young but rapidly growing field offers exciting opportunities for designers to get involved and make an impact.
+Imagining narratives for preferable AI futures
+How speculative design helped us visualize & prototype ways in which AI might contribute to the Sustainable Development Goals
+As AI systems are often pretty invisible, most people imagine artificial intelligence in the way it often is portrayed in sci-fi and pop culture. The Terminator, Ex-Machina, Blade Runner: AI is basically the same as an evil robot, right?
+
+This workshop aimed to explore the anxieties and prejudices we have around this technology and instead of imagining the easy-coming-to-mind dystopia, focus our gaze on preferable AI futures.
+
+Speculative design helps us to imagine and visualise these explorations, so we can open up these topics for discussion. To focus on real life issues rather than the creation of utopias, we used the Sustainable Development Goals as a framework to thematize our anxieties and narrow down the focus of possibilities.
+
+
+The event flyer :)
+AIxDesign & Speculative Futures Rotterdam
+In the span of the workshop, we aimed to imagine how AI technologies could positively contribute to the pursuit and realization of Sustainable Development Goals. We finished the event with a prototyping session of AI-driven solutions for better futures.
+
+This workshop was a collaboration between AIxDesign and Speculative Futures Rotterdam. The three organizers and facilitators — Nadia Piet, Karolina Thakker, and Erik Peters — came about the theme for the event during a casual chat on the perception of artificial intelligence in popular media. We allowed the speculative design framework to take us into less explored paths and together imagine the more hopeful alternatives during a 2 hours workshop.
+
+The setup of the workshop
+The setup of the workshop
+The event took place online with the help of Google Meet and Google Hangouts for group sessions. We used boards in Mural to create frameworks for exercises and provided an additional Google Docs document with instructions for the participants to refer to throughout the workshop.
+
+The session was packed with exercises we found necessary in providing the structure that could help the participants narrow down the focus and stimulate lively discussions in groups. At the same time, the technical complexity of hosting a workshop with this many exercises within two hours would be a challenge. In hindsight, most participants navigated with ease through all the different online channels.
+
+The workshop: How to use AI for the realization of Sustainable Development Goals?
+Mapping and flipping AI anxieties
+The event was divided into two main parts. In the first part, in an exercise called Anxiety Mapping, the participants were asked to list down all the anxieties and fears that they associate with the adoption of AI technologies in the current world. The map was filled with all sorts of worries within minutes in which we managed to identify main problem clusters. These challenges were to be used as a starting point for the second part of the workshop in which groups worked on developing AI-driven solutions for preferable futures through series of different exercises.
+
+Filling the Anxiety Map
+Filling the Anxiety Map
+The participants formed groups based on their choice of the problem they found to be most interesting. Along the theme of our evening, we then asked them to reframe this problem into a Hope — a way how AI technologies could help us in creating better futures, although there is no opinion on what “better” actually means. For that reason, we decided to add Sustainable Development Goals as our reference point. We asked the groups to choose their design objective for the next exercise based on the SDG that they felt was most relevant to their AI-driven Hope.
+
+It was a fast-paced event, so we made the decision not to intervene in the group chats. It turned out well but as facilitators, we missed hearing all the fun bits and weird ideas of group discussions.
+
+How might we use our AI superpowers?
+The next exercise was a brainstorming session. First, we asked participants to choose one domain within their focus area that they would like to work on. Besides, we briefly explained the main AI superpowers (add a short one sentence why AI superpower) and provided a simple prompt question to help groups with the idea generation phase of the workshop. People were engaged in the process. It was hard to break the discussions and ask everybody to move on to the next exercise.
+
+We asked each person in a group to then choose their favourite ideas and place them onto the provided Futures Cone template. It was helpful to narrow down the choices and assess the probability of them existing in the future.
+
+Prototyping the Bigotry Bias Buster
+The last part of the event was the rapid artefact prototyping session. To make it easier and more fun, we provided the groups with ready-to-use templates. The templates included: an event page, a Kickstarter campaign, a place in Google maps, an app and a LinkedIn job profile. In the end, many shared with us that they enjoyed working in this way and had a good laugh trying to put their prototype together.
+
+Unfortunately, we had only a few minutes left for groups to present their creative ideas for AI-powered futures (who wouldn’t like to own a cute digital double Patronus of their own?), but we were happy to see participants being proud and proactive in their projects.
+
+SDG’s for achieving a better future for all
+Team Orange reducing inequalities
+From the clustered anxiety ‘reinforcing harmful bias, the group flipped this anxiety in the exploration of Law and Justice Systems, linking this to SDG #10: Reduced Inequalities. The artefact they presented, named ‘Bigotry Bias Buster’, suggests a decentralised system that spots the biased stuff in our algorithms. ‘BBB is a supreme entity that reigns with Fairness on Planet Earth. It condemns entities, nations, citizens, or companies who dares letting any bias into their algorithms.’
+
+The canvas of Team Orange — SDG #10: Reduced Inequalities
+The canvas of Team Orange — SDG #10: Reduced Inequalities
+The artefact of team orange: A decentralised system that spots the biased stuff in our algorithms
+The artefact of Team Orange: A decentralised system that spots the biased stuff in our algorithms
+Team Purple guarding digital well-being
+From the clustered anxiety ‘lack of privacy / surveillance’, the group flipped this anxiety in the exploration of Help Companions and Data Protection, linking this to SDG #3: Good Health and Well Being. They proposed a Kickstarter campaign for ‘Create Your Own Digital Double’, an avatar hologram that is the visualisation of your private data. The double is customisable and protects your data.
+
+
+The canvas of Team Purple— SDG #3: Good Health and Well Being
+
+The artefact of Team Purple: An avatar hologram that is the visualisation of your private data
+Team Green promoting good health
+From the clustered anxiety ‘loss or lack of abilities’, the group flipped this anxiety into Enhancing our abilities and helping us being more in touch with ourselves, linking this to SDG #3: Good Health and Well Being. Career OS is a lifelong coach powered by AI to help build your social and soft skills at work. The system provides ‘timely and proactive recommendations on your next social and work skills to achieve your career goals.’
+
+
+The canvas of Team Green— SDG #3: Good Health and Well Being
+
+The artefact of Team Green: A lifelong coach powered by AI to help build your social and soft skills at work
+Learnings about manoeuvring the digital space
+Regardless of time constraints and a heatwave outside our houses, we hope everybody had fun during the workshop and got inspired by the discussions. Many liked working with the worksheets and the artefact templates, but wished to have a bit more time for an initial introduction. As virtual workshops have their limits, we are looking forward to a moment to conduct this workshop again in real life.
+
+We will continue to refine this version for future sessions, online and offline, and hope to set up another session in the near future! Join our Friendly Futures Bunch mailing list to be updated on public workshops, reach out if you’d like a version of this for your team or organization, and stay tuned for more near-future futures work!
+Imagining narratives for preferable AI futures
+How speculative design helped us visualize & prototype ways in which AI might contribute to the Sustainable Development Goals
+As AI systems are often pretty invisible, most people imagine artificial intelligence in the way it often is portrayed in sci-fi and pop culture. The Terminator, Ex-Machina, Blade Runner: AI is basically the same as an evil robot, right?
+
+This workshop aimed to explore the anxieties and prejudices we have around this technology and instead of imagining the easy-coming-to-mind dystopia, focus our gaze on preferable AI futures.
+
+Speculative design helps us to imagine and visualise these explorations, so we can open up these topics for discussion. To focus on real life issues rather than the creation of utopias, we used the Sustainable Development Goals as a framework to thematize our anxieties and narrow down the focus of possibilities.
+
+
+The event flyer :)
+AIxDesign & Speculative Futures Rotterdam
+In the span of the workshop, we aimed to imagine how AI technologies could positively contribute to the pursuit and realization of Sustainable Development Goals. We finished the event with a prototyping session of AI-driven solutions for better futures.
+
+This workshop was a collaboration between AIxDesign and Speculative Futures Rotterdam. The three organizers and facilitators — Nadia Piet, Karolina Thakker, and Erik Peters — came about the theme for the event during a casual chat on the perception of artificial intelligence in popular media. We allowed the speculative design framework to take us into less explored paths and together imagine the more hopeful alternatives during a 2 hours workshop.
+
+The setup of the workshop
+The setup of the workshop
+The event took place online with the help of Google Meet and Google Hangouts for group sessions. We used boards in Mural to create frameworks for exercises and provided an additional Google Docs document with instructions for the participants to refer to throughout the workshop.
+
+The session was packed with exercises we found necessary in providing the structure that could help the participants narrow down the focus and stimulate lively discussions in groups. At the same time, the technical complexity of hosting a workshop with this many exercises within two hours would be a challenge. In hindsight, most participants navigated with ease through all the different online channels.
+
+The workshop: How to use AI for the realization of Sustainable Development Goals?
+Mapping and flipping AI anxieties
+The event was divided into two main parts. In the first part, in an exercise called Anxiety Mapping, the participants were asked to list down all the anxieties and fears that they associate with the adoption of AI technologies in the current world. The map was filled with all sorts of worries within minutes in which we managed to identify main problem clusters. These challenges were to be used as a starting point for the second part of the workshop in which groups worked on developing AI-driven solutions for preferable futures through series of different exercises.
+
+Filling the Anxiety Map
+Filling the Anxiety Map
+The participants formed groups based on their choice of the problem they found to be most interesting. Along the theme of our evening, we then asked them to reframe this problem into a Hope — a way how AI technologies could help us in creating better futures, although there is no opinion on what “better” actually means. For that reason, we decided to add Sustainable Development Goals as our reference point. We asked the groups to choose their design objective for the next exercise based on the SDG that they felt was most relevant to their AI-driven Hope.
+
+It was a fast-paced event, so we made the decision not to intervene in the group chats. It turned out well but as facilitators, we missed hearing all the fun bits and weird ideas of group discussions.
+
+How might we use our AI superpowers?
+The next exercise was a brainstorming session. First, we asked participants to choose one domain within their focus area that they would like to work on. Besides, we briefly explained the main AI superpowers (add a short one sentence why AI superpower) and provided a simple prompt question to help groups with the idea generation phase of the workshop. People were engaged in the process. It was hard to break the discussions and ask everybody to move on to the next exercise.
+
+We asked each person in a group to then choose their favourite ideas and place them onto the provided Futures Cone template. It was helpful to narrow down the choices and assess the probability of them existing in the future.
+
+Prototyping the Bigotry Bias Buster
+The last part of the event was the rapid artefact prototyping session. To make it easier and more fun, we provided the groups with ready-to-use templates. The templates included: an event page, a Kickstarter campaign, a place in Google maps, an app and a LinkedIn job profile. In the end, many shared with us that they enjoyed working in this way and had a good laugh trying to put their prototype together.
+
+Unfortunately, we had only a few minutes left for groups to present their creative ideas for AI-powered futures (who wouldn’t like to own a cute digital double Patronus of their own?), but we were happy to see participants being proud and proactive in their projects.
+
+SDG’s for achieving a better future for all
+Team Orange reducing inequalities
+From the clustered anxiety ‘reinforcing harmful bias, the group flipped this anxiety in the exploration of Law and Justice Systems, linking this to SDG #10: Reduced Inequalities. The artefact they presented, named ‘Bigotry Bias Buster’, suggests a decentralised system that spots the biased stuff in our algorithms. ‘BBB is a supreme entity that reigns with Fairness on Planet Earth. It condemns entities, nations, citizens, or companies who dares letting any bias into their algorithms.’
+
+The canvas of Team Orange — SDG #10: Reduced Inequalities
+The canvas of Team Orange — SDG #10: Reduced Inequalities
+The artefact of team orange: A decentralised system that spots the biased stuff in our algorithms
+The artefact of Team Orange: A decentralised system that spots the biased stuff in our algorithms
+Team Purple guarding digital well-being
+From the clustered anxiety ‘lack of privacy / surveillance’, the group flipped this anxiety in the exploration of Help Companions and Data Protection, linking this to SDG #3: Good Health and Well Being. They proposed a Kickstarter campaign for ‘Create Your Own Digital Double’, an avatar hologram that is the visualisation of your private data. The double is customisable and protects your data.
+
+
+The canvas of Team Purple— SDG #3: Good Health and Well Being
+
+The artefact of Team Purple: An avatar hologram that is the visualisation of your private data
+Team Green promoting good health
+From the clustered anxiety ‘loss or lack of abilities’, the group flipped this anxiety into Enhancing our abilities and helping us being more in touch with ourselves, linking this to SDG #3: Good Health and Well Being. Career OS is a lifelong coach powered by AI to help build your social and soft skills at work. The system provides ‘timely and proactive recommendations on your next social and work skills to achieve your career goals.’
+
+
+The canvas of Team Green— SDG #3: Good Health and Well Being
+
+The artefact of Team Green: A lifelong coach powered by AI to help build your social and soft skills at work
+Learnings about manoeuvring the digital space
+Regardless of time constraints and a heatwave outside our houses, we hope everybody had fun during the workshop and got inspired by the discussions. Many liked working with the worksheets and the artefact templates, but wished to have a bit more time for an initial introduction. As virtual workshops have their limits, we are looking forward to a moment to conduct this workshop again in real life.
+
+We will continue to refine this version for future sessions, online and offline, and hope to set up another session in the near future! Join our Friendly Futures Bunch mailing list to be updated on public workshops, reach out if you’d like a version of this for your team or organization, and stay tuned for more near-future futures work!
+About volumetric interviews, art school collaborations, and algorithmic systems for artistic expression
+To share a variety of voices and perspectives in our growing community, we’ve decided to cast a monthly spotlight on one of our members in the form of mini-interviews 👀 This month, we are very happy to introduce you to Leo Scarin: an artist, creative technologist, and our brand new Social Media Lead!
+
+
+AIxD: Hi Leo! First question 🎤 where are you now and what does the view from your window look like? (We would love to see a picture 🏙)
+
+L: I am in the TodaysArt headquarters in The Hague, where my studio is based. Attached is a scratchy cat in the backyard 🐈
+
+
+AIxD: Thank you! We love to see a cat 😻 Off to the next question: tell us briefly about yourself. What do you currently do and what kind of background and experiences have led you to where you are now?
+
+L: I am a creative technologist! My main interest is the use of new technologies to design meaningful and tangible digital interactions. I recently graduated at the Royal Academy of Arts in Interactive / Media / Design, a bachelor program that incorporates diverse and critical approaches to Art, Design, Technology and Society. For a couple years I have worked with TodaysArt, a media art platform and festival based in The Hague.
+
+AIxD: As a creative technologist, it is actually part of your work to be trying new tools. Could you tell us more about a tool or a method you have recently worked with and are excited about?
+
+L: I have a strong fascination for volumetric capture technologies, which I believe to be the most intimate way to archive a memory. In my work, I often adopt this technique through the use of Kinect sensors, photogrammetry softwares (OpenMVG, Brekel), and realtime render engines (Unity3D, Touchdesigner). The most exciting part is the application of volumetric technologies into interactive experiences: an inspiring example is Planet of People at the Lithuanian Space Agency. PS — For the most technical geeks, Instant Neural Graphics Primitives seems to be the latest and fastest AI tool in the game of photogrammetry, a technique to be very curious about, in the future.
+
+
+Volumetric Interviews, RGBdog
+AIxD: to put it simply, what is volumetric capture? Is it recording real-life events in a 3D format?
+
+L: Correct! Volumetric capture renders a digital 3D replica of real-life objects or bodies. Photogrammetry, for example, uses different multi-angle photos to digitally recreate the 3D form of an object. Kinect sensors do this by capturing the real-time depth of a moving image through infrared lights.
+
+AIxD: Thank you for sharing some insights into your toolkit with us 🛠 We also want to use this space to promote your work and ideas. Is there anything you are working on at the moment you would like to share with us?
+
+L: I am now working on a super exciting project by Rotterdam-based artist and fellow KABK alum Kexin Hao for the upcoming Rewire Festival in The Hague. Future Dance of Nostalgia is an interactive performance and installation incorporating pre-industrial heavy labour gestures into dance and bodily knowledge. As the creative technologist of this project, I am developing a customised Just Dance-like motion-capture videogame for the visitors to play! The installation will be running at the entrance of Amare during the whole Rewire Festival (get your tickets here).
+
+AIxD: Fantastic! We can’t wait to see your work 🙌 and to learn more about your vision and perspective. What do you find interesting/attractive/worth looking into at the AI x Design crossover?
+
+L: As accessible as AI tools have become for artists and designers, what excites me the most is how algorithmic computational systems will enhance artistic, creative expression. There is some sort of poetry in the way machines manifest creativity, and how new aesthetics arise from it. Those fragmented attempts of computers to replicate the complexity of human situations are the limbo, the intermediate state of the image that I am attracted by, both as a creative medium and as a context of technological research. Furthermore, I find worth looking into the social justice scenarios and how they are shaped by computational systems. Kavita Philip writes “rights, ethics, speech, freedoms […] cannot be predicted or deduced from axioms or a priori rules […] searching for a pure, clean signal entails wiping out all noise. It involves shaping humans in the dumb models for which computational systems have been built”. As she wisely suggests, I am interested in embracing the noise and explore its expressive outcome.
+
+AIxD: Wow, this is a wonderful quote, and also very urgent, as we need to look not only at playful aspects of tech but also we aware of its harms and violations. Last question: If you could pick one text/book or a podcast which is an absolute must-read or must-listen, what would you recommend?
+
+L: Your computer is on fire (the quote above is from this book, from the chapter ‘Afterwords: How to Stop Worrying about Clean Signals and Start Loving the Noise’)
+
+
+Variations on a Remote Room, Leo Scarin, 2021
+AIxD: Thank you! And thank you so much for chatting with us 🙏 we are looking forward to having more conversations throughout the year and working together 🎆
+Shall we meet more of our community members? This month, let us introduce you to Catarina, our content lead and creator for AI Playground guides.
+
+
+AIxD: Hi Catarina, super excited to interview you this month! I have been enjoying a lot of the content you have been sharing at AIxDesign. For our audience, could you tell a bit about yourself? What do you feel passionate about and what aspired you to do what you are doing right now?
+
+Catarina: I’m a London-based digital designer with a great interest in generative visuals, mixed realities, and the human psyche.
+
+
+Originally from a small town in the north of Portugal, I moved to England 8 years ago. Before the big move, I was certain that I would work in the biomedical field. I studied one year of biomedical sciences and realized that it was never intended for me — so I then decided to pursue what has always been my biggest passion: film.
+
+After graduating, I was determined to work as a cinematographer during my career in film. I worked as a freelance photographer for big companies but soon realized how limited the photography medium could be if I stuck to the same old ways of working.
+
+I became fascinated with the world of creative coding and interactive technologies, which led me to a master’s degree in Computational Arts. Since then, I’ve had the opportunity to expand my creative practice and exhibit projects publicly. The world of design came very spontaneously to me as nowadays I work full-time as a digital designer and also freelance on other design & tech projects.
+
+I’m a firm believer that it’s totally okay to change paths, as I’m now able to look back and see how all of these experiences have shaped the work I currently do.
+
+
+Project 25 Abril_Sempre, about Portuguese revolution witnessed by a machine
+AIxD: I really admire how fearlessly you have been pursuing your passion. Are you currently working on any projects? 🖋
+
+Catarina: I’m collaborating with inspiring people in the holistic field using intuitive design and creating interactive live visuals for their events. These collaborations help give a bigger purpose to what I do in my specific field.
+
+
+AIxD: Since you have been our content lead, I am curious what do you find interesting in the AIxDesign crossover? 💾
+
+Catarina: As the AIxDesign crossover becomes more widely accessible, I’m excited to see what the future will bring to art-making, especially filmmaking. I find it exhilarating to learn about new tools/software and hear about how other designers and artists are expanding their creative practice with these tools.
+
+
+AIxD: When you are working in the field of creative technologies, is there any tools or methods that intrigue you currently?
+
+Catarina: I’ve recently been reading into applying Jungian archetypes to my design work and how ancestral wisdom (I like to call it AI — ancestral intelligence) can influence the reasons behind why we design. I’m excited to find ways to weave the old and the new beyond the human-machine-future ideology.
+
+
+AIxD: Ancestral Intelligence! How fascinating! To close our chat, is there any books, authors, or artists you would like to share with us? 📚
+
+Catarina: I seem to always go back to Be Here Now by one of my main references, Ram Dass. It is fascinating and insightful, I find its visual journey a source of inspiration. The fact that it can look a bit chaotic ironically brings a sense of calm as you follow the path the book takes you on. It might not be for everyone, but I still find it one of the most beautiful books.
+
+
+AIxD: Well thank you so much for the recommendation and thank you for taking the time for the chat! Can’t wait for the future projects that you will be working on🌸
+Meet the community: Karina Zavidova
+To share a variety of voices and perspectives in our growing community, we’ve decided to cast a monthly spotlight on one of our members in the form of mini-interviews 🎉 This month, let us introduce you to Karina, our communication lead.
+
+
+AIxD: Hi Karina, glad to be able to interview you this month! Although we have chatted before, could you share a little background about yourself with our readers? What are you currently working on, and what aspired you to pursue your passion?
+
+KZ: Hi! I have a background in graphic-design-slash-fine arts, so I am trained to work with visuals, but I ended up working with words. Right now, I am a freelancer and I do four types of work: I work as a fundraiser in the cultural field, mainly with autonomous practitioners and small collectives (it’s called ‘grant writer’ in the Dutch English-speaking arts & culture circle, but when I tried to explain what I do to a corporate recruiter they say this is called fundraiser — go figure), I do graphic design from time to time, I do communications at AIxDesign, and I also work in event catering.
+
+Right now I also took a job as a ghostwriter — this is something I have never done before, but of course I said yes. My goal is to stop being a freelancer by 2023 and streamline all my writing and content-making activities into an actual full-time job. I am taking my time to figure out what this job is.
+
+I (surprise surprise) love tech and see myself as a communications professional in tech, but I also want to talk to more people from various fields and do a more dedicated search — that’s not something I could think about in the last few years during the pandemic and now I feel that I am finally having enough space in my life to start exploring options.
+
+I am looking for a challenging environment I care about, where I can grow, and also an environment that is not starved of money and cares about its people (the reason I’m drifting away from the arts, an environment designed to grow superstars and care little about the rest).
+
+AIxD: That’s really fascinating. I am with you on being in a challenging environment could sometimes bring out the best side of us💪. Are you currently working on any projects that you would like to share with us?
+
+KZ: Nothing, I signed NDAs 😅🤝.
+
+But I have a quite an interesting personal project going on — after ten years in the Netherlands with six temporary residence permits, I am going to switch to a permanent permit (by 2023 unless there are delays with processing my application) and eventually become a Dutch citizen in 2023, changing nationality from Russian to Dutch.
+
+I am very curious how my professional situation will change — since my residence permit first was tied to studies (where employment is not allowed) and then to self-employment (when it is not allowed to work as an employee, only as a freelance contractor), it will be the first time I have full access to the job market.
+
+Will my employability improve? Would it be feasible to transition to a new field? In the Dutch cultural field, more than 50% are freelancers, so it didn’t feel very odd to be one. But now I can also try finding my place in the fields where freelancing is not the norm. What is out there? It feels great to begin to realise how many options are there.
+
+
+AIxD: Congratulations! That’s very exciting and I’m glad that there are a lot more opportunities awaiting you ❤️. Since you are our communication lead and have been collaborating with the AIxDesign team for a bit, may I ask what you find interesting/attractive/worth looking into at the AIxDesign crossover?
+
+KZ: I am interested in the current situation where we have a combination of super-powerful/realistic simulations and a lot of wacky and wonky low-tech-looking stuff and the power dynamic between the two. What I see is that a lot of big brands are embedding the ‘wonky stuff’ into their visual language, the streetwear + high fashion combination that is also translatable to visuals or text.
+
+What I ask myself, as a communications professional who loves tech, is what can we do to make sure that us embracing the ‘wonky stuff’ will lead to the appreciation of creatives who made it and the wider acknowledgment of individual makers and collectives (also more chances for all — moving away from ‘superstars and the rest’ mentality) and not to just subconsciously embedding the ‘wonky stuff’ into the neo-corporate speak.
+
+You asked me if I can share some images to illustrate my point about the ‘wonky stuff’ and to be honest there was nothing particular that came to mind. I mean this visual style where we see images that could be…uhm, a visual analogue of a crocheted top? It is somewhat in the air, in the Instagram stories.
+
+Yet, this mass-produced wonkiness made me think of something else. I am intrigued by the possibility to produce (visuals, texts, anything) in huge amounts, and I can see the statement ‘I can produce something you (or your consumers) like in an indefinite amount’ as a way for artists to negotiate with established entities or to lure.
+
+To illustrate this, I want to put side by side two examples: Metabirkin from 2022, where digital bags were created (in a relatively large amount), subsequently creating the conversation between the artist and the brand, and Female Extension from 1997, where an artist generated 127 (!) net art pieces by fictional female net artists, also to test how the authority would respond (And how would these fictional pieces inform her on her sense of belonging in the world of 90s net art?)
+
+Hermès Allegedly Sends Cease and Desist to MetaBirkins NFT Creator
+Hermès has allegedly sent a cease and desist letter to Mason Rothschild, the artist behind the MetaBirkins NFTs…
+hypebeast.com
+
+
+MetaBirkins by Mason Rothschild, which aren’t by Hermès or even really bags, initially sold for $42,000 in December. (Mason Rothschild. Business Of Fashion, 2022)
+AIxD: Love that observation. For our readers, could you share a tool or method that you have recently worked with and are very excited about recently?
+
+KZ: I love software, and I get genuinely hyped about using good software and project management tools. But I also appreciate it when a piece of software has an element of beauty built into it.
+
+I want to mention Ulysses, my favorite writing app. It is functional, it is beautiful and it is also made by a small team — the subscription costs only €50 a year (half if you are a student) and the support is better than for products that cost ten times more. Oh, and yes, it is in Markdown. I love writing in Markdown. First I was weirded out by it, but then I got used to it and now I am trying to write in Markdown in any other app
+
+AIxD: Thank you for sharing the software with us ✍️! To close our chat, if you could pick one text/book or a podcast which is an absolute must-read or must-listen, what would you recommend?
+
+Hacker, Hoaxer, Whistleblower, Spy
+The Many Faces of Anonymous
+by Gabriella Coleman
+To share a variety of voices and perspectives in our growing community, we’ve decided to cast a monthly spotlight on one of our members in the form of mini-interviews 👀 This month, we are very happy to introduce you to Sinem Görücü: a data and design justice advocate and our event lead!
+
+
+AIxD: Hi Sinem! Great to have the opportunity to chat with you 🙌. Please tell us briefly about yourself. What do you currently do, and what kind of background and experiences have led you to where you are now? 🎤
+S: I was actually trained as an architect and an urban designer, and I slowly got interested in data and design justice during my studies. Right now, I am working freelance on a variety of creative things at the intersections of data, AI, design, feminism, and social justice.
+
+AIxD: That’s amazing! I think data literacy and data science have become incredibly important topics to focus on in recent years, especially with the rise of machine learning. Could you tell us more about something you are interested in or excited about recently?
+
+S: In general, I am very interested in community-initiated and -led data practices and lately, I have been interested in data storytelling and communal data story construction. Works by Giorgia Lupi (datavizscrapbook) have always inspired me.
+
+
+
+Selected work from DataVizScrapbooks by Giorgia Lupi
+AIxD: Thank you for sharing!😍 Is there anything you are working on at the moment you would like to share with us?
+S: Right now, I am finalizing an article named “My Grandma Is Not A Cyborg” that I wrote for futuress.org. It is a critical text that merges the daily experiences of design oppression with design justice theory.
+
+AIxD: That sounds extremely intriguing! Looking forward to the article. As the event lead for AIxD, what do you find interesting/attractive/worth looking into at the AIxDesign crossover?
+S: I think what is most exciting to me is examining the potential and future of AI through the design justice perspective and exploring the democratized AI ways of doing/designing.
+
+AIxD: Definitely. Hopefully, we could have more opportunities to learn more about design justice in AI-driven design in our future events! If you could pick one text/book or a podcast which is an absolute must-read or must-listen, what would you recommend?📚
+S: I would definitely pick Data Feminism by Catherine D’ignazio and Lauren F. Klein, which has been the highlight of the last couple of years for me. I just keep it on my bedside table.
+
+
+Data Feminism by Catherine D’ignazio and Lauren F. Klein
+AIxD: Thank you! And thank you so much for chatting with us 🙏 we are looking forward to the future events you have planned for all of us in the upcoming months. 🎫
+Meet the community: Computational Mama
+To share a variety of voices and perspectives in our growing community, we’ve decided to cast a monthly spotlight on one of our members in the form of mini-interviews 🎉 This month, we are excited to introduce you to Ambika Joshi, also known as Computational Mama: a creative technologist and one of our project leads.
+
+
+AIxD: Hi Computational Mama! So amazing to have the time to sit down and chat with you! I’ve known you from our AI Playground project but I am wondering if you could tell us a bit about yourself? Very curious about your background.
+
+A: I’m co-founder of Ajaibghar and we build products and experiences for the arts and culture sector. I also teach and explore creative coding and the idea of coding as a form of care.
+
+Ajaibghar
+Website
+www.ajaibghar.com
+
+AIxD: That sounds amazing. 👏 The mission of Ajaibghar (“Builds product and strategic solutions in Arts & Culture, driven by creative technology and new media”) is particularly interesting. Could you shed some light on the projects that you have been working on?
+
+A: At Ajaibghar we are building a mobile-friendly web app for museums and brand experiences called MuseSkôp. It uses image recognition AI on products, artworks, and spaces and adds an augmented layer of digital content in the physical world!
+
+MuseSkôp | AI-driven Journeys through Artworks - Ajaibghar
+Website
+www.ajaibghar.com
+
+
+
+MuseSkôp
+AIxD: That is super fascinating! As a project lead at AIxDesign, what do you find interesting to look into at the AIxDesign crossover?
+
+A: As creators, we all have one eye and one step in the future. It’s only natural for the design community to embrace and mold the future of AI. Design brings nuance to AI through experience, empathy, and care.
+
+AIxD: Well said! When working with design and AI, there are many tools we could utilize to collaborate together. Is there any tool or methods you have recently worked with that you are particularly excited about? 🖌
+
+A: I’m so excited about Gather Town. It’s a very nice platform for events and community meet-ups and we have been exploring it for our exhibitions and museum projects too! We also held the first AIxDesign AI playground meet-up on it.
+
+Gather | A better way to meet online.
+Centered around fully customizable spaces, Gather makes spending time with your communities just as easy as real life.
+www.gather.town
+
+AIxD: It is such a cute platform to gather online! 😍 To close our conversation, is there any book or podcast you would like to recommend to our readers?
+
+A: In line with the responses and thoughts around care I’d recommend this very old podcast episode from Design Matters with Debbie Millman interviewing the artist Amy Sherald.
+
+Drip - Debbie Millman
+Hello my dear Drip friends! This is the last official episode of my 13th season of Design Matters! And it is a special…
+d.rip
+
+AIxD: Thank you for everything you have shared with us today! Looking forward to future AI Playground events and exciting things you have planned for us! 🔥
+
+AIxD: Hi Abdo! Really nice to get to chat with you this month! I know that you have been up to many exciting projects so why don’t you share a little bit about yourself and your background with our subscribers?
+
+Abdo: My name is Abdelrahman (Abdo) Hassan, and I’m a creative technologist, data practitioner, and poet.
+
+
+Abdo. Image courtesy of @Imaginationofthings
+Originally from Egypt, I was inspired massively by the January 2011 revolution and how it prompted an interplay between technical and social systems. I'm now based in Amsterdam, working full-time on the interdisciplinary practice of responsible AI.
+
+Over time, it became clear that data-driven systems aren't only becoming omnipresent but also increasingly invasive and extractive. My background in critical theory made it clear that there are power imbalances that are often amplified by technological systems. Decoding harm and decolonizing technology then aren’t just technical tasks, but rather outcomes of a shared choreography. I then work at the intersection of tech, design, literacy, and play to create this shared choreography. I love working within both academia and industry since my overarching mission is to bridge the theory and practice of data work.
+
+AIxD: That’s really fascinating. Love your remark on a delicate balance and choreography between decoding harm and decolonizing tech. I wonder if there’s any project that you are working on at the moment that touched upon a similar topic?
+
+Abdo: My next project is with AIxDesign, called Everyday Data (H)activism.
+
+
+In this project, I would like to invite the community of data practitioners/designers/researchers to curate with me ways that would enable the public to engage in more responsible data practices. We’re often reactive as data consumers, unaware of how invasive technologies shape our everyday. The project aims to provide a playful manual for individuals to fight back against information asymmetries.
+
+AIxD: For those who are reading, stay tuned for more updates on the project! As a project lead, I wonder what you find interesting at the AIxDesign crossover?
+
+Abdo: AIxDesign is a much-needed crossover between the technical and human sides of Artificial intelligence. We’re living in a time where the adoption of AI is skyrocketing, only to realize that the tech isn’t as innocent as we once thought. Technical systems never operate in a vacuum. There has been an ever-increasing gap between people who build tech, those that design it, and those affected by it. Platforms like AIxDesign provide fertile ground to fill in those gaps, allowing for data work to be a communal world-building practice.
+
+
+Image courtesy of @Imaginationofthings
+My collaboration with AIxDesign is an intuitive evolution of my practice and a continuation of an earlier project I worked on called Atlas of Algorithmic (in)Equality.
+
+AIxD: Absolutely. As technology becomes more democratized, we will need to provide the platform for conversations like these and connect like-minded people together. Is there any technology or tool you have been using or are excited about?
+
+Abdo: I try to be tool-agnostic as much as possible, but one technology I’ve recently worked with is Augmented Reality using Snap AR.
+
+I collaborated with Imagination of Things on a Poetic AR project, where we worked with poets on turning some of their poetic expressions into playful experiences. In the process, we were able to explore shifting identities, create new senses of space, and create meaning.
+
+
+Image courtesy of @Imaginationofthings
+I find that one of the biggest dilemmas in the field is finding a critical language that allows us to subvert dominant structures. Think of an AR piece that exposes alternate histories of space, or one which helps us explore shifting identities or connections to a colonial past.
+
+I love when tech is used in a way that is beyond solutionist; to show us that different futures are ultimately possible. I often think of Responsible Tech as not only a deconstructive practice but also a constructive and innovative one.
+
+AIxD: To close our chat, could you share one book that has strongly influenced you or that you would recommend to our readers?
+
+Abdo: It's hard to pick one, but it would be a mix of “Data Feminism” by Catherine D’Ignazio and Lauren Klein and “Psychopolitics: Neoliberalism and New Technologies of Power” by Byung-Chul Han.
+
+
+
+Left: Sketch notes of Data Feminism book. Right: Image courtesy of After 8 Books
+AIxD: Thank you for taking the time to share with our readers. We can’t wait for Everyday Data H(activism) program to begin and are looking forward to sharing the knowledge collaboratively developed during the program

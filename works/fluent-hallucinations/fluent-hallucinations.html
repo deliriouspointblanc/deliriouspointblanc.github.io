@@ -1,0 +1,45 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>AIxDesign Text Generator</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
+  <script src="https://unpkg.com/ml5" type="text/javascript"></script>
+  <!-- bootstrap -->
+   <!-- bootstrap css file -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <h1 class="text-uppercase pt-2 align-center">AIxDesign Text Generator</h1>
+      <h3 class="text-white">This is iteration #1 of training a text generator to create slogans for <a href="https://www.aixdesign.co">AIxDesign</a>. This implementation was only trained on 23kb of data scraped from AIxDesign's website, Notion and Medium articles. Read more about the experiment here (link added soon).</h2>
+    </div>
+    <p class="para">Template and code from ml5.js. Check out their <a href="https://learn.ml5js.org/#/reference/charrnn">documentation</a></p>
+    <h3 class="work-title">seed text:
+      <input id="textInput" value="The meaning of life is"                              />
+    </h3>
+    <h3 class="work-title">length:
+      <input id="lenSlider" type="range" min="10" max="500" value="100"                             /> <span id="length">100</span></p>
+    <h3 class="work-title">temperature:
+      <input id="tempSlider" type="range" min="0.01" max="1" step="0.01"                             /><span id="temperature">0.5</span></h3>
+    <p class="para" id="status">Loading Model</p>
+    <button id="generate">generate</button>
+    <h3 class="text-light" id="result"></h3>  
+  </div>
+  <script src="sketch.js"></script>
+  <!--  Jquery js file  -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+
+  <!--  Bootstrap js file  -->
+  <script src="./js/bootstrap.min.js"></script>
+
+  <!-- Isotope js file -->
+  <script src="./vendor/isotope/isotope.min.js"></script>
+
+  <!-- main js file-->
+  <script src="js/main.js"></script>
+</body>
+
+</html>

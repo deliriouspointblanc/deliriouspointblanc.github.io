@@ -1,0 +1,150 @@
+﻿AIxDesign is an independent community of practice, where we gather to delve into the intersection of Design and AI/ML/Data. We believe that AI is for everyone, and we work with the following principles:
+Creativity over productivity – co-creating with AI to connect with our human selves
+Democratizing access – all our events are accessible for beginners and don’t require expensive hardware
+Making and learning with joy
+
+
+In 2022 we are running four programs. Our programs are aimed at creating a welcoming space for exploration of AI/ML tools by and for independent creatives, exploring the use of AI for social good and introducing feminist and humanist perspective and methods
+
+
+AI Playground
+AI Playground, led by Computational Mama is an event series to play, build, craft and experiment with Creative AI tools and code. The series is divided in four themes: Image, Text, Music and Body. Through hands-on workshops and artist talks, this series invites creatives to experiment, offering the first steps into adopting AI into your creative practice.
+Bottom-up Data Activism
+Bottom-up Data Activism with Abdelrahman Hassan is a series of workshops where we engage in critiques of data-driven processes. We will focus on concepts of agency, privacy, and anti-hegemony, with an intersectional approach!⁠
+Mapping AIxDesign landscape
+In the research aspect of our practice, we are busy mapping the entry points and professional opportunities in the field of AI & Design. The research will produce a podcast series, and an illustrated depiction of the ecosystem, outlining overlaps, opportunities, challenges, key players and organizations, tools, and subjects covered in academic papers.
+AI Tooling
+AI Tooling led by Yasmin Morgan is a program where we experiment with generative design and AI tools to support our own creative process and content creation. The results are implemented into our own communication channels, and we will be sharing the messy and fun process of arriving there.⁠
+After successfully funding through Kickstarter and your help, the AI Ideation Cards are now also available in our shop!
+1. Get lost in the AIxDesign Resource Library
+A constantly-evolving database of resources for designers and creatives embarking on their AI journey. Including articles, online courses, code snippets, job opportunities, and much more!
+2. Attend one of our upcoming events
+We host keynotes and workshops on a regular basis. Mapping the AIxDesign landscape one session at a time, they range from accessible coding workshops to keynotes about the role of UX designers and tools for applied ethics to informal networking spaces. Join us to see for yourself.
+3. Download the AI meets Design toolkit
+The predecessor of this community, the AI meets Design toolkit is a set of tools to support designers in developing AI products & services. It was created by Nadia Piet in 2019 and you can download it here!
+4. Sign up for our monthly newsletter
+We send out a monthly newsletter packed with resources & community updates to 1100+ curious minds just like you. Click here to browse the archive, or sign up in the footer below to receive the next edition in your inbox.
+5. Join the AIxDesign community on Slack
+Our Slack space brings together ±210 practitioners in the field. To join us, you can fill the signup form here. It will send you an invite link once you submit (please check your SPAM folder as well). See you in there!
+6. Help us make it all happen
+We hope to be a platform for others and invite you to get involved. We’re open to any ideas you might have about how to contribute. If you’re not sure, this page can help.
+
+
+Collaboration is at the heart of what we do. Whether you’re an individual looking to contribute, an expert looking to speak or join forces on a project, an organization looking for talent, or other offerings, we’re here for it. Please check below for more info, or reach out to talk.
+
+
+Eventbrite:
+
+
+Recl(AI)ming Pleasure through F(AI)lure
+The tools we use to create narratives with AI, furthering and expanding our human language, are modern in their performance but simultaneously stuck in the past carrying our ingrained biases and stereotyping. How can one reclaim agency and fight biases with (AI) storytelling?
+In their work, Emily Martinez focuses on critically looking, un/learning, un/making, speaking and dreaming about queer imaginings and AI. During the behind-the-scenes talk, Emily will walk us through their projects such as Queer AI, Ultimate Fantasy, and Unsupervised Pleasures.
+The talk is open to curious individuals from all fields and disciplines.
+This event is part of AI Playground by AIxDesign. AI Playground is a series of events where we want to showcase the most interesting, forward-thinking and mind-blowing ways to use AI&ML tools in creative practice. The goal of these sessions is to inspire and activate creatives in a playful and accessible way to take the first step into exploring and adopting AI methods into their toolkit.
+This event is part of AI Playground program led by Computational Mama a.k.a. Ambika and funded by Stimuleringsfonds Creative Industrie.
+The talk will take around 60 minutes including the Q&A and discussions, and you will need to bring:
+-a reasonable internet access
+-An open mind :) <3
+(The talk will happen on Gathertown and will be recorded for future reference and documentation. )
+About the Artist
+Emily Martinez (they/she) is a new media artist working with machine learning, queer technologies, new economies, and consensual tech. They are a 1st generation immigrant/refugee (Cuba > Miami) and a self-taught coder who believes in the tactical misuse of technology. Emily's work has been exhibited internationally, mostly as a collaborator with Anxious to Make and Queer AI. Their latest project, Unsupervised Pleasures is a DIY community library and practice space that uses queer methodologies, glitch feminism, decolonial and other non-normative frameworks to un/make things with AI. When Emily is not working, they are learning to love and doing their energy work.
+About AIxDesign
+AIxDesign is a studio and global network exploring & shaping practices emerging at the intersection of Design and AI/ML/Data. Embracing industry, academic, and artistic approaches equally, our goals are to invite critical & creative approaches to AI, make it more accessible, and collectively unpack and uphold what it means to develop AI systems in line with human values. For more info about our work, have a look at our website at aixdesign.co.
+
+
+Thinking of AI, we are drawn to its potential when it comes to imagining our future. But in the creative uses of this technology, AI is as powerful to help us reminisce and create new memories and narratives of our past. In their work, interdisciplinary artist Aarati Akkapeddi. does just that – using AI to work with the subjects of family, memory and childhood, the artist creates new memories and a space for reflection. During their workshop, Aarati will introduce the workshop and take us on an immersive and exploratory deep dive into working with AI and images. In this hands-on workshop, we will understand how to combine AI and ML with our personal image archives and watch new memories emerge.
+The workshop is open to curious individuals from all fields and disciplines and requires no specific technical skills.
+This event is part of AI Playground by AIxDesign. AI Playground is a series of events where we want to showcase the most interesting, forward-thinking and mind-blowing ways to use AI&ML tools in creative practice. The goal of these sessions is to inspire and activate creatives in a playful and accessible way to take the first step into exploring and adopting AI methods into their toolkit.
+This event is part of AI Playground program led by Computational Mama a.k.a. Ambika and funded by Stimuleringsfonds Creative Industrie.
+About the Workshop Flow
+Does the machine understand the human face as an average of many faces? What does it mean to build a collage with AI? Can your photo gallery be used as a dataset? The very beginning of exploring AI as a creative tool is understanding the importance of datasets. Instead of struggling with “big data” we will learn to build tiny datasets. With the tiny image datasets, we’ll begin our journey of algorithm based creative explorations.
+The Good Old D(AI)s workshop will get you comfortable with:
+-redefining what an image dataset can mean to a creative practitioner
+-running google colab with small python scripts to realign your image dataset based on a AI facial recognition algorithm
+-developing a portrait of averaged faces using your dataset or others available freely on the internet
+The workshop will take 120 minutes and you will need to bring:
+-10-20 portrait images with humans in them from your own collection of photos or from a copyright free resource. While the algorithm is meant for facial recognition there is no restriction or compulsion to come in to the workshop with other images
+-All images should be less than 1mb and around 500kb is ideal.
+-Join on a computer with reasonable internet access
+-An open mind :) <3
+(The workshop will happen on Gathertown and will be recorded for future reference and documentation. )
+About the Artist
+Aarati Akkapeddi is a coder, interdisciplinary artist and educator based in Lenapehoking (Brooklyn, NY). They work for The Experimental Humanities Collaborative Network, where they create digital spaces and tools. In their creative practice, they combine archival material, code, machine learning and analog techniques (photography & printmaking) to create artwork about intergenerational/collective memory. They currently teach creative coding in the Design & Technology department at Parsons. Learn more about Aarati's work on aarati.me/.
+
+
+Learn about the exciting world of whales and how the Whales for Climate team is shining a light on the urgent environment crisis through AI, Generative Adversarial Networks, and new ways of generative image making.
+This event is part of the AI Playground program led by Computational Mama a.k.a. Ambika.
+
+
+Have you been thinking about playing with AI?
+Have you tried learning AI but quit because it seemed too complex?
+Would like to learn and explore AI in simple friendly formats?
+Have you been exploring and playing with AI tools?
+Has AI become part of your creative side projects?
+Have you been able to convince your clients to play with it?
+Have you convinced your friends to play with AI?
+**Bring your own (AI) toys will be a quick, convivial and fun free play session. Come with your toys, share your joys, build things together, consider friendships over collaborations.**
+
+
+Our community hangouts are a space to come meet other practitioners at the intersection of AI and Design and we're hosting our next on the 5th of April!
+We'll kick off with a round of speed networking. We'll randomise 1-to-1 meetings of 5 minutes each. No pressure, good times, 10/10 Would recommend.
+From there on, simply come-as-you-are. We'll open up gather.town for you to explore and interact as you'd like. Continue conversations from your 1:1s or gather around our virtual gallery to meet people interested in the same things as you.
+We will also be sharing our WIP roadmap! Leave a post it or six! to help shape our 2022 programming.
+The room will be hosted by the inspiring Ploipailin Flynn: business strategist, digital right activist, founder of antiracistby.design, and long-term AIxDesign member.
+Sign up here through Eventbrite and we'll send out a link to the call an hour shortly before the session (please check spam if you can't find it). See you then!
+
+
+What do AI and design have to do with each other? How may designers contribute to the trajectory? How may we claim AI as a creative material? Where might we put ourselves – jobs, schools, communities – if we want to commit to exploring these questions?
+With the goal to put on paper the broad scope of practices that lay on the intersection of AI and Design, we are inviting you to join our generative workshop and ponder these questions together 💭 In our exploration, we will be making a map to create a variety of entry points for curious individuals and collectives who are interested in getting to know this area and exploring professional opportunities it offers. Join us in our first session to collectively start roaming and mapping the AI & Design landscape!
+This event is hybrid, running both online and at Digital Society School in Amsterdam. If you wish to participate physically, please RSVP hello@aixdesign.co.
+
+
+Our community hangouts are a space to come meet other practitioners at the intersection of AI and Design and we're hosting our next on the 14th of December!
+We'll kick off with a round of speed networking. We'll randomise 1-to-1 meetings of 5 minutes each. No pressure, good times, 10/10 Would recommend.
+From there on, simply come-as-you-are. We'll open up gather.town for you to explore and interact as you'd like. Continue conversations from your 1:1s or gather around our virtual gallery to meet people interested in the same things as you.
+The room will be hosted by the inspiring Ploipailin Flynn: business strategist, digital right activist, founder of antiracistby.design, and long-term AIxDesign member.
+Sign up here through Eventbrite and we'll send you a message with everything you need. See you then!
+
+
+About the Session
+ML5.js is an open-source and user-friendly library that aims to make machine learning approachable for designers, artists, and other members of the creative community.
+In this session, we will train a custom Neural Network to recognize and respond to a body pose of your choice. This can be a dance move, a yoga posture, or any other body pose or gesture you'd like to play with! We will be using the ML5.js library, the PoseNet model, and Glitch to create a user interface.
+This session is the second of two introductory workshops to ML5.js. While coding experience is not required, a basic understanding of Javascript will be helpful.
+About the Speaker
+Erik Katerborg is a creative technologist and lecturer in creative media at the Rotterdam University for Applied Sciences. He is especially interested in making technology and coding more accessible to people with a creative or design background. Learn more about Erik’s work on his Linkedin.
+Now more than ever, advanced technologies are being put into practice around us. Evolving technologies have brought about a change in human behaviour when interacting with AI. For example, certain products are shaped in a certain way around us to accommodate certain technologies. This is also shaped the interface delivering such technology (Think: Google Home or Fitbit).
+In this talk, Sofie will dive into the risks, opportunities and application areas of how design and UX shape human decision making when it comes to AI and products that harness the capabilities of AI.
+Human behavior results not only from intentions and deliberate decisions, but also from its interaction with technological artifacts. She will also touch upon the basics of captology which is the study of computers as persuasive technologies. Here, persuasion broadly covers behaviour change and change in user motivation brought about by evolving technologies.
+About the Speaker
+Meet Sofie Nabseth, part of the core team at the AI company Sana Labs.
+Over the last years, Sofie has headed Sana Labs’ global marketing activities and expanded their international footprint. From brand and positioning to global AI summits and lead generation, bringing the benefits of AI in learning to tens of thousands of individuals across the globe. Sofie is now responsible for business development, helping organizations in various industries leverage AI in learning.
+Sofie is also leading the Swedish chapter of the non-profit Women In AI - helping more girls and women understand and apply AI, decreasing the gender gap in the AI field.
+Learn more about Sofie and her work as well as Sana Labs through her LinkedIn.
+
+
+AIxDesign is a community-led platform exploring and promoting the use of AI/ML for creative purposes, practice-based research and activism.
+What is AIxDesign - for the website (up to 5 sentences)
+1. At AIxDesign we are celebrating the power of human-machine creativity for social good. Through our hands-on workshops on AI, ML and Data tools and community-led research, we create wacky and imaginative use cases for these technologies. By working with independent creatives and combining hands-on play with a critical approach, we are developing feminist and humanist gatherings, materials and methods.
+
+2. At AIxDesign we focus on the combination of AI, ML and Data tools with designerly and artistic practices, developing wacky and imaginative use cases. We believe that AI is for everyone, and it is our goal to democratize access to AI and expand the typology of an AI-professional. It is our goal to use our creativity, capacity to reflect and the desire to tweak our tools to help create better AI and an inclusive professional community.
+
+3. At AIxDesign we believe that AI is for everyone, and it is our goal to radically democratize access to AI, ML and Data tools with the focus on create uses of these technologies. We want a future where artists, designers, and activists can freely use AI for reasons other than corporate benefit. By working with independent creatives and combining hands-on play with a critical approach, we are developing feminist and humanist gatherings, materials and methods.
+4. 5. AIxDesign is a collaborative effort to democratize access to AI&ML tools and computational literacy, with the focus on imaginative and creative use of these technologies. Furthering the use and exploration of AI in non-commercial context, AIxDesign creates learning opportunities and showcases the wide array of practices and professionals working with AI. Joy, and working and learning with joy, is our core value. Our goal is to make AI&ML tools less intimidating and lower the access barrier. Through our non-hierarchical structure and with a team to support a thriving community of like-minded individuals, we work to create joyful encounters between humans and tech and between humans and other humans. Destabilising AI as a fixed construct – with a fixed set of ties to the goal of automation and optimization, big tech and wast amounts of computational power – we want to radically expand the typology of an AI-practitioner. We see a lot of opportunities to decentralize AI and we promote it as a tool everyone can use. While we are intrigued and impressed by all creative uses of AI, be it design or music creation or writing, we currently call ourselves AIxDesign, as we want to use the word ‘design’ as an umbrella term for intentionally using AI/ML as a creative tool and designing creative processes where AI/ML is involved. At AIxDesign, we work with joy, but we also work with difficult subjects. The tools we are working with are not neutral, and we acknowledge the fact that technologies that fascinate us came into existence with built-in biases, discriminating on the basis of race, gender and class. We do our part to work against (algorithmic) discrimination and towards a more just society, and create a comfortable setup for difficult conversations.
+THE WHY - Vision
+We believe that AI is for everyone, and it is our goal to radically democratize access to AI, ML and Data tools. We want a future where artists, designers, and activists can freely use AI for reasons other than corporate benefit. By taking AI outside of big tech, we want to expand the typology of AI-professional, simultaneously expanding the range of subjects for AI to work with. Outside of chasing productivity and optimization, what goals are out there? AI-technologies have built-in biases and often facilitate injustice. We want to use our creativity, capacity to reflect and the desire to tweak our tools to help create better AI and an inclusive professional community.
+THE WHAT - Mission
+At AIxDesign we are harnessing the power of human-machine creativity for social good. Through our hands-on workshops on AI, ML and Data tools and community-led research, we create wacky and imaginative use cases for these technologies. By working with independent creatives and combining hands-on play with a critical approach, we are developing feminist and humanist gatherings, materials and methods.
+   * We focus on AI, ML and Data and the intersection of these tools with design and creative practices.
+   * We engage in field-building. As a nascent field, we aim to both explore, shape, and advocate for practices emerging at the intersection of AI and Design.
+   * We produce workshop programs, event series, one-off events and collaborative event production – AIxDesign community is at its best when we gather to play, learn, explore and chat.
+   * We gather: We started AIxDesign because we struggled to find like-mindeds to talk to - people that understood and valued both technology, creativity, data, and design. We value our community, and we are working to ensure that every member has the opportunity of networking and professional development.
+   * We acknowledge that AI & ML landscape of today is far from being an inclusive space, and we aim to change that by creating a welcoming community, playful learning experiences and accessible formats. AIxDesign started online, and while we are beginning to have events on location we will continue keeping all our events hybrid, for everyone to join.
+   * We aim to overcome the ‘techie/non-techie’ binary. Our practice embraces equal parts data and design smarts, valuing industry and academic contributions, and looking to marry both analytical and creative approaches to build meaningful intelligent systems to co-exist with.
+   * We are an independent community of practice. When it comes to AI/ML landscape, existing communities of practice live within the big tech and not independently. AIxDesign aims to change that.
+THE HOW - Values & Guiding principles
+   * Imagination & creativity
+   * Plurality: We are, and we always will be, featuring a multitude of perspectives.
+   * Joy
+   * Inclusive community
+   * Practice-based without sacrificing theory: We created AIxDesign partly out of our frustration with existing learning materials on AI & ML tools. While being technically excellent, many don’t introduce the students to complex concepts and problematic history of AI. We wanted to create hands-on learning situations in which it is also possible to learn about those.
+   * Not for profit but for gainful employment AIxDesign is a non-profit organization, but by focusing on non-commercial activities we don’t mean that we don’t cover any corporate uses of AI & ML. We are interested in seeing how playful exploration can lead to job opportunities, and we are happy to share job postings for positions where AI & ML skills are valued in our network.
