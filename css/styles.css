@@ -92,6 +92,24 @@ body{
 /* end nav */
 
 /* banner area */
+#byline {
+  overflow: hidden;
+  background: linear-gradient(90deg, var(--primary-color2), #fff, #000);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: shine 8s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+@keyframes shine {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
 /*  showreel */
 .showreel {
   position: absolute;
