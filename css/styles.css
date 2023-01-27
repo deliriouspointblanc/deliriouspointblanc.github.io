@@ -249,7 +249,7 @@ canvas {
 .journal-para {
 
   margin: 2rem 3rem 1rem 3rem;
-  color: var(--primary-color);
+  color: white;
   font: normal 550 17px/25px var(--space);
   /* text-align: justify; */
 }
@@ -264,5 +264,8 @@ canvas {
     float: left;
     width: 28%;
     display: none;
+  }
+  .journal-para {
+    margin: 0rem;
   }
 }
