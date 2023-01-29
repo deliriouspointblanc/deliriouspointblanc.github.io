@@ -28,7 +28,7 @@ function setup() {
   // Saves the canvas as an image
   // cnv = createCanvas(innerWidth, innerHeight);
   // createCanvas(innerWidth, innerHeight);
-  background(0);
+  background(12,5,38);
 }
 
 function draw() {

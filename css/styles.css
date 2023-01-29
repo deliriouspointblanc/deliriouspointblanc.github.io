@@ -93,6 +93,7 @@ body{
 
 /* banner area */
 #byline {
+  text-align: center;
   overflow: hidden;
   background: linear-gradient(90deg, var(--primary-color2), #fff, #000);
   background-repeat: no-repeat;
