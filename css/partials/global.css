@@ -52,10 +52,11 @@ a {
 /* Sketch styling - this is a tricky one still */
 
 #rose-curve { /* TO-DO: NEEDS FIXING */
+  margin: 0;
   position: fixed;
   /* top:100vmin;  */
   left: 15rem;  
-  width:100%;
+  width:50%;
   height:100%;
   z-index: -1; 
 }
