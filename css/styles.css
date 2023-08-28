@@ -122,10 +122,14 @@ body{
 }
 
 .site-main .site-banner .site-title h3{
-  font-size: 1.8rem;
-  padding-top: 5%;
+  font-size: 1.5rem;
   font-weight: 500;
+  padding-top: 3%;
 }
+
+/* .site-main .site-banner .site-title h3 > not:(first-child) {
+  padding-top: 3%;
+} */
 
 .site-main .site-banner .site-title h1{
   font-size: 3rem;
