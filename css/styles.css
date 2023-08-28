@@ -142,13 +142,13 @@ body{
 }
 
 /* p5 beat-sketch styling TO FIX: canvas does not reach limit of div, how to extend it? */
-canvas {
-  /* width: 100%;
+/* width: 100%;
   height: 100%; */
   /* display: absolute;  */
-  position: fixed;
   /* top: 0;
   left: 0; */
+canvas {
+  position: fixed;
   z-index: -9999;
 }
 
@@ -221,6 +221,10 @@ canvas {
   color: white;
   box-shadow: 1px 7px #fe007fae;
   /* text-transform: uppercase; */
+}
+
+#circle-app-img {
+  max-height: 512px;
 }
 
 #btn1 {
