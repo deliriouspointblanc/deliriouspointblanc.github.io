@@ -1,14 +1,15 @@
 //copy to clipboard
-let email = document.getElementById('email').innerHTML;
-console.log(email);
-const copyContent = async () => {
-  try {
-    await navigator.clipboard.writeText(text);
-    console.log('Content copied to clipboard');
-  } catch (err) {
-    console.error('Failed to copy: ', err);
-  }
-}
+//To-DO: FIX EMAIL LATER
+// let email = document.getElementById('email').innerHTML;
+// console.log(email);
+// const copyContent = async () => {
+//   try {
+//     await navigator.clipboard.writeText(text);
+//     console.log('Content copied to clipboard');
+//   } catch (err) {
+//     console.error('Failed to copy: ', err);
+//   }
+// }
 
 $(document).ready(function(){
   let $btns = $('.project-area .button-group button');

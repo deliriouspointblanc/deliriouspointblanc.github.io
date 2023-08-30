@@ -13,7 +13,9 @@ let beatSketch = function(p) {
   let started = false;
 
   let clientHeight = document.getElementById('beat-sketch').clientHeight;
-    let clientWidth = document.getElementById('beat-sketch').clientWidth;
+  let clientWidth = document.getElementById('beat-sketch').clientWidth;
+  console.log(clientHeight);
+  console.log(clientWidth);
 
   p.preload = function() {
     track = p.loadSound('../assets/amorphousButterfly_short.mp3');
