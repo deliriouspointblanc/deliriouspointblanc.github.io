@@ -243,7 +243,7 @@ canvas {
   border-radius: 20px;
   font: normal 500 3vmin/15px var(--space);
   color: white;
-  box-shadow: 1px 7px #fe007fae;
+  /* box-shadow: 1px 7px #fe007fae; */
   /* text-transform: uppercase; */
 }
 
