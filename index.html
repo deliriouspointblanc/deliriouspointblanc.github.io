@@ -26,7 +26,7 @@
   <!-- <link rel="stylesheet" href="./css/all.min.css"> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- custom css file -->
-  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" type="text/css" href="./css/styles.css">
   <!-- Trying out analytics -->
   <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-D3T4CY7J3V"></script>
@@ -43,7 +43,7 @@
     press 'm' to toggle music
   </div>
   <!-- beat-sketch as background-->
-  <div id="beat-sketch" class="desktop-vis"><canvas></canvas></div>
+  <div id="beat-sketch" class="desktop-vis"></div>
   <!-- ======================= Start Header Area -->
   <header class="header_area">
     <div class="main-menu">
@@ -111,9 +111,11 @@
             </div>
           </div>
           <div class="col-lg-6 col-md-12 banner-image">
+            <!-- Replace profile with tiling sketch-->
+            <div id="tilingCanvas"></div>
             <!-- ALIGN PROFILE PIC TO CENTER WHEN IN-->
-              <img width="400" src="./assets/profile_combined.png" alt="banner-img" class="img-fluid profile-pic">
-            </a>
+              <!-- <img width="400" src="./assets/profile_combined.png" alt="banner-img" class="img-fluid profile-pic"> -->
+            <!-- </a> -->
           </div>
           <div class="row">
             <h1 class="text-uppercase pt-2 align-center">Showreel 2022</h1>
@@ -460,9 +462,10 @@
 
   <!-- p5.js library -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/addons/p5.sound.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
 
-  <!-- beat-sketch file for banner area-->
-  <script src="js/beat-sketch.js"></script>
+  <!-- homepage p5.js sketches : beat sketch and tiling sketch-->
+  <!-- <script src="js/beat-sketch.js"></script> -->
+  <script src="js/home-page.js"></script>
 </body>
 </html>
