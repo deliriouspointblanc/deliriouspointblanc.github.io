@@ -179,6 +179,7 @@ let tilingSketch = function(p) {
 
     const tilingCanvas = p.createCanvas(500, 500);
     tilingCanvas.parent("tilingCanvas");
+    tilingCanvas.class("justify-content-center");
 
     // let button = document.getElementById("btnTiling");
     // button.addEventListener("click", console.log("button clicked"));
