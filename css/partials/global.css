@@ -36,9 +36,15 @@ a {
 }
 
 .work-tag{
+  font: normal normal 2.5vmin/ 3.5vmin var(--space); 
   color: white;
-  padding-top: 1rem;
-  padding-bottom: 0.8rem;
+  /* padding-top: 1rem; */
+  /* padding-bottom: 0.8rem; */
+}
+
+#company{
+  font: normal bold 5vmin/ 80px var(--space);
+  color: var(--title-color);
 }
 
 .work-vid{
@@ -72,8 +78,10 @@ a {
   z-index: -999;
 }
 
-#tiling-canvas{
+#tilingCanvas{
   z-index: 50;
+  /* position: absolute; */
+  left: 100%;
 }
 
 

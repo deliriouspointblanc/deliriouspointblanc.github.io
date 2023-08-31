@@ -103,6 +103,9 @@ body{
   -webkit-text-fill-color: rgba(255, 255, 255, 0);
 }
 
+
+
+
 @keyframes shine {
   0% {
     background-position: -500%;
@@ -126,7 +129,16 @@ body{
   -webkit-backdrop-filter: blur(3px);
 }
 
-.site-main .site-banner .site-title h3{
+.company h3{
+  /* font-size: 2rem;
+  padding-top: 5%;
+  font-weight: 500;
+  padding-top: 3%; */
+  font: var(--space);
+  color: var(--title-color);
+}
+
+.site-main .site-banner .site-title{
   font-size: 1.8rem;
   padding-top: 5%;
   font-weight: 500;
