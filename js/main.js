@@ -11,6 +11,19 @@
 //   }
 // }
 
+//Loader js
+
+let loader = document.querySelector(".loader");
+//When the whole window loads, fire off vanish function
+window.addEventListener("load", vanish);
+
+function vanish() {
+  //addClass
+  loader.classList.add("disappear");
+}
+
+console.log(vanish);
+
 $(document).ready(function(){
   let $btns = $('.project-area .button-group button');
 

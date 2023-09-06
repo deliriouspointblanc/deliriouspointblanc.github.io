@@ -156,7 +156,7 @@ let tilingSketch = function(p) {
   let tiles2 = [];
   let img, img2;
   let w = 50; //size of tile
-  let waitTime = 3; //increase for slower speed
+  let waitTime = 5; //increase for slower speed
   let frameCounter = 0; //frame counter
 
   let xPos; 
