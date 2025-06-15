@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Anti-Hijack Chatbot</title>
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Reflective Chatbot</h1>
+  <div id="chatbox">Loading...</div>
+  <!-- <div id="response-buttons"></div> -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+  <script>
+  const csvUrl = "https://docs.google.com/spreadsheets/d/18FgTuL9eLzQRA5vb10r3myiGDJRNMlt-9Ld9R2YzH04/export?format=csv";
+
+  const chatContainer = document.getElementById("chatbox");
+  let nodes = {};
+
+  function showNode(nodeId) {
+    const node = nodes[nodeId];
+    if (!node) return;
+
+    // Add bot message
+    const messageDiv = document.createElement("div");
+    messageDiv.className = "message";
+    messageDiv.textContent = node.message;
+    chatContainer.appendChild(messageDiv);
+
+    // Add response buttons if available
+    if (node.responses.length > 0) {
+      const responseContainer = document.createElement("div");
+      responseContainer.className = "response-messages";
+
+      node.responses.forEach((response, index) => {
+        const btn = document.createElement("button");
+        btn.textContent = response;
+        btn.className = "response-button";
+        btn.onclick = () => {
+          const userDiv = document.createElement("div");
+          userDiv.className = "user-response";
+          userDiv.textContent = response;
+          chatContainer.appendChild(userDiv);
+          responseContainer.remove();
+
+          const nextNodeId = node.next[index];
+          if (nextNodeId && nodes[nextNodeId]) {
+            showNode(nextNodeId);
+          } else {
+            // End of tree
+            const endDiv = document.createElement("div");
+            endDiv.className = "message";
+            endDiv.textContent = "Thank you for your time.";
+            chatContainer.appendChild(endDiv);
+          }
+        };
+        responseContainer.appendChild(btn);
+      });
+
+      chatContainer.appendChild(responseContainer);
+    }
+
+    // Scroll to bottom
+    chatContainer.scrollTop = chatContainer.scrollHeight;
+  }
+
+  Papa.parse(csvUrl, {
+    download: true,
+    header: true,
+    complete: function (results) {
+      results.data.forEach(row => {
+        const id = row["Node ID"];
+        if (!id) return;
+
+        const responses = row["User Responses"] ? row["User Responses"].split(" / ") : [];
+        const nextIds = row["Next Node IDs"] ? row["Next Node IDs"].split(" / ") : [];
+
+        nodes[id] = {
+          message: row["Message"],
+          responses: responses,
+          next: nextIds
+        };
+      });
+
+      // Clear loading message
+      chatContainer.innerHTML = "";
+
+      // Start from node 1
+      showNode("1");
+    }
+  });
+</script>
+</body>
+</html>
