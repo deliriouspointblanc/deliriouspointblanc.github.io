@@ -97,10 +97,11 @@
     <h2>Selected Mixes</h2>
 
     <p><strong>"GROOVETANK LIVE PRESENTS: QUEENIEPRINX & pals W/ DELIRIOUS.BLANC" (2025)</strong><br />A 45-min dive into grime edits, nostalgic bootlegs, and breaks.</p>
-    <div style="position: relative; width: 100%; max-width: 560px; height: 315px;">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/t1D8N8fUvug?si=uVNzUZD7zYRMhODe" referrerpolicy="no-referrer-when-downgrade" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <!-- <div style="position: relative; width: 100%; max-width: 560px; height: 315px;">
       <img id="vidimg" src="./portfolio/groovetank_thumbnail.png" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; cursor: pointer; z-index: 2;" />
       <iframe id="unlocked-video" src="https://www.youtube.com/embed/t1D8N8fUvug" width="100%" height="100%" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; z-index: 1;"></iframe>
-    </div>
+    </div> -->
 
     <p><strong>"Back2Back DJ Battle - Talent Spotlight" (2025)</strong><br />A fast and ephemeral set to take the winter blues away</p>
     <iframe width="100%" height="120" src="https://player-widget.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2Fback2backdjbattle%2Ftalent-spotlight-deliriousblanc%2F"></iframe>
@@ -183,16 +184,18 @@
       camera.updateProjectionMatrix();
       renderer.setSize(window.innerWidth, window.innerHeight);
     });
-  </script>
 
-  <script>
-    var monitor = setInterval(function(){
+        var monitor = setInterval(function(){
       var elem = document.activeElement;
       if(elem && elem.id == 'unlocked-video'){
         document.getElementById('vidimg').style.display='none';
         clearInterval(monitor);
       }
     }, 100);
+  </script>
+
+  <script>
+
   </script>
 </body>
 </html>
