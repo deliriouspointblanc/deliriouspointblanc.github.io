@@ -6,13 +6,21 @@
   <title>delirious.blanc EPK</title>
   <link rel="stylesheet" href="styles.css" />
   <style>
-    /* Basic reset and layout */
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
       background: #0f0f0f;
       color: #fff;
       scroll-behavior: smooth;
+    }
+
+    canvas.webgl {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: -1;
     }
 
     section {
@@ -25,7 +33,6 @@
       font-weight: 700;
     }
 
-    /* Hero Section Styling */
     .hero {
       height: 100vh;
       display: flex;
@@ -44,26 +51,22 @@
       margin-top: 10px;
     }
 
-    /* Mixes embed styling */
     .mixes iframe {
       width: 100%;
-      /* height: 315px; */
       margin-bottom: 20px;
       border: none;
     }
 
-    /* Grid layout for highlights */
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 24px;
     }
 
-    /* Highlight images styling */
     #highlights img {
-      width: 100%; /* Use full width of the grid cell */
-      height: auto; /* Maintain aspect ratio */
-      object-fit: cover; /* Ensure proper cropping if needed */
+      width: 100%;
+      height: auto;
+      object-fit: cover;
       display: block;
       border-radius: 8px;
     }
@@ -75,14 +78,13 @@
   </style>
 </head>
 <body>
-  <!-- Hero / Intro Section -->
+  <canvas class="webgl"></canvas>
   <section class="hero">
     <h1>DELIRIOUS.BLANC</h1>
     <p>Genre-bending DJ & Creative Technologist<br />London / Global</p>
     <p>↓ SCROLL TO ENTER ↓</p>
   </section>
 
-  <!-- About Section -->
   <section id="about">
     <h2>About</h2>
     <p>
@@ -91,44 +93,32 @@
     </p>
   </section>
 
-  <!-- Mixes Section -->
   <section id="mixes" class="mixes">
     <h2>Selected Mixes</h2>
 
-    <!-- YouTube embed -->
     <p><strong>"GROOVETANK LIVE PRESENTS: QUEENIEPRINX & pals W/ DELIRIOUS.BLANC" (2025)</strong><br />A 45-min dive into grime edits, nostalgic bootlegs, and breaks.</p>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/t1D8N8fUvug?si=uVNzUZD7zYRMhODe" referrerpolicy="no-referrer-when-downgrade" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-    <div width="560px" height="315px" style="position: static; clear: both; width: 560px; height: 315px;">&nbsp;
-      <div style="position: relative"><img id="vidimg" width="560px" height="315px" src="./portfolio/groovetank_thumbnail.png" style="position: absolute; top: 0; left: 0; cursor: pointer; pointer-events: none; z-index: 2;" />
-        <iframe id="unlocked-video" style="position: absolute; top: 0; left: 0; z-index: 1;" src="https://www.youtube.com/embed/t1D8N8fUvug" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen">
-        </iframe>
-      </div>
+    <div style="position: relative; width: 100%; max-width: 560px; height: 315px;">
+      <img id="vidimg" src="./portfolio/groovetank_thumbnail.png" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; cursor: pointer; z-index: 2;" />
+      <iframe id="unlocked-video" src="https://www.youtube.com/embed/t1D8N8fUvug" width="100%" height="100%" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; z-index: 1;"></iframe>
     </div>
-    
-    <!-- Mixcloud embed 1 -->
-    <p><strong>"Back2Back DJ Battle - Talent Spotlight" (2025)</strong><br />A fast and ephemeral set to take the winter blues away</p>
-    <iframe width="100%" height="120" src="https://player-widget.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2Fback2backdjbattle%2Ftalent-spotlight-deliriousblanc%2F" frameborder="0" allow="encrypted-media; fullscreen; autoplay; idle-detection; speaker-selection; web-share;"></iframe>
 
-    <!-- Mixcloud embed 2 -->
+    <p><strong>"Back2Back DJ Battle - Talent Spotlight" (2025)</strong><br />A fast and ephemeral set to take the winter blues away</p>
+    <iframe width="100%" height="120" src="https://player-widget.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2Fback2backdjbattle%2Ftalent-spotlight-deliriousblanc%2F"></iframe>
+
     <p><strong>"Baile Caótica" (2025)</strong><br />A wild ride of experimental club sounds, blending unpredictable tracks from 'Weird Baile,' a group of artists including VHOOR, and other chaotic favourites</p>
-    <iframe width="100%" height="120" src="https://player-widget.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2Fdelirious_works%2Fbaile-ca%25C3%25B3tica%2F" frameborder="0" allow="encrypted-media; fullscreen; autoplay; idle-detection; speaker-selection; web-share;"></iframe>
+    <iframe width="100%" height="120" src="https://player-widget.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2Fdelirious_works%2Fbaile-ca%25C3%25B3tica%2F"></iframe>
     <h3>Check out more on my <a href="https://www.mixcloud.com/delirious_works/">Mixcloud</a></h3>
   </section>
 
-  <!-- Highlights Section -->
   <section id="highlights">
     <h2>Highlights</h2>
     <div class="grid">
-
-      <!-- Highlight 1 -->
       <div>
         <h3>Founder of Hand in Hand (2023 - now)</h3>
         <p>QTIBIPOC club night focused on care, co-creation, and community. Hosting parties in Nottingham and Club Makossa, Dalston.</p>
         <img src="./portfolio/hih-logo-21-09.png" alt="Hand in Hand logo">
       </div>
 
-      <!-- Highlight 2 -->
       <div>
         <h3>Performed at Dalston Superstore</h3>
         <p>including Lucky Dip, Digi-Gxl <em>Desire Generation</em> exhibition & open decks</p>
@@ -137,7 +127,6 @@
     </div>
   </section>
 
-  <!-- Bookings & Contact Section -->
   <section id="bookings">
     <h2>Bookings & Contact</h2>
     <p>
@@ -149,15 +138,61 @@
     <p>✸ Open to club, radio, art, and hybrid projects</p>
     <p>✸ Check out my main site <a href="https://www.yasminmorgan.com">here</a> for creative tech work!</p>
   </section>
+
+  <script type="module">
+    import * as THREE from 'https://cdn.skypack.dev/three';
+    import { GLTFLoader } from 'https://cdn.skypack.dev/three/examples/jsm/loaders/GLTFLoader.js';
+    import { OrbitControls } from 'https://cdn.skypack.dev/three/examples/jsm/controls/OrbitControls.js';
+
+    const canvas = document.querySelector('.webgl');
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 100);
+    camera.position.z = 2;
+
+    const renderer = new THREE.WebGLRenderer({ canvas, alpha: true, antialias: true });
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+
+    const ambientLight = new THREE.AmbientLight(0xffffff, 1);
+    scene.add(ambientLight);
+
+    const loader = new GLTFLoader();
+    loader.load('./assets/rubikscube_delirious_6July.glb', (gltf) => {
+      const model = gltf.scene;
+      model.scale.set(1, 1, 1);
+      scene.add(model);
+
+      const mixer = new THREE.AnimationMixer(model);
+      gltf.animations.forEach((clip) => {
+        mixer.clipAction(clip).play();
+      });
+
+      const clock = new THREE.Clock();
+
+      function animate() {
+        requestAnimationFrame(animate);
+        const delta = clock.getDelta();
+        mixer.update(delta);
+        renderer.render(scene, camera);
+      }
+      animate();
+    });
+
+    window.addEventListener('resize', () => {
+      camera.aspect = window.innerWidth / window.innerHeight;
+      camera.updateProjectionMatrix();
+      renderer.setSize(window.innerWidth, window.innerHeight);
+    });
+  </script>
+
+  <script>
+    var monitor = setInterval(function(){
+      var elem = document.activeElement;
+      if(elem && elem.id == 'unlocked-video'){
+        document.getElementById('vidimg').style.display='none';
+        clearInterval(monitor);
+      }
+    }, 100);
+  </script>
 </body>
-  <script type="application/javascript">
-        // Adapted from https://stackoverflow.com/a/32138108
-        var monitor = setInterval(function(){
-          var elem = document.activeElement;
-          if(elem && elem.id == 'unlocked-video'){
-            document.getElementById('vidimg').style.display='none';
-            clearInterval(monitor);
-          }
-        }, 100);
-      </script>
 </html>

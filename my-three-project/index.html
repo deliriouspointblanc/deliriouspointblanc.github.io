@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script type="module" src="./src/main.js"></script>
+    <title>Three Test</title>
+    <style>
+      /* body { margin: 0; overflow: hidden; } */
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #0f0f0f;
+      color: #fff;
+      scroll-behavior: smooth;
+    }
+
+    canvas.webgl {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: -1;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    h1, h2 {
+      font-weight: 700;
+    }
+
+    .hero {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+
+    .mixes iframe {
+      width: 100%;
+      margin-bottom: 20px;
+      border: none;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+
+    #highlights img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      display: block;
+      border-radius: 8px;
+    }
+
+    a {
+      color: #ff9ce3;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <canvas class="webgl"></canvas>
+  <section class="hero">
+    <h1>DELIRIOUS.BLANC</h1>
+    <p>Genre-bending DJ & Creative Technologist<br />London / Global</p>
+    <p>↓ SCROLL TO ENTER ↓</p>
+  </section>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>
+      delirious.blanc is the sonic alias of Yasmin Morgan — a London-based DJ,
+      creative technologist, and genre-bender. Their fast-paced sets fuse ecstatic vocals with hard-hitting rhythms from around the world. Genres flow between (but not limited to) future bass, garage, footwork, hyperpop, and vocal edits with intense energy and unexpected moments.
+    </p>
+  </section>
+
+  <section id="mixes" class="mixes">
+    <h2>Selected Mixes</h2>
+
+    <p><strong>"GROOVETANK LIVE PRESENTS: QUEENIEPRINX & pals W/ DELIRIOUS.BLANC" (2025)</strong><br />A 45-min dive into grime edits, nostalgic bootlegs, and breaks.</p>
+    <div style="position: relative; width: 100%; max-width: 560px; height: 315px;">
+      <img id="vidimg" src="/assets/groovetank_thumbnail.png" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; cursor: pointer; z-index: 2;" />
+      <iframe id="unlocked-video" src="https://www.youtube.com/embed/t1D8N8fUvug" width="100%" height="100%" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; z-index: 1;"></iframe>
+    </div>
+
+    <p><strong>"Back2Back DJ Battle - Talent Spotlight" (2025)</strong><br />A fast and ephemeral set to take the winter blues away</p>
+    <iframe width="100%" height="120" src="https://player-widget.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2Fback2backdjbattle%2Ftalent-spotlight-deliriousblanc%2F"></iframe>
+
+    <p><strong>"Baile Caótica" (2025)</strong><br />A wild ride of experimental club sounds, blending unpredictable tracks from 'Weird Baile,' a group of artists including VHOOR, and other chaotic favourites</p>
+    <iframe width="100%" height="120" src="https://player-widget.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2Fdelirious_works%2Fbaile-ca%25C3%25B3tica%2F"></iframe>
+    <h3>Check out more on my <a href="https://www.mixcloud.com/delirious_works/">Mixcloud</a></h3>
+  </section>
+
+  <section id="highlights">
+    <h2>Highlights</h2>
+    <div class="grid">
+      <div>
+        <h3>Founder of Hand in Hand (2023 - now)</h3>
+        <p>QTIBIPOC club night focused on care, co-creation, and community. Hosting parties in Nottingham and Club Makossa, Dalston.</p>
+        <img src="/assets/hih-logo-21-09.png" alt="Hand in Hand logo">
+      </div>
+
+      <div>
+        <h3>Performed at Dalston Superstore</h3>
+        <p>including Lucky Dip, Digi-Gxl <em>Desire Generation</em> exhibition & open decks</p>
+        <img src="/assets/desire-generation.png" alt="Desire Generation event">
+      </div>
+    </div>
+  </section>
+
+  <section id="bookings">
+    <h2>Bookings & Contact</h2>
+    <p>
+      For DJ bookings, radio shows, or collabs — get in touch:<br /><br/>
+      Email: <a href="mailto:yasminmorgan.info@proton.me"><strong>yasminmorgan.info@proton.me</strong></a><br/>
+      Instagram: <a href="https://instagram.com/delirious.blanc" target="_blank"><strong>@delirious.blanc</a></strong>
+    </p>
+    <p>✸ Available for Europe & UK gigs summer/autumn 2025 + festivals!!</p>
+    <p>✸ Open to club, radio, art, and hybrid projects</p>
+    <p>✸ Check out my main site <a href="https://www.yasminmorgan.com">here</a> for creative tech work!</p>
+  </section>
+    <canvas class="webgl"></canvas>
+    <script>
+      var monitor = setInterval(function(){
+      var elem = document.activeElement;
+      if(elem && elem.id == 'unlocked-video'){
+        document.getElementById('vidimg').style.display='none';
+        clearInterval(monitor);
+      }
+    }, 100);
+    </script>
+  </body>
+</html>
