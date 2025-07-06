@@ -6,7 +6,7 @@
   <title>delirious.blanc EPK</title>
   <link rel="stylesheet" href="styles.css" />
   <style>
-    /* Basic reset and aesthetic, feel free to override */
+    /* Basic reset and layout */
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
@@ -14,14 +14,18 @@
       color: #fff;
       scroll-behavior: smooth;
     }
+
     section {
-      padding: 80px 20px;
+      padding: 60px 20px;
       max-width: 1000px;
       margin: 0 auto;
     }
+
     h1, h2 {
       font-weight: 700;
     }
+
+    /* Hero Section Styling */
     .hero {
       height: 100vh;
       display: flex;
@@ -30,24 +34,40 @@
       align-items: center;
       text-align: center;
     }
+
     .hero h1 {
       font-size: 3rem;
     }
+
     .hero p {
       font-size: 1.2rem;
       margin-top: 10px;
     }
+
+    /* Mixes embed styling */
     .mixes iframe {
       width: 100%;
-      height: 166px;
+      /* height: 315px; */
       margin-bottom: 20px;
       border: none;
     }
+
+    /* Grid layout for highlights */
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 24px;
     }
+
+    /* Highlight images styling */
+    #highlights img {
+      width: 100%; /* Use full width of the grid cell */
+      height: auto; /* Maintain aspect ratio */
+      object-fit: cover; /* Ensure proper cropping if needed */
+      display: block;
+      border-radius: 8px;
+    }
+
     a {
       color: #ff9ce3;
       text-decoration: none;
@@ -55,57 +75,72 @@
   </style>
 </head>
 <body>
+  <!-- Hero / Intro Section -->
   <section class="hero">
     <h1>DELIRIOUS.BLANC</h1>
     <p>Genre-bending DJ & Creative Technologist<br />London / Global</p>
     <p>↓ SCROLL TO ENTER ↓</p>
   </section>
 
+  <!-- About Section -->
   <section id="about">
     <h2>About</h2>
     <p>
-      Delirious.Blanc is the sonic alias of Yasmin Morgan — a London-based DJ,
-      creative technologist, and genre-blender. Their fast-paced sets fuse ecstatic vocals with hard-hitting rhythms from around the world. Genres flow between (but not limited to) future bass, garage, footwork, hyperpop, and vocal edits with [emotional intensity and cinematic edge]. 
-    </p>
-    <p>
-      With roots in club experimentation and XR design, they brings an immersive,
-      tactile approach to every mix — whether live or broadcast.
+      delirious.blanc is the sonic alias of Yasmin Morgan — a London-based DJ,
+      creative technologist, and genre-bender. Their fast-paced sets fuse ecstatic vocals with hard-hitting rhythms from around the world. Genres flow between (but not limited to) future bass, garage, footwork, hyperpop, and vocal edits with intense energy and unexpected moments.
     </p>
   </section>
 
+  <!-- Mixes Section -->
   <section id="mixes" class="mixes">
     <h2>Selected Mixes</h2>
+
+    <!-- YouTube embed -->
+    <p><strong>"GROOVETANK LIVE PRESENTS: QUEENIEPRINX & pals W/ DELIRIOUS.BLANC" (2025)</strong><br />A 45-min dive into grime edits, nostalgic bootlegs, and breaks.</p>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/t1D8N8fUvug?si=uVNzUZD7zYRMhODe" referrerpolicy="no-referrer-when-downgrade" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    <p><strong>"GROOVETANK LIVE 177 PRESENTS: QUEENIEPRINX & pals W/ DELIRIOUS.BLANC" (2025)</strong><br />A 45-min dive into emotional club textures, femme energy & distorted pop</p>
-    <iframe width="100%" height="400" src="https://player-widget.mixcloud.com/widget/iframe/?feed=%2Fback2backdjbattle%2Ftalent-spotlight-deliriousblanc%2F" frameborder="0" allow="encrypted-media; fullscreen; autoplay; idle-detection; speaker-selection; web-share;" ></iframe>
+
+    <!-- Mixcloud embed 1 -->
     <p><strong>"Back2Back DJ Battle - Talent Spotlight" (2025)</strong><br />A fast and ephemeral set to take the winter blues away</p>
+    <iframe width="100%" height="120" src="https://player-widget.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2Fback2backdjbattle%2Ftalent-spotlight-deliriousblanc%2F" frameborder="0" allow="encrypted-media; fullscreen; autoplay; idle-detection; speaker-selection; web-share;"></iframe>
+
+    <!-- Mixcloud embed 2 -->
+    <p><strong>"Baile Caótica" (2025)</strong><br />A wild ride of experimental club sounds, blending unpredictable tracks from 'Weird Baile,' a group of artists including VHOOR, and other chaotic favourites</p>
+    <iframe width="100%" height="120" src="https://player-widget.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2Fdelirious_works%2Fbaile-ca%25C3%25B3tica%2F" frameborder="0" allow="encrypted-media; fullscreen; autoplay; idle-detection; speaker-selection; web-share;"></iframe>
   </section>
 
+  <!-- Highlights Section -->
   <section id="highlights">
     <h2>Highlights</h2>
     <div class="grid">
+
+      <!-- Highlight 1 -->
       <div>
-        <h3>Co-Founder of Hand in Hand (2023 - now)</h3>
+        <h3>Founder of Hand in Hand (2023 - now)</h3>
         <p>QTIBIPOC club night focused on care, co-creation, and community. Hosting parties in Nottingham and Club Makossa, Dalston.</p>
+        <img src="./portfolio/hih-logo-21-09.png" alt="Hand in Hand logo">
       </div>
+
+      <!-- Highlight 2 -->
       <div>
         <h3>Performed at Dalston Superstore</h3>
-        <p>including Lucky Dip, Digi-Gxl exhibition & open decks</p>
+        <p>including Lucky Dip, Digi-Gxl <em>Desire Generation</em> exhibition & open decks</p>
+        <img src="./portfolio/desire-generation.png" alt="Desire Generation event">
       </div>
-      <!-- Add more highlights as needed -->
     </div>
   </section>
 
+  <!-- Bookings & Contact Section -->
   <section id="bookings">
     <h2>Bookings & Contact</h2>
     <p>
       For DJ bookings, radio shows, or collabs — get in touch:<br />
-      <strong>yasminmorgan.info@proton.me</strong><br />
+      <strong>yasminmorgan.info@proton.me</strong><br/>
+      <a href="mailto:yasminmorgan.info@proton.me">email</a>
       Instagram: <a href="https://instagram.com/delirious.blanc" target="_blank">@delirious.blanc</a>
     </p>
     <p>✸ Available for Europe & UK gigs summer/autumn 2025</p>
     <p>✸ Open to club, radio, art, and hybrid projects</p>
-    <p>✸ Check out my main site for creative tech work!</p>
+    <p>✸ Check out my main site <a href="https://www.yasminmorgan.com">here</a> for creative tech work!</p>
   </section>
 </body>
 </html>
