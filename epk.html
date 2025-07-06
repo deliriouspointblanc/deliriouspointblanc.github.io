@@ -99,6 +99,13 @@
     <p><strong>"GROOVETANK LIVE PRESENTS: QUEENIEPRINX & pals W/ DELIRIOUS.BLANC" (2025)</strong><br />A 45-min dive into grime edits, nostalgic bootlegs, and breaks.</p>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/t1D8N8fUvug?si=uVNzUZD7zYRMhODe" referrerpolicy="no-referrer-when-downgrade" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
+    <div width="560px" height="315px" style="position: static; clear: both; width: 560px; height: 315px;">&nbsp;
+      <div style="position: relative"><img id="vidimg" width="560px" height="315px" src="./portfolio/groovetank_thumbnail.png" style="position: absolute; top: 0; left: 0; cursor: pointer; pointer-events: none; z-index: 2;" />
+        <iframe id="unlocked-video" style="position: absolute; top: 0; left: 0; z-index: 1;" src="https://www.youtube.com/embed/t1D8N8fUvug" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen">
+        </iframe>
+      </div>
+    </div>
+    
     <!-- Mixcloud embed 1 -->
     <p><strong>"Back2Back DJ Battle - Talent Spotlight" (2025)</strong><br />A fast and ephemeral set to take the winter blues away</p>
     <iframe width="100%" height="120" src="https://player-widget.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2Fback2backdjbattle%2Ftalent-spotlight-deliriousblanc%2F" frameborder="0" allow="encrypted-media; fullscreen; autoplay; idle-detection; speaker-selection; web-share;"></iframe>
@@ -143,4 +150,14 @@
     <p>✸ Check out my main site <a href="https://www.yasminmorgan.com">here</a> for creative tech work!</p>
   </section>
 </body>
+  <script type="application/javascript">
+        // Adapted from https://stackoverflow.com/a/32138108
+        var monitor = setInterval(function(){
+          var elem = document.activeElement;
+          if(elem && elem.id == 'unlocked-video'){
+            document.getElementById('vidimg').style.display='none';
+            clearInterval(monitor);
+          }
+        }, 100);
+      </script>
 </html>
