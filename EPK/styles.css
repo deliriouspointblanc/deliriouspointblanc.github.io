@@ -115,6 +115,15 @@ section {
   text-align: center;
 }
 
+.mixes {
+  width: 100%;
+  padding: 2rem 1rem;
+}
+
+.mixes p {
+  text-align: center;
+}
+
 .mixes iframe {
   width: 75%;
   margin-bottom: 20px;
@@ -208,9 +217,6 @@ section {
 .outro h2{
   width: 70%;
   text-align: center;
-}
-
-.outro h2 {
   font-size: 2vw;
 }
 
@@ -250,6 +256,14 @@ a:hover {
 
 /* === MOBILE REFINEMENTS (screen width below 768px) === */
 @media screen and (max-width: 768px) {
+  .hero h1 {
+    margin-top: 2em;
+  }
+
+  .hero p{
+    font-size: 4.5vw;
+  }
+
   .info h2,
   .info p {
     width: 90%;
@@ -270,8 +284,12 @@ a:hover {
     white-space: nowrap;
   }
 
+  .grid p{
+    margin-bottom: 1em;
+  }
+
   .scan-container {
-    margin-top: 2em;
+    margin-top: 3.5em;
   }
 
   .barcode,
@@ -286,6 +304,10 @@ a:hover {
     margin: 0 auto;
     width: 90%;
     justify-items: center;
+  }
+
+  .highlights h2 {
+    font-size: 4.5vw;
   }
 
   /* Center contents of each grid item */
@@ -320,8 +342,49 @@ a:hover {
     max-width: 300px;
   } */
 
+  .mixes {
+    width: 100%;
+    padding: 2rem 1rem;
+  }
+
+  .mixes p {
+    text-align: center;
+  }
+
+  h3 {
+    text-align: center;
+  }
+
+  .mixes h2 {
+    font-size: 4.5vw;
+  }
   .mixes iframe {
     height: 200px;
+  }
+
+  .outro img {
+    width: 60%;
+  }
+
+  .outro h2 {
+    font-size: 4.5vw;
+  }
+
+  .outro p {
+    padding: 2em;
+    font-size: 4vw;
+  }
+
+  .scan-info {
+    padding: 0.5em;
+  }
+
+  .product-id p {
+    font-size: 3vw;
+  }
+
+  .product-description p {
+    font-size: 3vw;
   }
 }
 
