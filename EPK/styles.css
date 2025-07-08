@@ -31,7 +31,7 @@ h1 {
   text-shadow: none;
   color: #ff9ce3;
   text-align: center;
-  font-size: 10vw;
+  font-size: 8vw;
   font-weight: 400;
   line-height: 100%;
 }
@@ -52,7 +52,7 @@ p {
   position: fixed;
   width: 100%;
   height: 100vh;
-  background: #fefdfd;
+  /* background: #fefdfd; */
 }
 
 section {
@@ -61,23 +61,36 @@ section {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   gap: 1em;
   z-index: 2;
 }
 
-.hero h1 {
-  margin-bottom: 0.25em;
+.hero .location {
+  width: 400px;
+  position: absolute;
+  bottom: 5em; /* adjust this to control how far from the bottom */
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  width: max-content;
+  z-index: 3;
 }
 
-.hero p {
+.hero h1 {
+  margin-top: 0.1em;
+  margin-bottom: 0.25em;
+} 
+
+/* .hero p {
   width: 50%;
   text-align: center;
-}
+} */
 
 .info {
   gap: 8em;
+  justify-content: center;
 }
 
 .info .tags {
@@ -96,6 +109,10 @@ section {
   text-align: center;
 }
 
+.scanner {
+  justify-content: center;
+}
+
 .scan-info {
   position: absolute;
   top: 0;
@@ -106,6 +123,7 @@ section {
 }
 
 .scan-container {
+  margin-top: 5em;
   width: 350px;
   height: 350px;
   border: 1px solid #ffffff;
@@ -130,6 +148,10 @@ section {
   /* border-radius: 2em; */
   width: 200px;
   height: 200px;
+}
+
+.outro {
+  justify-content: center;
 }
 
 .outro h2{
@@ -168,4 +190,73 @@ a:hover {
 
 .lenis.lenis-smooth iframe {
   pointer-events: none;
+}
+
+/* === MOBILE STYLES (screen width below 768px) === */
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 10vw;
+  }
+
+  h2 {
+    font-size: 4vw;
+    text-align: center;
+    width: 90%;
+  }
+
+  p {
+    font-size: 4vw;
+    width: 90%;
+    text-align: center;
+  }
+
+  .hero .location {
+    bottom: 2em;
+  }
+
+  .info {
+    gap: 4em;
+  }
+
+  .info .tags {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+    width: 90%;
+  }
+
+  .scan-info {
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    text-align: center;
+  }
+
+  .scan-container {
+    width: 80vw;
+    height: 80vw;
+  }
+
+  .barcode,
+  .purchased {
+    position: static;
+    width: 40vw;
+    height: auto;
+    margin: 1em auto;
+  }
+
+  .outro h2 {
+    font-size: 4.5vw;
+    width: 90%;
+  }
+
+  .outro p {
+    font-size: 4vw;
+    width: 90%;
+  }
+
+  section {
+    gap: 2em;
+    padding: 1em 0;
+  }
 }

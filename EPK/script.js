@@ -16,7 +16,7 @@ const camera = new THREE.PerspectiveCamera(
   1000
 );
 // Adjust camera position to be suitable for seeing the cube at its default scale
-camera.position.set(0, 0, 10); // Start closer to ensure visibility
+camera.position.set(0, 1, 10); // Start closer to ensure visibility
 
 const renderer = new THREE.WebGLRenderer({
   antialias: true,
@@ -131,9 +131,9 @@ loader.load(
 function playInitialAnimation() {
   if (model) {
     gsap.to(model.scale, {
-      x: 0.8,
-      y: 0.8,
-      z: 0.8,
+      x: 0.9,
+      y: 0.9,
+      z: 0.9,
       duration: 1.5,
       ease: "power2.out",
       onComplete: () => {
@@ -180,9 +180,9 @@ ScrollTrigger.create({
   onEnterBack: () => {
     if (model) {
       gsap.to(model.scale, {
-        x: 1,
-        y: 1,
-        z: 1,
+        x: 0.9,
+        y: 0.9,
+        z: 0.9,
         duration: 1,
         ease: "power2.out",
       });
