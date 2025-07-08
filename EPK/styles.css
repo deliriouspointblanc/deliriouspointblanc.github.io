@@ -12,7 +12,10 @@ html, body {
   background: #0f0f0f;
   color: #fff;
   width: 100vw;
-  height: 500vh;
+  /* height: 500vh; */
+  height: auto;
+  min-height: 100vh;
+  overflow-x: hidden;
   text-shadow: 1px 1px 5px black;
 }
 
@@ -59,7 +62,7 @@ p {
 section {
   position: relative;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   /* justify-content: center; */
@@ -113,7 +116,7 @@ section {
 }
 
 .mixes iframe {
-  width: 90%;
+  width: 75%;
   margin-bottom: 20px;
   border: none;
 }
@@ -125,22 +128,37 @@ section {
 }
 
 .highlights {
-  justify-content: center;
+  width: 100%;
+  padding: 3em 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .highlights h2 {
-  width: 75%;
-  text-align: center;
+  font-size: 3vw;
+  margin-bottom: 2em;
 }
 
 .highlights img {
-  text-align: center;
-  width: 50%;
+  justify-content: center;
+  width: 100%;
   height: auto;
   object-fit: cover;
   display: block;
   border-radius: 8px;
+  margin-top: 1em;
 }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2em;
+  width: 100%;
+  max-width: 1000px;
+}
+
 
 .scanner {
   justify-content: center;
@@ -263,11 +281,36 @@ a:hover {
     height: auto;
   }
 
-  .grid {
-    grid-template-columns: 1fr;
+  /* Center-align the grid container itself */
+  .highlights .grid {
+    margin: 0 auto;
+    width: 90%;
+    justify-items: center;
   }
 
-  .highlights h2 {
+  /* Center contents of each grid item */
+  .highlights .grid > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* Center and constrain images */
+  .highlights img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+    align-items: center;
+  }
+
+  /* .highlights h2 {
     width: 90%;
     font-size: 5vw;
   }
@@ -275,10 +318,10 @@ a:hover {
   .highlights img {
     width: 100%;
     max-width: 300px;
-  }
+  } */
 
   .mixes iframe {
-    height: 100px;
+    height: 200px;
   }
 }
 
