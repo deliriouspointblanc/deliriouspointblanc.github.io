@@ -4,91 +4,141 @@
   <title>Anti-Hijack Chatbot</title>
   <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
   <link rel="stylesheet" href="styles.css">
+  <!-- <style>
+    
+  </style> -->
 </head>
+
 <body>
-  <h1>Reflective Chatbot</h1>
-  <div id="chatbox">Loading...</div>
-  <!-- <div id="response-buttons"></div> -->
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
-  <script>
-  const csvUrl = "https://docs.google.com/spreadsheets/d/18FgTuL9eLzQRA5vb10r3myiGDJRNMlt-9Ld9R2YzH04/export?format=csv";
+<h1>Reflective Chatbot</h1>
+<div id="chatbox">Loading...</div>
 
-  const chatContainer = document.getElementById("chatbox");
-  let nodes = {};
+<script>
+const csvUrl = "https://docs.google.com/spreadsheets/d/18FgTuL9eLzQRA5vb10r3myiGDJRNMlt-9Ld9R2YzH04/export?format=csv";
+const chatContainer = document.getElementById("chatbox");
 
-  function showNode(nodeId) {
-    const node = nodes[nodeId];
-    if (!node) return;
+let nodes = {};
+let OCCUPATION = "our current work"; // fallback
 
-    // Add bot message
+// Replace {{OCCUPATION}} inside any message
+function template(str) {
+  return str.replace(/{{OCCUPATION}}/g, OCCUPATION);
+}
+
+function showNode(nodeId) {
+  const node = nodes[nodeId];
+  if (!node) return;
+
+  // Add typing indicator
+  const typing = document.createElement("div");
+  typing.className = "typing";
+  typing.textContent = "typing";
+  chatContainer.appendChild(typing);
+  chatContainer.scrollTop = chatContainer.scrollHeight;
+
+  // After a short delay, reveal message
+  setTimeout(() => {
+    typing.remove();
+
     const messageDiv = document.createElement("div");
     messageDiv.className = "message";
-    messageDiv.textContent = node.message;
     chatContainer.appendChild(messageDiv);
 
-    // Add response buttons if available
-    if (node.responses.length > 0) {
-      const responseContainer = document.createElement("div");
-      responseContainer.className = "response-messages";
+    const fullMessage = template(node.message);
+    const sentences = fullMessage.split(/(?<=\.)\s+/);
 
-      node.responses.forEach((response, index) => {
-        const btn = document.createElement("button");
-        btn.textContent = response;
-        btn.className = "response-button";
-        btn.onclick = () => {
-          const userDiv = document.createElement("div");
-          userDiv.className = "user-response";
-          userDiv.textContent = response;
-          chatContainer.appendChild(userDiv);
-          responseContainer.remove();
+    let i = 0;
 
-          const nextNodeId = node.next[index];
-          if (nextNodeId && nodes[nextNodeId]) {
-            showNode(nextNodeId);
-          } else {
-            // End of tree
-            const endDiv = document.createElement("div");
-            endDiv.className = "message";
-            endDiv.textContent = "Thank you for your time.";
-            chatContainer.appendChild(endDiv);
-          }
-        };
-        responseContainer.appendChild(btn);
-      });
-
-      chatContainer.appendChild(responseContainer);
+    function showSentence() {
+      if (i < sentences.length) {
+        messageDiv.innerHTML += sentences[i] + " ";
+        i++;
+        setTimeout(showSentence, 500);
+      } else {
+        addResponseButtons(node);
+      }
+      chatContainer.scrollTop = chatContainer.scrollHeight;
     }
 
-    // Scroll to bottom
-    chatContainer.scrollTop = chatContainer.scrollHeight;
-  }
+    showSentence();
+  }, 600);
+}
 
-  Papa.parse(csvUrl, {
-    download: true,
-    header: true,
-    complete: function (results) {
-      results.data.forEach(row => {
-        const id = row["Node ID"];
-        if (!id) return;
+function addResponseButtons(node) {
+  if (!node.responses || node.responses.length === 0) return;
 
-        const responses = row["User Responses"] ? row["User Responses"].split(" / ") : [];
-        const nextIds = row["Next Node IDs"] ? row["Next Node IDs"].split(" / ") : [];
+  const responseContainer = document.createElement("div");
+  responseContainer.className = "response-messages";
 
-        nodes[id] = {
-          message: row["Message"],
-          responses: responses,
-          next: nextIds
-        };
-      });
+  node.responses.forEach((response, index) => {
+    const btn = document.createElement("button");
+    btn.textContent = response;
+    btn.className = "response-button";
 
-      // Clear loading message
-      chatContainer.innerHTML = "";
+    btn.onclick = () => {
+      // Add user's response bubble
+      const userDiv = document.createElement("div");
+      userDiv.className = "user-response";
+      userDiv.textContent = response;
+      chatContainer.appendChild(userDiv);
 
-      // Start from node 1
-      showNode("1");
-    }
+      responseContainer.remove();
+
+      // Restart logic
+      const r = response.toLowerCase();
+      if (r.includes("restart") || r.includes("done")) {
+        chatContainer.innerHTML = "";
+        showNode("1");
+        return;
+      }
+
+      const nextNodeId = node.next[index];
+      if (nextNodeId && nodes[nextNodeId]) {
+        showNode(nextNodeId);
+      } else {
+        const endDiv = document.createElement("div");
+        endDiv.className = "message";
+        endDiv.textContent = "Thank you for your time.";
+        chatContainer.appendChild(endDiv);
+      }
+    };
+
+    responseContainer.appendChild(btn);
   });
+
+  chatContainer.appendChild(responseContainer);
+}
+
+// Load CSV
+Papa.parse(csvUrl, {
+  download: true,
+  header: true,
+  complete: function(result) {
+    result.data.forEach(row => {
+      const id = row["Node ID"];
+      if (!id) return;
+
+      if (id === "OCCUPATION") {
+        OCCUPATION = row["Message"] || OCCUPATION;
+        return;
+      }
+
+      const responses = row["User Responses"] ? row["User Responses"].split(" / ") : [];
+      const next = row["Next Node IDs"] ? row["Next Node IDs"].split(" / ") : [];
+
+      nodes[id] = {
+        message: row["Message"],
+        responses: responses,
+        next: next
+      };
+    });
+
+    chatContainer.innerHTML = "";
+    showNode("1");
+  }
+});
 </script>
+
 </body>
 </html>
