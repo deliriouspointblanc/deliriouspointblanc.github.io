@@ -64,7 +64,7 @@ let clock = new THREE.Clock(); // Initialize a clock for delta time
 
 const loader = new THREE.GLTFLoader();
 loader.load(
-  "./assets/rubikscube_delirious_linear_6July.glb",
+  "/EPK/assets/rubikscube_delirious_linear_6July.glb",
   function (gltf) {
     model = gltf.scene;
     model.traverse((node) => {
