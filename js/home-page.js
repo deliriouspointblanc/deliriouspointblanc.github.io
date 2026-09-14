@@ -2,7 +2,7 @@ let beatSketch = function(p) {
   let beats = [];
   let numBeats = 10;
   let track;
-  let playing = true;
+  let playing = false;
   let moveX = 0;
   let moveY = 0;
 
@@ -128,19 +128,28 @@ let beatSketch = function(p) {
     }
   }
 
+  //Shared toggle used by both the 'm' key and the sound button.
+  //Returns the new playing state so callers can update the UI.
+  p.toggleMusic = function() {
+    if (!track) return playing;
+    if (track.isPlaying()) {
+      track.pause();
+      playing = false;
+    } else {
+      track.play();
+      playing = true;
+    }
+    setMusicToggleUI(playing);
+    return playing;
+  }
+
   p.keyPressed = function() {
     if (p.keyCode == 77) { //press 'm' to toggle music
-      if (track.isPlaying()) {
-        track.stop();
-        playing = false;
-      } else {
-        track.play();
-        playing = true;
-      }
+      p.toggleMusic();
     }
   }
 
-  
+
   p.windowResized = function() {
     p.resizeCanvas(clientWidth, clientHeight);
   }
@@ -331,5 +340,29 @@ class Beat {
 }
 
  
+//Updates the sound toggle button's icon/label/pulse to match playing state
+function setMusicToggleUI(isPlaying) {
+  const btn = document.getElementById('music-toggle');
+  if (!btn) return;
+  const icon = btn.querySelector('i');
+  const label = btn.querySelector('.music-toggle-label');
+  btn.classList.toggle('is-playing', isPlaying);
+  btn.setAttribute('aria-pressed', isPlaying);
+  if (icon) {
+    icon.classList.toggle('fa-volume-high', isPlaying);
+    icon.classList.toggle('fa-volume-xmark', !isPlaying);
+  }
+  if (label) {
+    label.textContent = isPlaying ? 'sound on' : 'sound off';
+  }
+}
+
 let myp5TilingSketch = new p5(tilingSketch);
 let myp5BeatSketch = new p5(beatSketch);
+
+let musicToggleBtn = document.getElementById('music-toggle');
+if (musicToggleBtn) {
+  musicToggleBtn.addEventListener('click', function() {
+    myp5BeatSketch.toggleMusic();
+  });
+}

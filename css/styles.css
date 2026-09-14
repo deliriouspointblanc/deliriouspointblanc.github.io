@@ -10,12 +10,7 @@
 
 @media screen and (max-width: 600px) {
   .sticky-div {
-    visibility: hidden;
-    clear: both;
-    float: left;
     margin: 10px auto 5px 20px;
-    width: 28%;
-    display: none;
   }
 }
 
@@ -30,8 +25,17 @@
   height: 100%;
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.loader-text {
+  color: white;
+  font: normal 500 14px/1 var(--space);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-top: 1rem;
 }
 
 .disappear {
@@ -59,6 +63,50 @@
   position: relative;
   width: 100%;
   padding: 10px 10px;
+  z-index: 500;
+}
+
+.music-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 999px;
+  padding: 8px 16px;
+  color: white;
+  font: normal 500 12px/1 var(--space);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+.music-toggle:hover,
+.music-toggle:focus-visible {
+  background: rgba(255, 255, 255, 0.16);
+  border-color: rgba(255, 255, 255, 0.5);
+  outline: none;
+}
+
+.music-toggle i {
+  font-size: 14px;
+  width: 1em;
+}
+
+.music-toggle.is-playing i {
+  animation: music-pulse 1.6s ease-in-out infinite;
+}
+
+@keyframes music-pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.25);
+    opacity: 0.6;
+  }
 }
 
 .start {

@@ -5,13 +5,14 @@
 let loader = document.querySelector(".loader");
 //When the whole window loads, fire off vanish function
 window.addEventListener("load", vanish);
+//Safety net: if some resource (iframe, font, script) never fires "load",
+//don't leave the loader stuck covering the site forever.
+setTimeout(vanish, 6000);
 
 function vanish() {
   //addClass
   loader.classList.add("disappear");
 }
-
-console.log(vanish);
 
 $(document).ready(function(){
   let $btns = $('.project-area .button-group button');
