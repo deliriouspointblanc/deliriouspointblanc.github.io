@@ -254,6 +254,12 @@ body{
 
 /* p5 beat-sketch styling TO FIX: canvas does not reach limit of div, how to extend it? */
 
+/* Consistent left/right gutter matching nav + about-area (16px container padding + 16px here = 32px) */
+.site-banner {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 /* end banner area ============================== */
 
 /* start about area ============================== */
@@ -301,6 +307,13 @@ body{
 }
 /* end about area ============================== */
 
+/* start client work area ============================== */
+.client-work {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+/* end client work area ============================== */
+
 /* start project area ============================== */
 
 .carousel-item{
@@ -310,7 +323,7 @@ body{
 }
 
 .site-main .project-area{
-  padding: 4rem 2rem;
+  padding: 4rem 1rem;
 }
 
 .site-main .project-area .button-group button{
