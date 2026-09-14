@@ -208,9 +208,10 @@ let tilingSketch = function(p) {
 	  xPos = p.random(0,img.width);
 
     p.resetAnimation(); // Initial animation setup
-    p.btn = p.createButton("\u{1F504}"); //Refresh unicode symbol
+    p.btn = p.createButton('<i class="fa-solid fa-arrows-rotate" aria-hidden="true"></i>'); //Refresh icon (p5's createButton sets innerHTML, so an FA <i> tag renders fine)
     // p.btn.position(19,19);
     p.btn.id("tilingBtn");
+    p.btn.attribute("aria-label", "Shuffle tiles");
     // p.btn.position(0,0);
     p.btn.parent("tilingCanvas");
     
