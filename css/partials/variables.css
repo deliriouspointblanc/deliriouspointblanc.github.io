@@ -9,9 +9,9 @@ html,body{
 
 :root{
   --primary-color: #18A999;/*#4458dc;*/
-  --primary-color2: #ee4f77;
-  --title-color: #FCA17D; /*#D79E9E;*/
-  --text-color: #8AF3FF;/*#414DDA;*/ /*For section titles*/
+  --primary-color2: #F3A6C1;
+  --title-color: #F3D9C4; /*#D79E9E;*/
+  --text-color: #7DD6C8;/*#414DDA;*/ /*For section titles*/
   --border-color: #4458dc;
   --gradient-color:linear-gradient(90deg, #4458dc 0%, #854fee 100%);
   --shadow-color: 0px 10px 30px rgba(118, 85, 225, 0.3);

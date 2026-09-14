@@ -136,7 +136,7 @@ a {
 p.para{
   color: var(--title-color);
   font: normal 550 17px/25px var(--space);
-  text-align: justify;
+  text-align: left;
 }
 
 button:focus,
