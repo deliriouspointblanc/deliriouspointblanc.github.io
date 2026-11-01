@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hero prototype: The Pantheon</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400&display=swap">
+<style>
+  html,body{margin:0;height:100%;background:#09090b;color:#ececf1;font-family:"Space Grotesk",system-ui,sans-serif;overflow:hidden}
+  #gl,#threads{position:fixed;inset:0;width:100%;height:100%;display:block}
+  #threads{pointer-events:none}
+  .label{position:fixed;transform:translate(-50%,0);font-family:"JetBrains Mono",monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase;pointer-events:none;white-space:nowrap;opacity:0;transition:color .2s}
+  .label small{display:block;text-transform:none;letter-spacing:0;font-family:"Space Grotesk",sans-serif;font-size:13px;color:#8b8b97;margin-top:4px;text-align:center}
+  header{position:fixed;top:24px;left:28px;font-weight:700;font-size:15px;letter-spacing:.02em;pointer-events:none}
+  .hero{position:fixed;left:28px;bottom:28px;max-width:560px;pointer-events:none}
+  .hero p{font-size:clamp(20px,2.4vw,30px);line-height:1.15;margin:0;font-weight:500}
+  .hero span{display:block;margin-top:10px;font-family:"JetBrains Mono",monospace;font-size:12px;color:#8b8b97;letter-spacing:.08em}
+  .proto{position:fixed;top:22px;right:24px;font-family:"JetBrains Mono",monospace;font-size:11px;color:#8b8b97;text-align:right;line-height:1.6}
+  .proto button{font:inherit;color:#ececf1;background:transparent;border:1px solid #2a2a31;border-radius:99px;padding:4px 10px;cursor:pointer;margin-left:4px}
+  .proto button.on{border-color:#c6ff3d;color:#c6ff3d}
+  #toast{position:fixed;left:50%;top:24px;transform:translateX(-50%);font-family:"JetBrains Mono",monospace;font-size:12px;background:#16161a;border:1px solid #2a2a31;padding:8px 14px;border-radius:99px;opacity:0;transition:opacity .3s;pointer-events:none}
+</style>
+</head>
+<body>
+<canvas id="gl"></canvas>
+<canvas id="threads"></canvas>
+<header>Yasmin Morgan</header>
+<div class="proto">PROTOTYPE · move your cursor near them, then leave them alone<br>
+  quality <button data-q="0.5">low</button><button data-q="0.75" class="on">med</button><button data-q="1">high</button>
+  · <button id="tThreads" class="on">threads</button></div>
+<div class="hero"><p>I build experiences that make people wonder, and the tools that make them possible.</p><span>CREATIVE TECHNOLOGIST · XR · REAL-TIME 3D · WEB</span></div>
+<div id="toast"></div>
+
+<script id="fs" type="x-shader/x-fragment">
+precision highp float;
+uniform vec2 uRes;
+uniform float uTime;
+uniform vec3 uPos[4];
+uniform vec4 uState[4];   // wake, phase, twitch, kind
+uniform vec2 uRot[4];     // yaw, pitch
+uniform float uSeed[4];
+
+#define RB 0.85
+#define SA 6.2
+#define SB 4.0
+
+mat2 Rot(float a){float s=sin(a),c=cos(a);return mat2(c,-s,s,c);}
+float sdBox(vec3 p, vec3 s){p=abs(p)-s;return length(max(p,0.))+min(max(p.x,max(p.y,p.z)),0.);}
+float sdBox2d(vec2 p, vec2 s){p=abs(p)-s;return length(max(p,0.))+min(max(p.x,p.y),0.);}
+
+// Amorphous butterfly (your shadertoy SDF, re-centred)
+float deityA(vec3 q, float t, float amp){
+  vec3 bp = q - vec3(0.,2.4,0.);
+  bp.z = abs(bp.z)-.5;
+  bp.z -= .7;
+  bp.y -= 2.*min(0., q.y);
+  float scale = mix(1.,4., smoothstep(-1.,1.,bp.y));
+  bp.xz *= scale;
+  bp.xz *= Rot(smoothstep(0.,1.,bp.y));
+  bp.y -= sin(bp.y*.6 + t*.8);
+  bp.z += sin(bp.z*2.);
+  float box = sdBox(bp, vec3(1.,1.5,1.))/scale;
+  box -= sin((q.x+2.)*2.+t*2.)*.1*amp;
+  box = abs(box)-.2;
+  return box*.5;
+}
+
+// Torii twisted ring (your p5 SDF; poseBox.x is now driven by wake)
+float deityB(vec3 q, float t, float k){
+  vec2 cp = vec2(length(q.xz)-1.7, q.y) - vec2(.5,0.);
+  float a = atan(q.x, q.z);
+  cp *= Rot(a*.5 + t*1.5);
+  cp.y = abs(cp.y)-.7;
+  float d = sdBox2d(cp, vec2(.1, .4*(sin(k*a)*.5+.5)))-.1;
+  return d*.6;
+}
+
+float mapD(vec3 p, vec3 c, vec2 rot, vec4 st, float seed){
+  vec3 l = p - c;
+  float br = 1. + (.035*sin(uTime*.9+seed*6.) + .025*sin(uTime*1.37+seed*11.))*(1.+st.x) + .06*st.z;
+  l /= br;
+  l.xz *= Rot(rot.x);
+  l.yz *= Rot(rot.y);
+  float d;
+  if(st.w < .5){
+    float amp = .7 + 1.3*st.x + 3.*st.z;
+    d = deityA(l.xyz*SA, st.y, amp)/SA;
+  } else {
+    float k = 1.2 + 3.2*st.x + seed*1.5 + 2.*st.z;
+    d = deityB(l*SB, st.y, k)/SB;
+  }
+  return d*br;
+}
+
+vec3 BgA(vec3 rd){float k=rd.y*.8+.8;return mix(vec3(0.105,0.815,0.615),vec3(0.972,0.050,0.2),clamp(k,0.,1.));}
+vec3 BgB(vec3 rd){float k=rd.y*.5+.5;return mix(vec3(.4,.1,.2),vec3(.1,.7,1.),k);}
+
+void main(){
+  vec2 uv = (gl_FragCoord.xy - .5*uRes)/uRes.y;
+  vec3 ro = vec3(0.,0.,-7.);
+  vec3 rd = normalize(vec3(uv, 1.6));
+
+  // backdrop
+  vec3 col = vec3(.035,.035,.045) * (1. - .35*length(uv));
+  float bestT = 1e9; int bestI = -1;
+  vec3 bc = vec3(0.); vec2 br = vec2(0.); vec4 bs = vec4(0.); float bseed = 0.;
+
+  for(int i=0;i<4;i++){
+    vec3 c = uPos[i]; vec2 rot = uRot[i]; vec4 st = uState[i]; float seed = uSeed[i];
+    // glow halo behind awake deities
+    float dl = length(cross(rd, c-ro));
+    vec3 tint = st.w < .5 ? vec3(.9,.25,.4) : vec3(.2,.6,1.);
+    col += tint * st.x * .10 * exp(-dl*dl*2.2);
+
+    vec3 oc = ro - c;
+    float b = dot(oc, rd);
+    float h = b*b - (dot(oc,oc) - RB*RB);
+    if(h > 0.){
+      h = sqrt(h);
+      float t = max(-b-h, 0.), t1 = -b+h;
+      for(int s=0;s<130;s++){
+        float d = mapD(ro+rd*t, c, rot, st, seed);
+        if(d < .0006){ if(t < bestT){ bestT=t; bestI=i; bc=c; br=rot; bs=st; bseed=seed; } break; }
+        t += d*.6;
+        if(t > t1) break;
+      }
+    }
+  }
+
+  if(bestI >= 0){
+    vec3 p = ro + rd*bestT;
+    vec2 e = vec2(.0015,0.);
+    float d = mapD(p,bc,br,bs,bseed);
+    vec3 n = normalize(d - vec3(mapD(p-e.xyy,bc,br,bs,bseed), mapD(p-e.yxy,bc,br,bs,bseed), mapD(p-e.yyx,bc,br,bs,bseed)));
+    vec3 r = reflect(rd, n);
+    float spec = pow(max(0., r.y), 30.);
+    float dif = dot(n, normalize(vec3(.5,5.,-7.)))*.5+.5;
+    vec3 env = bs.w < .5 ? BgA(r) : BgB(r);
+    vec3 c2 = mix(env*1.5, vec3(dif), .2) + spec;
+    float fres = pow(1.-max(0.,dot(n,-rd)), 3.);
+    c2 += fres * env * (.25 + .6*bs.x);
+    float g = dot(c2, vec3(.3,.59,.11));
+    c2 = mix(vec3(g)*.24, c2, .08 + .92*bs.x);   // asleep: dim and grey. awake: full colour
+    c2 += bs.z * .25;                            // twitch flash
+    col = c2;
+  }
+  col = pow(col, vec3(.85));
+  gl_FragColor = vec4(col, 1.);
+}
+</script>
+<script id="vs" type="x-shader/x-vertex">
+attribute vec2 aPos; void main(){ gl_Position = vec4(aPos,0.,1.); }
+</script>
+
+<script>
+(function(){
+  // ---- the four hats (placeholders: rename freely) ----
+  var HATS = [
+    {name:"Immersive",   sub:"XR for brands and science", kind:0, seed:.13},
+    {name:"Tools",       sub:"pipelines that help teams", kind:1, seed:.71},
+    {name:"Art",         sub:"delight, then question it",  kind:0, seed:.42},
+    {name:"Community",   sub:"Free the Motive and more",  kind:1, seed:.29}
+  ];
+  var RB = 0.85, CAMZ = 7, FOC = 1.6;
+
+  var gl = document.getElementById("gl").getContext("webgl", {antialias:false});
+  var glc = document.getElementById("gl"), tc = document.getElementById("threads"), ctx = tc.getContext("2d");
+  if(!gl){ document.querySelector(".hero p").textContent = "WebGL is not available here. On the real site this is where the fallback video goes."; return; }
+
+  function sh(type, src){ var s=gl.createShader(type); gl.shaderSource(s,src); gl.compileShader(s);
+    if(!gl.getShaderParameter(s,gl.COMPILE_STATUS)) console.error(gl.getShaderInfoLog(s)); return s; }
+  var prog = gl.createProgram();
+  gl.attachShader(prog, sh(gl.VERTEX_SHADER, document.getElementById("vs").textContent));
+  gl.attachShader(prog, sh(gl.FRAGMENT_SHADER, document.getElementById("fs").textContent));
+  gl.linkProgram(prog); gl.useProgram(prog);
+  var buf = gl.createBuffer(); gl.bindBuffer(gl.ARRAY_BUFFER, buf);
+  gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1,-1,3,-1,-1,3]), gl.STATIC_DRAW);
+  var aPos = gl.getAttribLocation(prog,"aPos"); gl.enableVertexAttribArray(aPos); gl.vertexAttribPointer(aPos,2,gl.FLOAT,false,0,0);
+  var U = {}; ["uRes","uTime","uPos","uState","uRot","uSeed"].forEach(function(n){U[n]=gl.getUniformLocation(prog,n)});
+
+  var deities = HATS.map(function(h,i){
+    var el = document.createElement("div"); el.className="label"; el.innerHTML = h.name+"<small>"+h.sub+"</small>"; document.body.appendChild(el);
+    return {h:h, el:el, pos:[0,0,0], wake:0, phase:Math.random()*10, twitch:0, next:2+Math.random()*6,
+            yaw:Math.random()*6, pitch:h.kind?0.55:0, yawT:0, pitchT:0, sx:0, sy:0, sr:0};
+  });
+
+  var quality = 0.75, showThreads = true, W=0, H=0;
+  function layout(){
+    W = innerWidth; H = innerHeight;
+    var dpr = Math.min(devicePixelRatio||1, 2);
+    glc.width = Math.round(W*dpr*quality); glc.height = Math.round(H*dpr*quality);
+    tc.width = Math.round(W*dpr); tc.height = Math.round(H*dpr); ctx.setTransform(dpr,0,0,dpr,0,0);
+    gl.viewport(0,0,glc.width,glc.height);
+    var aspect = W/H, halfW = (aspect/2)*CAMZ/FOC, halfH = 0.5*CAMZ/FOC;
+    if(aspect >= 1){
+      var span = Math.min(halfW - RB - .2, 3.0);
+      deities.forEach(function(d,i){ var x = -span + i*(2*span/3); d.pos=[x, .35 + .22*Math.sin(i*1.9), 0]; });
+    } else {
+      deities.forEach(function(d,i){ var x = (i%2?1:-1)*Math.min(halfW-RB-.05, 1.1), y = (i<2?1:-0.3)*Math.min(halfH*.55,1.25)+.4; d.pos=[x,y,0]; });
+    }
+  }
+  addEventListener("resize", layout); layout();
+
+  function proj(p){ var s = FOC/(CAMZ+p[2]); return [W/2 + p[0]*s*H, H/2 - p[1]*s*H]; }
+
+  var mouse = {x:-9999,y:-9999,active:false,last:-99};
+  function mv(x,y){ mouse.x=x; mouse.y=y; mouse.active=true; mouse.last=performance.now()/1000; }
+  addEventListener("pointermove", function(e){mv(e.clientX,e.clientY)});
+  addEventListener("pointerdown", function(e){mv(e.clientX,e.clientY)});
+  document.addEventListener("pointerleave", function(){mouse.active=false});
+  addEventListener("click", function(){
+    var best=null; deities.forEach(function(d){ if(d.wake>.55 && (!best||d.wake>best.wake)) best=d; });
+    if(best){ var t=document.getElementById("toast"); t.textContent="would open: /"+best.h.name.toLowerCase(); t.style.opacity=1;
+      clearTimeout(t._t); t._t=setTimeout(function(){t.style.opacity=0},1400); best.twitch=1; }
+  });
+  document.querySelectorAll("[data-q]").forEach(function(b){ b.addEventListener("click",function(e){ e.stopPropagation();
+    quality=+b.dataset.q; document.querySelectorAll("[data-q]").forEach(function(x){x.classList.toggle("on",x===b)}); layout(); }); });
+  document.getElementById("tThreads").addEventListener("click",function(e){ e.stopPropagation(); showThreads=!showThreads; this.classList.toggle("on",showThreads); });
+
+  function ss(a,b,x){ var t=Math.max(0,Math.min(1,(x-a)/(b-a))); return t*t*(3-2*t); }
+  function segDist(px,py,ax,ay,bx,by){ var dx=bx-ax,dy=by-ay,t=((px-ax)*dx+(py-ay)*dy)/(dx*dx+dy*dy); t=Math.max(0,Math.min(1,t)); var x=ax+t*dx-px,y=ay+t*dy-py; return Math.sqrt(x*x+y*y); }
+
+  var pos=new Float32Array(12), st=new Float32Array(16), rot=new Float32Array(8), sd=new Float32Array(4);
+  var t0=performance.now()/1000, prev=t0;
+  function frame(){
+    var now=performance.now()/1000, dt=Math.min(.05, now-prev); prev=now; var time=now-t0;
+    var present = mouse.active && (now-mouse.last) < 6;   // cursor counts as "someone here" for a while
+
+    // where the deities look: the cursor if present, otherwise a slow wandering point
+    var tx, ty;
+    if(present){ var s=FOC/(CAMZ-2.5); tx=(mouse.x-W/2)/(s*H); ty=-(mouse.y-H/2)/(s*H); }
+    else { tx = Math.sin(time*.13)*3; ty = Math.sin(time*.21+1)*1.2; }
+
+    deities.forEach(function(d,i){
+      var sp = proj(d.pos); d.sx=sp[0]; d.sy=sp[1]; d.sr = RB*FOC/CAMZ*H;
+      var dist = Math.hypot(mouse.x-d.sx, mouse.y-d.sy);
+      var target = present ? ss(3.0*d.sr, 0.7*d.sr, dist) : 0;
+      d.wake += (target-d.wake) * (target>d.wake ? 3.5 : 0.6) * dt;   // wakes fast, falls asleep slowly
+      d.phase += dt * (0.18 + 0.9*d.wake);
+      // unprompted moments
+      if(time > d.next){ d.twitch = .6 + .4*Math.random(); d.next = time + (d.wake>.5 ? 1.5 : 4) + Math.random()*7; d.yaw += (Math.random()-.5)*.6; }
+      d.twitch *= Math.exp(-dt*5);
+      // attention with lag; asleep ones only half-turn
+      var dx = tx-d.pos[0], dy = ty-d.pos[1], dz = -2.5-d.pos[2];
+      var engage = present ? .35 + .65*d.wake : .25;
+      d.yawT = Math.atan2(dx, -dz)*engage + time*.05*(1-d.wake) + d.h.seed*2;
+      d.pitchT = (d.h.kind ? .55 : 0) - Math.atan2(dy, Math.hypot(dx,dz))*engage*.8;
+      d.yaw += (d.yawT-d.yaw) * (1-Math.exp(-dt*(1.2+2*d.wake)));
+      d.pitch += (d.pitchT-d.pitch) * (1-Math.exp(-dt*(1.2+2*d.wake)));
+
+      pos.set(d.pos, i*3); st.set([d.wake, d.phase, d.twitch, d.h.kind], i*4); rot.set([d.yaw, d.pitch], i*2); sd[i]=d.h.seed;
+      d.el.style.left = d.sx+"px"; d.el.style.top = (d.sy + d.sr*1.05)+"px";
+      d.el.style.opacity = Math.max(0, (d.wake-.15)/.85).toFixed(3);
+    });
+
+    gl.uniform2f(U.uRes, glc.width, glc.height); gl.uniform1f(U.uTime, time);
+    gl.uniform3fv(U.uPos, pos); gl.uniform4fv(U.uState, st); gl.uniform2fv(U.uRot, rot); gl.uniform1fv(U.uSeed, sd);
+    gl.drawArrays(gl.TRIANGLES, 0, 3);
+
+    // threads: you are the thing that connects the hats
+    ctx.clearRect(0,0,W,H);
+    if(showThreads){
+      ctx.lineWidth = 1;
+      for(var a=0;a<4;a++) for(var b=a+1;b<4;b++){
+        var A=deities[a], B=deities[b];
+        var near = present ? ss(220, 10, segDist(mouse.x,mouse.y,A.sx,A.sy,B.sx,B.sy)) : 0;
+        var alpha = .035 + .35*near*(.4+.6*Math.max(A.wake,B.wake)) + .1*(A.wake*B.wake);
+        var mx=(A.sx+B.sx)/2, my=(A.sy+B.sy)/2, nx=-(B.sy-A.sy), ny=(B.sx-A.sx), nl=Math.hypot(nx,ny)||1;
+        var sag = Math.sin(time*.7 + a*1.3 + b*2.1)*18 + (b-a)*14;
+        if(present && near>0){ mx += (mouse.x-mx)*near*.35; my += (mouse.y-my)*near*.35; }
+        ctx.strokeStyle = "rgba(210,245,235,"+alpha.toFixed(3)+")";
+        ctx.beginPath(); ctx.moveTo(A.sx,A.sy); ctx.quadraticCurveTo(mx+nx/nl*sag, my+ny/nl*sag, B.sx,B.sy); ctx.stroke();
+      }
+      if(present){
+        deities.forEach(function(d){ if(d.wake<.05) return;
+          ctx.strokeStyle = "rgba(198,255,61,"+(d.wake*.45).toFixed(3)+")";
+          ctx.beginPath(); ctx.moveTo(mouse.x,mouse.y);
+          ctx.quadraticCurveTo((mouse.x+d.sx)/2, (mouse.y+d.sy)/2 - 30*Math.sin(time*1.3), d.sx, d.sy); ctx.stroke(); });
+      }
+    }
+    requestAnimationFrame(frame);
+  }
+  requestAnimationFrame(frame);
+})();
+</script>
+</body>
+</html>
