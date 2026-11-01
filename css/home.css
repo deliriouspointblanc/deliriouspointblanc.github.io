@@ -276,3 +276,106 @@ button:focus-visible {
 @media (prefers-reduced-motion: reduce) {
   * { animation: none !important; transition: none !important; }
 }
+
+/* ---------- case studies ----------
+   Shared by the pages in case-studies/. Same shell as the homepage: the
+   header, footer, draft badge and focus styles above all apply there too. */
+
+.case {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 120px 24px 40px;
+}
+
+.case h1 {
+  font-size: clamp(28px, 4vw, 44px);
+  line-height: 1.1;
+  margin: 0 0 18px;
+  color: var(--title-color);
+}
+
+/* role · tools · timeline · studio */
+.case .meta-row {
+  margin: 0 0 40px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--rule);
+  font-size: 13px;
+  line-height: 1.8;
+  color: var(--ink-dim);
+  letter-spacing: 0.02em;
+}
+.case .meta-row span + span::before {
+  content: " · ";
+  color: var(--rule);
+}
+
+.case p {
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--ink);
+  margin: 0 0 22px;
+}
+
+.case ul {
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--ink);
+  margin: 0 0 22px;
+  padding-left: 20px;
+}
+.case li { margin-bottom: 10px; }
+
+.case .outbound {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 18px;
+  border: 1px solid var(--rule);
+  border-radius: 99px;
+  text-decoration: none;
+  font-size: 14px;
+}
+.case .outbound:hover,
+.case .outbound:focus {
+  border-color: var(--primary-color);
+}
+
+.case figure { margin: 32px 0; }
+.case figure img { width: 100%; height: auto; display: block; }
+.case figcaption {
+  margin-top: 8px;
+  font-size: 12px;
+  color: var(--ink-dim);
+}
+
+/* A block that is not Yas's words yet. Loud on purpose. */
+.case .note {
+  margin: 32px 0;
+  padding: 18px 20px;
+  border: 1px dashed var(--primary-color2);
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--title-color);
+}
+.case .note h3 {
+  margin: 0 0 10px;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--primary-color2);
+}
+.case .note ul { font-size: 14px; margin-bottom: 0; }
+
+.case .back {
+  display: inline-block;
+  margin-bottom: 28px;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--ink-dim);
+}
+
+@media (max-width: 768px) {
+  .case { padding: 32px 16px 40px; }
+}
