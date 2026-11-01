@@ -75,6 +75,52 @@ float deityB(vec3 q, float t, float k){
   return d*.6;
 }
 
+
+float smin(float a, float b, float k){ float h=clamp(.5+.5*(b-a)/k,0.,1.); return mix(b,a,h)-k*h*(1.-h); }
+float sdCapsule(vec3 p, vec3 a, vec3 b, float r){ vec3 pa=p-a, ba=b-a; float h=clamp(dot(pa,ba)/dot(ba,ba),0.,1.); return length(pa-ba*h)-r; }
+
+// Soft morph displacement: two octaves of drifting sine noise with a little domain warp.
+// Stand-in for the Blender displacement. Swap for proper 3D noise later.
+float morph(vec3 p, float t){
+  vec3 w = p + .15*vec3(sin(p.y*3.+t*.7), sin(p.z*3.+t*.9), sin(p.x*3.+t*.6));
+  float n = sin(w.x*4.1+t)*sin(w.y*3.7-t*.8)*sin(w.z*4.3+t*.6);
+  n += .5*sin(w.x*9.+t*1.3)*sin(w.y*8.3+t)*sin(w.z*9.7-t*1.1);
+  return n;
+}
+
+// Blue blob (Blender morph 1): a body with a horn, a bulb and a knuckle, all melting into each other
+float deityC(vec3 p, float t, float amp){
+  p.xy *= Rot(-.45);
+  float body = (length(p*vec3(1.,.82,1.05)) - .40);
+  vec3 hornTip = vec3(.14 + .05*sin(t*.9), .66 + .04*sin(t*1.3), .05);
+  float horn = sdCapsule(p, vec3(.04,.22,0.), hornTip, .075 + .015*sin(t*1.7));
+  vec3 bulbEnd = vec3(-.40 + .04*sin(t*.8+1.), -.46, -.18);
+  float bulb = sdCapsule(p, vec3(-.12,-.24,.04), bulbEnd, .11);
+  float knuckle = length(p - vec3(-.26,.24 + .03*sin(t), -.12)) - .15;
+  float lump = length(p - vec3(.28,-.12,-.2)) - .13;
+  float d = smin(body, horn, .14);
+  d = smin(d, bulb, .16);
+  d = smin(d, knuckle, .12);
+  d = smin(d, lump, .14);
+  d += .045*amp*morph(p*1.4, t);
+  return d*.7;
+}
+
+// Purple shell (Blender morph 2): a wrinkled, folded open shell that breathes open and closed
+float deityD(vec3 p, float t, float amp){
+  vec3 q = p;
+  q.xy *= Rot(.35);
+  q.x += .12*q.y*q.y;                                   // lean / curl
+  q.x += .22*max(q.y,0.)*max(q.y,0.)*3.;
+  float e = (length(q/vec3(.62,.42,.45)) - 1.)*.40;     // ellipsoid
+  e += .035*amp*morph(q*1.6, t) + .012*sin(q.y*22.+t*2.)*sin(q.x*18.);  // lumps + wrinkles
+  float shell = abs(e) - .03;
+  float open = .02 + .09*(.5+.5*sin(t*.8));            // the mouth breathes
+  float cut = dot(q, normalize(vec3(.35,-.15,-1.))) - open + .05*sin(q.y*6.+t);
+  float d = max(shell, cut);
+  return d*.65;
+}
+
 float mapD(vec3 p, vec3 c, vec2 rot, vec4 st, float seed){
   vec3 l = p - c;
   float br = 1. + (.035*sin(uTime*.9+seed*6.) + .025*sin(uTime*1.37+seed*11.))*(1.+st.x) + .06*st.z;
@@ -82,12 +128,16 @@ float mapD(vec3 p, vec3 c, vec2 rot, vec4 st, float seed){
   l.xz *= Rot(rot.x);
   l.yz *= Rot(rot.y);
   float d;
+  float amp = .7 + 1.3*st.x + 3.*st.z;
   if(st.w < .5){
-    float amp = .7 + 1.3*st.x + 3.*st.z;
     d = deityA(l.xyz*SA, st.y, amp)/SA;
-  } else {
+  } else if(st.w < 1.5){
     float k = 1.2 + 3.2*st.x + seed*1.5 + 2.*st.z;
     d = deityB(l*SB, st.y, k)/SB;
+  } else if(st.w < 2.5){
+    d = deityC(l*1.05, st.y, amp)/1.05;
+  } else {
+    d = deityD(l*1.3, st.y, amp)/1.3;
   }
   return d*br;
 }
@@ -109,7 +159,7 @@ void main(){
     vec3 c = uPos[i]; vec2 rot = uRot[i]; vec4 st = uState[i]; float seed = uSeed[i];
     // glow halo behind awake deities
     float dl = length(cross(rd, c-ro));
-    vec3 tint = st.w < .5 ? vec3(.9,.25,.4) : vec3(.2,.6,1.);
+    vec3 tint = st.w < .5 ? vec3(.9,.25,.4) : st.w < 1.5 ? vec3(.2,.6,1.) : st.w < 2.5 ? vec3(.1,.2,1.) : vec3(.55,.3,1.);
     col += tint * st.x * .10 * exp(-dl*dl*2.2);
 
     vec3 oc = ro - c;
@@ -135,10 +185,20 @@ void main(){
     vec3 r = reflect(rd, n);
     float spec = pow(max(0., r.y), 30.);
     float dif = dot(n, normalize(vec3(.5,5.,-7.)))*.5+.5;
-    vec3 env = bs.w < .5 ? BgA(r) : BgB(r);
-    vec3 c2 = mix(env*1.5, vec3(dif), .2) + spec;
     float fres = pow(1.-max(0.,dot(n,-rd)), 3.);
-    c2 += fres * env * (.25 + .6*bs.x);
+    vec3 c2;
+    if(bs.w < 1.5){
+      vec3 env = bs.w < .5 ? BgA(r) : BgB(r);
+      c2 = mix(env*1.5, vec3(dif), .2) + spec;
+      c2 += fres * env * (.25 + .6*bs.x);
+    } else {
+      // satin clay look, like the Blender renders
+      vec3 base = bs.w < 2.5 ? vec3(.04,.10,.72) : vec3(.40,.24,.72);
+      vec3 L = normalize(vec3(-.6,.8,-.7));
+      float lam = clamp(dot(n,L),0.,1.)*.75 + .25;
+      float sp = pow(max(0., dot(reflect(-L,n), -rd)), 24.) * .45;
+      c2 = base*lam*1.25 + sp + fres*(base+.25)*(.3+.5*bs.x);
+    }
     float g = dot(c2, vec3(.3,.59,.11));
     c2 = mix(vec3(g)*.24, c2, .08 + .92*bs.x);   // asleep: dim and grey. awake: full colour
     c2 += bs.z * .25;                            // twitch flash
@@ -156,10 +216,10 @@ attribute vec2 aPos; void main(){ gl_Position = vec4(aPos,0.,1.); }
 (function(){
   // ---- the four hats (placeholders: rename freely) ----
   var HATS = [
-    {name:"Immersive",   sub:"XR for brands and science", kind:0, seed:.13},
-    {name:"Tools",       sub:"pipelines that help teams", kind:1, seed:.71},
-    {name:"Art",         sub:"delight, then question it",  kind:0, seed:.42},
-    {name:"Community",   sub:"Free the Motive and more",  kind:1, seed:.29}
+    {name:"Immersive",   sub:"XR for brands and science", kind:2, seed:.13},  // blue blob
+    {name:"Tools",       sub:"pipelines that help teams", kind:1, seed:.71},  // torii ring
+    {name:"Art",         sub:"delight, then question it",  kind:0, seed:.42},  // amorphous butterfly
+    {name:"Community",   sub:"Free the Motive and more",  kind:3, seed:.29}   // purple shell
   ];
   var RB = 0.85, CAMZ = 7, FOC = 1.6;
 
@@ -181,7 +241,7 @@ attribute vec2 aPos; void main(){ gl_Position = vec4(aPos,0.,1.); }
   var deities = HATS.map(function(h,i){
     var el = document.createElement("div"); el.className="label"; el.innerHTML = h.name+"<small>"+h.sub+"</small>"; document.body.appendChild(el);
     return {h:h, el:el, pos:[0,0,0], wake:0, phase:Math.random()*10, twitch:0, next:2+Math.random()*6,
-            yaw:Math.random()*6, pitch:h.kind?0.55:0, yawT:0, pitchT:0, sx:0, sy:0, sr:0};
+            yaw:Math.random()*6, pitch:h.kind===1?0.55:0, yawT:0, pitchT:0, sx:0, sy:0, sr:0};
   });
 
   var quality = 0.75, showThreads = true, W=0, H=0;
@@ -244,7 +304,7 @@ attribute vec2 aPos; void main(){ gl_Position = vec4(aPos,0.,1.); }
       var dx = tx-d.pos[0], dy = ty-d.pos[1], dz = -2.5-d.pos[2];
       var engage = present ? .35 + .65*d.wake : .25;
       d.yawT = Math.atan2(dx, -dz)*engage + time*.05*(1-d.wake) + d.h.seed*2;
-      d.pitchT = (d.h.kind ? .55 : 0) - Math.atan2(dy, Math.hypot(dx,dz))*engage*.8;
+      d.pitchT = (d.h.kind===1 ? .55 : 0) - Math.atan2(dy, Math.hypot(dx,dz))*engage*.8;
       d.yaw += (d.yawT-d.yaw) * (1-Math.exp(-dt*(1.2+2*d.wake)));
       d.pitch += (d.pitchT-d.pitch) * (1-Math.exp(-dt*(1.2+2*d.wake)));
 
