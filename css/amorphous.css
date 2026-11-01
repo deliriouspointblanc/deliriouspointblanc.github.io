@@ -141,3 +141,71 @@ h1 {
   margin-top: 0.rem;
   top: 0rem;
 }
+/* ---------------------------------------------------------------
+   Narrow screens. The piece was laid out for a desktop window: the
+   two model panels sit at absolute 45% each, the reset button at
+   left: 40rem, and the textareas at a fixed 600px. Below 768px that
+   all lands off-screen or on top of itself. This stacks it instead.
+   The canvas stays an absolute backdrop, as designed; it already resizes
+   itself in sketch.js.
+   --------------------------------------------------------------- */
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 1.6rem;
+    margin: 0.5rem 0.5rem 0.5rem 7rem;
+  }
+
+  #homepage {
+    padding: 0.35rem;
+    left: 0.35rem;
+  }
+  #homepage h2 { font-size: 0.85rem; }
+
+  /* Stacking the panels in flow would push the canvas below them, so the
+     canvas becomes a fixed backdrop and the controls scroll over it. */
+  #sketch-holder canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  /* side by side becomes one after the other */
+  #model1,
+  #model2 {
+    position: relative;
+    left: auto;
+    right: auto;
+    width: 100%;
+    padding: 0 0.75rem;
+    box-sizing: border-box;
+  }
+
+  #textInput,
+  #textInput2 {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  #result,
+  #result2 {
+    height: 40vh;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 1.1rem;
+  }
+
+  /* was pinned at left: 40rem, which is off the side of a phone */
+  #resetBoth {
+    position: relative;
+    left: auto;
+    top: auto;
+    display: block;
+    margin: 0.75rem auto;
+    padding: 0.5rem 1.25rem;
+  }
+
+  .collapsible { padding: 12px; font-size: 14px; }
+}
