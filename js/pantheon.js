@@ -108,19 +108,26 @@ function start() {
 
     const aspect = W / H;
     const halfW = (aspect / 2) * CAMZ / FOC, halfH = 0.5 * CAMZ / FOC;
-    if (aspect >= 1) {
-      const span = Math.min(halfW - RB - 0.2, 3.0);
-      deities.forEach(function (d, i) {
-        const x = -span + i * (2 * span / 3);
-        d.pos = [x, 0.35 + 0.22 * Math.sin(i * 1.9), 0];
-      });
-    } else {
-      deities.forEach(function (d, i) {
-        const x = (i % 2 ? 1 : -1) * Math.min(halfW - RB - 0.05, 1.1);
-        const y = (i < 2 ? 1 : -0.3) * Math.min(halfH * 0.55, 1.25) + 0.4;
-        d.pos = [x, y, 0];
-      });
-    }
+
+    // Two by two, in the order the sections run below: XR and Tools on the top
+    // row, Art and Community under them. The whole block sits above centre so
+    // the lower pair's labels stay clear of the hero copy.
+    const wide = aspect >= 1;
+    const spanX = wide
+      ? Math.min(halfW - RB - 0.2, 2.1)
+      : Math.min(halfW - RB - 0.05, 1.1);
+    const spanY = Math.min(halfH - RB - 0.1, wide ? 0.86 : 1.15);
+    const lift = wide ? 0.70 : 0.4;
+    // Stacked two deep they need more room than a single row did, so the whole
+    // cluster sits further from the camera. proj() and the shader both read z,
+    // so this shrinks them honestly rather than faking a scale.
+    const depth = wide ? 1.5 : 0.8;
+
+    deities.forEach(function (d, i) {
+      const col = (i % 2) ? 1 : -1;
+      const row = (i < 2) ? 1 : -1;
+      d.pos = [col * spanX, row * spanY + lift, depth];
+    });
   }
   window.addEventListener('resize', layout);
   layout();
@@ -159,7 +166,7 @@ function start() {
     deities.forEach(function (d) {
       const sp = proj(d.pos);
       d.sx = sp[0]; d.sy = sp[1];
-      d.sr = RB * FOC / CAMZ * H;
+      d.sr = RB * FOC / (CAMZ + d.pos[2]) * H;
       d.el.style.left = d.sx + 'px';
       d.el.style.top = (d.sy + d.sr * 1.05) + 'px';
     });
@@ -238,7 +245,7 @@ function start() {
     deities.forEach(function (d) {
       const sp = proj(d.pos);
       d.sx = sp[0]; d.sy = sp[1];
-      d.sr = RB * FOC / CAMZ * H;
+      d.sr = RB * FOC / (CAMZ + d.pos[2]) * H;
 
       const dist = Math.hypot(mouse.x - d.sx, mouse.y - d.sy);
       const target = present ? ss(3.0 * d.sr, 0.7 * d.sr, dist) : 0;
